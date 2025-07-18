@@ -1,0 +1,662 @@
+brand,name,SKU,price,weight,PBW,discount,PWD
+VIVERE,Suavizante P/Ropa Clásico Vivere 3 Ltr,7791290793743,"$9.692,99",N/A,,25%Dto,"$7.269,74"
+VIVERE,Suavizante P/Ropa Flores Silvest Vivere 900 Ml,7791290793736,"$2.983,99",900 Ml,,25%Dto,"$2.237,99"
+VIVERE,Suavizante P/Ropa Plancha Fácil Vivere 810 Ml,7791290793774,"$2.690,99",810 Ml,,25%Dto,"$2.018,24"
+VIVERE,Suavizante P/Ropa Violetas Y Flr Vivere 900 Ml,7791290793729,"$2.983,99",900 Ml,,25%Dto,"$2.237,99"
+VIVERE,Suavizante P/Ropa Violetas Y Flr Vivere Doy 3 Ltr,7791290793712,"$9.692,99",N/A,,25%Dto,"$7.269,74"
+VIVERE,Suavizante Para Ropa Clásico Vivere 3 Ltr,7791290793866,"$10.692,99",N/A,,25%Dto,"$8.019,74"
+DOWNY,Aromatizante Para Ropa April Fresh Downy 345g,30772097953,"$38.776,99",345 g,,2x1,"$19.388,50"
+DOWNY,Aromatizante Para Ropa Fresh Downy 141g,30772087251,"$18.208,99",141 g,,2x1,"$9.104,50"
+DOWNY,Aromatizante Para Ropa Fresh Downy 345g,30772095713,"$38.776,99",345 g,,2x1,"$19.388,50"
+DOWNY,Aromatizante Para Ropa Lush Downy 141g,30772087343,"$18.208,99",141 g,,2x1,"$9.104,50"
+DOWNY,Aromatizante Para Ropa Lush Downy 345g,30772095720,"$38.776,99",345 g,,2x1,"$19.388,50"
+DOWNY,Enjuague Concentrado Adorable Downy 900ml,7500435160070,"$12.105,00",900 ml,,2x1,"$6.052,50"
+DOWNY,Enjuague Concentrado Downy 450ml,7500435159999,"$7.059,00",450 ml,,2x1,"$3.529,50"
+DOWNY,Enjuague Concentrado Místico Downy 450ml,7500435160087,"$7.059,00",450 ml,,2x1,"$3.529,50"
+DOWNY,Enjuague Concentrado Místico Downy 900ml,7500435160001,"$12.105,00",900 ml,,2x1,"$6.052,50"
+DOWNY,Enjuague Concentrado Perfume Brisa Suave Downy 1l,7500435243650,"$12.105,00",1 l,,2x1,"$6.052,50"
+DOWNY,Enjuague Concentrado Perfume Brisa Suave Downy 500ml,7500435243612,"$7.059,00",500 ml,,2x1,"$3.529,50"
+DOWNY,Enjuague Concentrado Perfume Intenso Downy 400ml,7500435233385,"$4.418,99",400 ml,,2x1,"$2.209,50"
+DOWNY,Suavizante De Telas DOWNY Concentrado Brisa De Verano 1 L,7506339332643,"$12.105,00",1 L,,2x1,"$6.052,50"
+DOWNY,Suavizante De Telas DOWNY Concentrado Brisa De Verano 400 Ml,7500435140966,"$4.418,99",400 Ml,,2x1,"$2.209,50"
+DOWNY,Suavizante De Telas DOWNY Concentrado Brisa De Verano 500 Ml,7506195143834,"$7.059,00",500 Ml,,2x1,"$3.529,50"
+BIC,Maquina De Afeitar BIC Soleil Blister 2 Unidades,70330731769,"$3.499,99",N/A,,35%Dto,"$2.274,99"
+BIC,Maquina De Afeitar BIC Flex 3 Blister 2 Unidades,70330736580,"$4.299,99",N/A,,35%Dto,"$2.794,99"
+BIC,Maquina De Afeitar BIC Comfort 3 Blister 2 Unidades,70330717510,"$3.349,99",N/A,,35%Dto,"$2.177,49"
+BIC,Maquina De Afeitar BIC Comfort 3 Blister 2 Unidades,70330717527,"$3.349,99",N/A,,35%Dto,"$2.177,49"
+BIC,Maquina De Afeitar BIC Confort Blister 4 Unidades,70330734401,"$4.999,99",N/A,,35%Dto,"$3.249,99"
+BIC,Maquina De Afeitar BIC Lady Paquete 5 Unidades,70330732339,"$1.999,99",N/A,,35%Dto,"$1.299,99"
+BIC,Maquina De Afeitar +5 Cartuchos F BIC 6 Uni,3086123549999,"$9.880,00",N/A,,35%Dto,"$6.422,00"
+BIC,Maquina De Afeitar Comfort 2 Bic 5 Uni,70330721838,"$3.699,99",N/A,,35%Dto,"$2.404,99"
+BIC,Maquina De Afeitar Confort 2 Women Bic X 5u.,70330728547,"$3.699,99",N/A,,35%Dto,"$2.404,99"
+BIC,Maquina De Afeitar Confort 3 Acti BIC 4 Uni,70330734395,"$4.999,99",N/A,,35%Dto,"$3.249,99"
+BIC,Maquina De Afeitar Flex 2 Bic 5 Uni,70330745889,"$6.999,99",N/A,,35%Dto,"$4.549,99"
+BIC,Maquina De Afeitar Flex3 Hybrid Bic 1u,7501843502919,"$9.879,99",N/A,,35%Dto,"$6.421,99"
+BIC,Maquina De Afeitar Lavanda Y Eucalipto Bic Bli 3u,7501014501390,"$7.410,00",N/A,,35%Dto,"$4.816,50"
+BIC,Maquina De Afeitar Rosa Magnolia Bic 3u,7501843503923,"$7.410,00",N/A,,35%Dto,"$4.816,50"
+BIC,Maquina De Afeitar Sensitive Shaver Bic 7 Uni,70330728509,"$2.499,99",N/A,,35%Dto,"$1.624,99"
+BIC,Maquina De Afeitar Soleil Bic 2 Uni,70330738133,"$4.099,99",N/A,,35%Dto,"$2.664,99"
+BIC,Maquina De Afeitar Soleil Sensitive Bic 1u,7501843502926,"$9.469,99",N/A,,35%Dto,"$6.155,49"
+JOHNSON & JOHNSON,Hisopos Flexibles Cotonetes® JOHNSON & JOHNSON X 150 Un.,7891010032937,"$5.675,98",150 Un,,N/A,N/A
+GILLETTE,Repuestos De Afeitar GILLETTE Mach3 Sensitive 4 Un,7702018037896,"$12.984,00",4 Un,,35%Dto,"$8.439,60"
+GILLETTE,Máquina De Afeitar Eléctrica 3 En 1 GILLETTE Styler 1 Kit,7702018330126,"$47.423,00",N/A,,N/A,N/A
+GILLETTE PRESTOBARBA3,"Máquina De Afeitar GILLETTE PRESTOBARBA3 Fresh Con Eucalipto Y 3 Hojas, 4 Uds",7702018983902,"$10.148,00",N/A,,N/A,N/A
+GILLETTE PRESTOBARBA3,Máquinas Para Afeitar GILLETTE PRESTOBARBA3 2 Unidades,7702018874729,"$5.126,00",N/A,,N/A,N/A
+GILLETTE PRESTOBARBA3,Máquinas Para Afeitar GILLETTE PRESTOBARBA3 4 Unidades,7702018874750,"$9.242,00",N/A,,N/A,N/A
+GILLETTE PRESTOBARBA3,Máquinas Para Afeitar Gillette Prestobarba3 Sensitive 4 Unidades,7506339337532,"$10.132,00",N/A,,N/A,N/A
+GILLETTE PRESTOBARBA3,Máquinas Para Afeitar Gillette Prestobarba3 Sensitive 8 Unidades,7506339337549,"$19.157,00",N/A,,N/A,N/A
+GILLETTE VENUS,Máquinas Para Afeitar Gillette Venus Simply3 2 Unidades,7702018072392,"$4.197,00",N/A,,N/A,N/A
+GILLETTE VENUS,Repuesto Para Máquina De Afeitar Mujer GILLETTE VENUS Original Con Hojas 2 Ud,7702018072477,"$7.252,00",N/A,,N/A,N/A
+GILLETTE,Máquina De Afeitar Prestobarba Ultragrip2 5 Un,7500435160674,"$5.589,00",5 Un,,N/A,N/A
+GILLETTE,"GILLETTE Prestobarba3 Máquina De Afeitar Desechable Con Afeitadas Suaves, 4 Unidades",7500435189408,"$9.242,00",N/A,,N/A,N/A
+GILLETTE,Máquina De Afeitar GILLETTE Proshield 1 Un,7500435190473,"$25.986,00",1 Un,,N/A,N/A
+GILLETTE,Maquina De Afeitar GILLETTE Venus Tropical Blister 3 Unidades,7500435105699,"$8.883,00",N/A,,N/A,N/A
+GILLETTE VENUS,Máquinas Para Afeitar Gillette Venus Simply3 2 Unidades,7702018072392,"$4.197,00",N/A,,N/A,N/A
+GILLETTE VENUS,Repuesto Para Máquina De Afeitar Mujer GILLETTE VENUS Original Con Hojas 2 Ud,7702018072477,"$7.252,00",N/A,,N/A,N/A
+VENUS,Maquina De Afeitar Venus Gillette Bli 1 Uni,7506339315486,"$11.058,00",N/A,,N/A,N/A
+GILLETTE,Maquina De Afeitar Sensitive GILLETTE Venus 2u,7702018072217,"$7.585,00",N/A,,N/A,N/A
+AROMASS,Aromatizante Con Difusor Venus Aromass 125 Ml,7798273211133,"$6.419,99",125 Ml,,N/A,N/A
+VENUS,"Crema De Afeitar Gillette VENUS Para Depilar Con Máquina De Afeitar Mujer, 150ml",7500435173100,"$5.220,00",150 ml,,N/A,N/A
+VENUS,Maquina De Afeitar Intima VENUS 4u,7500435203982,"$9.986,00",N/A,,N/A,N/A
+VENUS,Maquina De Afeitar Sensitive Venus 4u,7500435245463,"$13.652,00",N/A,,N/A,N/A
+VENUS,Maquina De Afeitar Simply 3 Sensitive Venus 4u,7500435144230,"$9.499,00",N/A,,N/A,N/A
+VENUS,Máquina Afeitar Mujer Gillette VENUS Malibu 2 Uds,7500435148627,"$16.251,00",N/A,,N/A,N/A
+GILLETTE,Máquina Afeitar Mujer GILLETTE Venus Íntima 1 Ud,7500435204026,"$24.110,00",N/A,,N/A,N/A
+GILLETTE,Repuesto Máquina Afeitar GILLETTE Venus Íntima 2 Ud,7500435204040,"$18.467,00",N/A,,N/A,N/A
+PANTENE,Acondicionador PANTENE Hidratación Extrema Pomada 170 ML,7500435106412,"$6.622,00",170 ML,,70% 2da,"$4.304,30"
+PANTENE,Acondicionador PANTENE Restauración Pomada 170 ML,7500435106382,"$7.417,00",170 ML,,70% 2da,"$4.821,05"
+PANTENE,Crema Para Peinar PANTENE Restauración Botella 300 Ml,7506309837246,"$6.502,00",300 Ml,,70% 2da,"$4.226,30"
+PANTENE,Tratamiento Capilar PANTENE Restauración Ampolla 15 Ml,7506195196694,"$5.753,00",15 Ml,,70% 2da,"$3.739,45"
+PANTENE,Acondicionador Cabellos Frágiles Pantene 250ml,7500435247955,"$6.635,00",250 ml,,70% 2da,"$4.312,75"
+PANTENE,Acondicionador Equilibrio Raíz Y Puntas PANTENE 200ml,7500435230001,"$4.933,00",200 ml,,70% 2da,"$3.206,45"
+PANTENE,Acondicionador Hidrata Y Fortalece Pantene 200ml,7500435230070,"$4.933,00",200 ml,,70% 2da,"$3.206,45"
+PANTENE,Acondicionador Hidrata Y Fortalece Pantene 700ml,7500435244374,"$13.007,00",700 ml,,70% 2da,"$8.454,55"
+PANTENE,Acondicionador Hidratación PANTENE 400 Ml,7500435211970,"$6.855,00",400 Ml,,70% 2da,"$4.455,75"
+PANTENE,Acondicionador Keratina Pantene 250ml,7500435241106,"$6.635,00",250 ml,,70% 2da,"$4.312,75"
+PANTENE,Acondicionador Keratina Pantene 510ml,7500435241045,"$10.616,00",510 ml,,70% 2da,"$6.900,40"
+PANTENE,Acondicionador Liso Infinito Pantene 700ml,7500435244428,"$13.007,00",700 ml,,70% 2da,"$8.454,55"
+PANTENE,Acondicionador PANTENE Keratina 200 Ml,7500435241090,"$4.933,00",200 Ml,,70% 2da,"$3.206,45"
+PANTENE,Acondicionador PANTENE Keratina 700 Ml,7500435240970,"$13.007,00",700 Ml,,70% 2da,"$8.454,55"
+PANTENE,Acondicionador PANTENE Nutrición 170 Ml,7500435243698,"$7.417,00",170 Ml,,70% 2da,"$4.821,05"
+PANTENE,Acondicionador PANTENE Pro-V Miracles Detox Limpia - Purifica 200 Ml,7500435229852,"$4.933,00",200 Ml,,70% 2da,"$3.206,45"
+PANTENE,Acondicionador Pro Colágeno Pantene 250ml,7500435191586,"$6.635,00",250 ml,,70% 2da,"$4.312,75"
+PANTENE,Acondicionador Restauración PANTENE 400 Ml,7500435211857,"$6.855,00",400 Ml,,70% 2da,"$4.455,75"
+PANTENE,PANTENE Crema Para Peinar Colágeno Nutre & Revitaliza 300 Ml,7500435191548,"$7.132,00",300 Ml,,70% 2da,"$4.635,80"
+PANTENE,PANTENE Pro-V Miracles Detox Limpia - Purifica Acondicionador Hidratante 700 Ml,7500435229807,"$13.007,00",700 Ml,,70% 2da,"$8.454,55"
+PANTENE,PANTENE Pro-V Miracles Equilibrio Raíz & Puntas Acondicionador Hidratante 700 Ml,7500435230025,"$13.007,00",700 Ml,,70% 2da,"$8.454,55"
+PANTENE,PANTENE Pro-V Miracles Liso Infinito Suave Y Brillante Acondicionador Hidratante 200 Ml,7500435235372,"$4.933,00",200 Ml,,70% 2da,"$3.206,45"
+PANTENE,PANTENE Pro-V Miracles Revitalización Repara & Hidrata Acondicionador Hidratante 200 Ml,7500435235433,"$4.933,00",200 Ml,,70% 2da,"$3.206,45"
+PANTENE,PANTENE Pro-V Miracles Revitalización Repara & Hidrata Acondicionador Hidratante 750 Ml,7500435235419,"$11.613,00",750 Ml,,70% 2da,"$7.548,45"
+PANTENE,PANTENE Pro-V Miracles Volumen Suavidad & Fuerza Acondicionador Hidratante 200 Ml,7500435235341,"$4.933,00",200 Ml,,70% 2da,"$3.206,45"
+PANTENE,PANTENE Pro-V Miracles Volumen Suavidad & Fuerza Acondicionador Hidratante 400 Ml,7500435235334,"$7.951,00",400 Ml,,70% 2da,"$5.168,15"
+PANTENE,Sellador De Puntas Abiertas PANTENE Colágeno Nutre Y Revitaliza 90ml,7500435191524,"$6.710,00",90 ml,,70% 2da,"$4.361,50"
+PANTENE,Tónico Capilar Anticaspa Pantene 300ml,7500435247900,"$20.385,00",300 ml,,70% 2da,"$13.250,25"
+PANTENE,PANTENE Pro-V Miracles Detox Limpia - Purifica Shampoo Detox 200 Ml,7500435229845,"$4.933,00",200 Ml,,70% 2da,"$3.206,45"
+PANTENE,PANTENE Pro-V Miracles Equilibrio Raíz & Puntas Shampoo Equilibrante 700 Ml,7500435229999,"$13.007,00",700 Ml,,70% 2da,"$8.454,55"
+PANTENE,PANTENE Pro-V Miracles Liso Infinito Suave Y Brillante Shampoo 200 Ml,7500435235402,"$4.933,00",200 Ml,,70% 2da,"$3.206,45"
+PANTENE,PANTENE Pro-V Miracles Liso Infinito Suave Y Brillante Shampoo 400 Ml,7500435235396,"$7.951,00",400 Ml,,70% 2da,"$5.168,15"
+PANTENE,PANTENE Pro-V Miracles Revitalización Repara & Hidrata Shampoo Reparador 200 Ml,7500435235464,"$4.933,00",200 Ml,,70% 2da,"$3.206,45"
+PANTENE,PANTENE Pro-V Miracles Volumen Suavidad & Fuerza Shampoo Voluminizador 200 Ml,7500435235310,"$4.933,00",200 Ml,,70% 2da,"$3.206,45"
+PANTENE,PANTENE Pro-V Miracles Volumen Suavidad & Fuerza Shampoo Voluminizador 400 Ml,7500435235297,"$7.951,00",400 Ml,,70% 2da,"$5.168,15"
+PANTENE,Shampoo Cabellos Débiles Pantene 300ml,7500435248037,"$6.635,00",300 ml,,70% 2da,"$4.312,75"
+PANTENE,Shampoo Equilibrante PANTENE Equilibrio Raíz Y Puntas Pro-V Miracles 200 Ml,7500435209632,"$4.933,00",200 Ml,,70% 2da,"$3.206,45"
+PANTENE,Shampoo Hidrata Y Fortalece Pantene 200ml,7500435230100,"$4.933,00",200 ml,,70% 2da,"$3.206,45"
+PANTENE,Shampoo Hidrata Y Fortalece Pantene 700ml,7500435244381,"$13.007,00",700 ml,,70% 2da,"$8.454,55"
+PANTENE,Shampoo Keratina Pantene 300ml,7500435241113,"$6.635,00",300 ml,,70% 2da,"$4.312,75"
+PANTENE,Shampoo Keratina Pantene 510ml,7500435241052,"$10.616,00",510 ml,,70% 2da,"$6.900,40"
+PANTENE,Shampoo Liso Infinito Pantene 700ml,7500435244442,"$13.007,00",700 ml,,70% 2da,"$8.454,55"
+PANTENE,Shampoo PANTENE Keratina 200 Ml,7500435241069,"$4.933,00",200 Ml,,70% 2da,"$3.206,45"
+PANTENE,Shampoo PANTENE Pro-V Miracles Detox Limpia - Purifica 400 Ml,7500435229821,"$7.951,00",400 Ml,,70% 2da,"$5.168,15"
+PANTENE,Shampoo Pro-V Miracles Colágeno PANTENE 200 Ml,7500435191418,"$4.933,00",200 Ml,,70% 2da,"$3.206,45"
+PANTENE,Shampoo Pro-V Miracles Colágeno Pantene 300ml,7500435191425,"$6.635,00",300 ml,,70% 2da,"$4.312,75"
+PANTENE,Shampoo Pro-V Miracles Colágeno Pantene 510ml,7500435191456,"$10.616,00",510 ml,,70% 2da,"$6.900,40"
+PANTENE,Shampoo Restauración PANTENE 400 Ml,7500435211826,"$6.855,00",400 Ml,,70% 2da,"$4.455,75"
+PANTENE,Crema Para Peinar PANTENE Keratina 300 Ml,7500435241076,"$7.132,00",300 Ml,,70% 2da,"$4.635,80"
+PANTENE,Mascarilla Nutricion PANTENE 270ml,7500435243667,"$7.930,00",270 ml,,70% 2da,"$5.154,50"
+PANTENE,Mascarilla PANTENE Hidratación 270 Ml,7500435243681,"$7.930,00",270 Ml,,70% 2da,"$5.154,50"
+PANTENE,Mascarilla Restauracion PANTENE 270ml,7500435243674,"$7.930,00",270 ml,,70% 2da,"$5.154,50"
+SEDAL,Acondicionador Carbón Activado + Sedal 190 Ml,7791293047690,"$2.960,00",190 Ml,,70% 2da,"$1.924,00"
+SEDAL,Acondicionador Carbón Activado + Sedal 340 Ml,7791293047706,"$4.109,00",340 Ml,,70% 2da,"$2.670,85"
+SEDAL,Acondicionador Carbón Activado + Sedal 650 Ml,7791293047713,"$6.829,00",650 Ml,,70% 2da,"$4.438,85"
+SEDAL,Acondicionador Ceramidas Fuerza Y Brillo Sedal 190 Ml,7791293045856,"$2.960,00",190 Ml,,70% 2da,"$1.924,00"
+SEDAL,Acondicionador Ceramidas Fuerza Y Brillo Sedal 650 Ml,7791293045986,"$7.102,00",650 Ml,,70% 2da,"$4.616,30"
+SEDAL,Acondicionador Ceramidas Infusion Activo Sedal 340 Ml,7791293045931,"$4.422,00",340 Ml,,70% 2da,"$2.874,30"
+SEDAL,Acondicionador Colágeno + Vitamina C Sedal 190ml,7791293046457,"$2.961,00",190 ml,,70% 2da,"$1.924,65"
+SEDAL,Acondicionador Colágeno + Vitamina C Sedal 340 Ml,7791293046464,"$4.423,00",340 Ml,,70% 2da,"$2.874,95"
+SEDAL,Acondicionador Colágeno + Vitamina C Sedal 650ml,7791293046471,"$7.102,00",650 ml,,70% 2da,"$4.616,30"
+SEDAL,Acondicionador Crema Balance Sedal 190 Ml,7791293045863,"$2.960,00",190 Ml,,70% 2da,"$1.924,00"
+SEDAL,Acondicionador Crema Balance Sedal 340 Ml,7791293045948,"$4.422,00",340 Ml,,70% 2da,"$2.874,30"
+SEDAL,Acondicionador Crema Balance Sedal 650 Ml,7791293045993,"$7.102,00",650 Ml,,70% 2da,"$4.616,30"
+SEDAL,Acondicionador Hialurónico + Sedal 340 Ml,7791293046433,"$4.423,00",340 Ml,,70% 2da,"$2.874,95"
+SEDAL,Acondicionador Hialurónico + Vitamina A Sedal 190 Ml,7791293046426,"$2.961,00",190 Ml,,70% 2da,"$1.924,65"
+SEDAL,Acondicionador Hialurónico + Vitamina A Sedal 650 Ml,7791293046440,"$7.102,00",650 Ml,,70% 2da,"$4.616,30"
+SEDAL,Acondicionador Jengibre Y Ricino Sedal 340 Ml,7791293047737,"$3.974,00",340 Ml,,70% 2da,"$2.583,10"
+SEDAL,Acondicionador Liso Perfecto Sedal 190 Ml,7791293045870,"$2.960,00",190 Ml,,70% 2da,"$1.924,00"
+SEDAL,Acondicionador Liso Perfecto Sedal 650 Ml,7791293046006,"$7.102,00",650 Ml,,70% 2da,"$4.616,30"
+SEDAL,Acondicionador Luminous Uv Sedal 190ml,7791293051451,"$2.961,00",190 ml,,70% 2da,"$1.924,65"
+SEDAL,Acondicionador Luminous Uv Sedal 340ml,7791293051468,"$4.423,00",340 ml,,70% 2da,"$2.874,95"
+SEDAL,Acondicionador Luminous Uv Sedal 650ml,7791293051475,"$7.102,00",650 ml,,70% 2da,"$4.616,30"
+SEDAL,Acondicionador Prebioticos Biotina Sedal 190ml,7791293049755,"$2.961,00",190 ml,,70% 2da,"$1.924,65"
+SEDAL,Acondicionador Prebioticos Biotina Sedal 340ml,7791293049762,"$4.423,00",340 ml,,70% 2da,"$2.874,95"
+SEDAL,Acondicionador Prebioticos Biotina Sedal 650ml,7791293049779,"$7.102,00",650 ml,,70% 2da,"$4.616,30"
+SEDAL,Acondicionador Restauración Instantanea Sedal 340 Ml,7791293045962,"$4.422,00",340 Ml,,70% 2da,"$2.874,30"
+SEDAL,Acondicionador Restauración Instantanea Sedal 650 Ml,7791293046013,"$7.102,00",650 Ml,,70% 2da,"$4.616,30"
+SEDAL,Acondicionador Restauración Instantánea Sedal 190 Ml,7791293045887,"$2.960,00",190 Ml,,70% 2da,"$1.924,00"
+SEDAL,Acondicionador Rizos Definidos Sedal 190 Ml,7791293045894,"$2.960,00",190 Ml,,70% 2da,"$1.924,00"
+SEDAL,Acondicionador Rizos Definidos Sedal 340 Ml,7791293045979,"$4.422,00",340 Ml,,70% 2da,"$2.874,30"
+SEDAL,Acondicionador Rizos Definidos Sedal 650 Ml,7791293046020,"$7.102,00",650 Ml,,70% 2da,"$4.616,30"
+SEDAL,Acondiconador Liso Perfecto Sedal 340 Ml,7791293045955,"$4.422,00",340 Ml,,70% 2da,"$2.874,30"
+SEDAL,Crema Para Peinar Ceramidas Sedal 300ml,7791293050546,"$4.544,00",300 ml,,70% 2da,"$2.953,60"
+SEDAL,Crema Para Peinar Liso Perfecto Sedal 300ml,7791293050553,"$4.544,00",300 ml,,70% 2da,"$2.953,60"
+SEDAL,Crema Para Peinar Rizos Definido Sedal 300ml,7791293050560,"$4.544,00",300 ml,,70% 2da,"$2.953,60"
+SEDAL,Shampoo Carbón Activado Peonias Sedal 190 Ml,7791293047782,"$2.846,00",190 Ml,,70% 2da,"$1.849,90"
+SEDAL,Shampoo Carbón Activado Peonias Sedal 340 Ml,7791293047799,"$4.109,00",340 Ml,,70% 2da,"$2.670,85"
+SEDAL,Shampoo Carbón Activado Peonias Sedal 650 Ml,7791293047805,"$7.102,00",650 Ml,,70% 2da,"$4.616,30"
+SEDAL,Shampoo Caspa Control Sedal 340 Ml,7791293045788,"$4.422,00",340 Ml,,70% 2da,"$2.874,30"
+SEDAL,Shampoo Ceramidas Fuerza Brillo SEDAL 340 Ml,7791293045733,"$4.422,00",340 Ml,,70% 2da,"$2.874,30"
+SEDAL,Shampoo Ceramidas Fuerza Y Brillo Sedal 190ml,7791293045658,"$2.960,00",190 ml,,70% 2da,"$1.924,00"
+SEDAL,Shampoo Ceramidas Fuerza Y Brillo SEDAL 650ml,7791293045795,"$7.102,00",650 ml,,70% 2da,"$4.616,30"
+SEDAL,Shampoo Colágeno + Vitamina C Sedal 190ml,7791293046396,"$2.961,00",190 ml,,70% 2da,"$1.924,65"
+SEDAL,Shampoo Colágeno + Vitamina C Sedal 340 Ml,7791293046402,"$4.423,00",340 Ml,,70% 2da,"$2.874,95"
+SEDAL,Shampoo Colágeno + Vitamina C Sedal 650 Ml,7791293046419,"$7.102,00",650 Ml,,70% 2da,"$4.616,30"
+SEDAL,Shampoo Crema Balance Sedal 190 Ml,7791293045665,"$2.960,00",190 Ml,,70% 2da,"$1.924,00"
+SEDAL,Shampoo Crema Balance SEDAL 340 Ml,7791293045740,"$4.422,00",340 Ml,,70% 2da,"$2.874,30"
+SEDAL,Shampoo Crema Balance SEDAL 650 Ml,7791293045801,"$7.102,00",650 Ml,,70% 2da,"$4.616,30"
+SEDAL,Shampoo Hialurónico + Vitamina A SEDAL 340 Ml,7791293046372,"$4.423,00",340 Ml,,70% 2da,"$2.874,95"
+SEDAL,Shampoo Hialurónico + Vitamina A Sedal 650 Ml,7791293046389,"$7.102,00",650 Ml,,70% 2da,"$4.616,30"
+SEDAL,Shampoo Hialurónico Vitamina A Sedal 190 Ml,7791293046365,"$2.961,00",190 Ml,,70% 2da,"$1.924,65"
+SEDAL,Shampoo Jengibre Y Ricino Sedal 190 Ml,7791293047829,"$2.558,00",190 Ml,,70% 2da,"$1.662,70"
+SEDAL,Shampoo Liso Perfecto Sedal 190 Ml,7791293045672,"$2.960,00",190 Ml,,70% 2da,"$1.924,00"
+SEDAL,Shampoo Liso Perfecto Sedal 340 Ml,7791293045757,"$4.422,00",340 Ml,,70% 2da,"$2.874,30"
+SEDAL,Shampoo Liso Perfecto Sedal 650ml,7791293045818,"$7.102,00",650 ml,,70% 2da,"$4.616,30"
+SEDAL,Shampoo Luminous Uv Sedal 190ml,7791293051420,"$2.961,00",190 ml,,70% 2da,"$1.924,65"
+SEDAL,Shampoo Luminous Uv Sedal 340ml,7791293051437,"$4.423,00",340 ml,,70% 2da,"$2.874,95"
+SEDAL,Shampoo Luminous Uv Sedal 650ml,7791293051444,"$7.102,00",650 ml,,70% 2da,"$4.616,30"
+SEDAL,Shampoo Prebioticos Biotina Sedal 190ml,7791293049724,"$2.961,00",190 ml,,70% 2da,"$1.924,65"
+SEDAL,Shampoo Prebioticos Biotina Sedal 340ml,7791293049731,"$4.423,00",340 ml,,70% 2da,"$2.874,95"
+SEDAL,Shampoo Prebiotina Biotina Sedal 650ml,7791293049748,"$7.102,00",650 ml,,70% 2da,"$4.616,30"
+SEDAL,Shampoo Restauración Instantanea Sedal 190 Ml,7791293045689,"$2.960,00",190 Ml,,70% 2da,"$1.924,00"
+SEDAL,Shampoo Restauración Instantanea Sedal 650 Ml,7791293045825,"$7.102,00",650 Ml,,70% 2da,"$4.616,30"
+SEDAL,Shampoo Restaurador Instantanea Sedal 340 Ml,7791293045764,"$4.422,00",340 Ml,,70% 2da,"$2.874,30"
+SEDAL,Shampoo Rizos Definidos Sedal 190 Ml,7791293045696,"$2.960,00",190 Ml,,70% 2da,"$1.924,00"
+SEDAL,Shampoo Rizos Definidos Sedal 340 Ml,7791293045771,"$4.422,00",340 Ml,,70% 2da,"$2.874,30"
+SEDAL,Shampoo Rizos Definidos Sedal 650 Ml,7791293045832,"$7.102,00",650 Ml,,70% 2da,"$4.616,30"
+SEDAL,Crema Para Peinar Hialuronico Vitamina A Sedal 300ml,7791293050577,"$4.544,00",300 ml,,70% 2da,"$2.953,60"
+SEDAL,Crema Para Peinar Luminous Uv Sedal 300ml,7791293051482,"$4.544,00",300 ml,,70% 2da,"$2.953,60"
+SEDAL,Mascara Para Cabello Ceramidas Sedal 300g,7891150099463,"$5.150,00",300 g,,70% 2da,"$3.347,50"
+SEDAL,Mascara Para Cabello Luminous Uv Sedal 300g,7891150099920,"$5.150,00",300 g,,70% 2da,"$3.347,50"
+SEDAL,Mascara Para Cabello Rizos Definidos Sedal 300g,7891150099456,"$5.150,00",300 g,,70% 2da,"$3.347,50"
+SEDAL,Mascara Para Cabello Tratamiento Colageno Vitamina C Sedal 300ml,7791293049793,"$5.150,00",300 ml,,70% 2da,"$3.347,50"
+SEDAL,Mascara Para Cabello Tratamiento Hiauluronico Vitamina A Sedal 300ml,7791293049809,"$5.149,99",300 ml,,70% 2da,"$3.347,49"
+SEDAL,Mascara Para Cabello Tratamiento Prebioticos Biotina Sedal 300ml,7791293049786,"$5.150,00",300 ml,,70% 2da,"$3.347,50"
+ELVIVE,Acondicionador Dream Long Elvive Bot 200 Ml,7509552836554,"$5.429,00",200 Ml,,40%Dto,"$3.257,40"
+ELVIVE,Acondicionador Dream Long Elvive Bot 400 Ml,7509552790160,"$8.799,00",400 Ml,,40%Dto,"$5.279,40"
+ELVIVE,Acondicionador Dream Long Elvive Bot 750 Ml,7509552790153,"$13.399,00",750 Ml,,40%Dto,"$8.039,40"
+ELVIVE,Acondicionador Dream Long Liss ELVIVE Loreal Paris 750ml,7509552843125,"$12.169,00",750 ml,,40%Dto,"$7.301,40"
+ELVIVE,Acondicionador Dream Long Liss ELVIVE L´Oréal Paris 400ml,7509552843118,"$7.989,00",400 ml,,40%Dto,"$4.793,40"
+ELVIVE,Acondicionador ELVIVE Colorvive 200ml ,7509552903423,"$5.429,00",200 ml,,40%Dto,"$3.257,40"
+ELVIVE,Acondicionador ELVIVE Colorvive 400ml ,7509552902891,"$8.799,00",400 ml,,40%Dto,"$5.279,40"
+ELVIVE,Acondicionador ELVIVE Colorvive 750ml ,7509552902976,"$13.399,00",750 ml,,40%Dto,"$8.039,40"
+ELVIVE,Acondicionador ELVIVE Dream Liso 750ml,7509552964400,"$14.499,99",750 ml,,40%Dto,"$8.699,99"
+ELVIVE,Acondicionador ELVIVE Glycolic Gloss 200ml,7509552930337,"$6.099,00",200 ml,,40%Dto,"$3.659,40"
+ELVIVE,Acondicionador ELVIVE Glycolic Gloss 400ml,7509552930344,"$9.699,00",400 ml,,40%Dto,"$5.819,40"
+ELVIVE,Acondicionador ELVIVE Glycolic Gloss 750ml,7509552928273,"$14.499,00",750 ml,,40%Dto,"$8.699,40"
+ELVIVE,Acondicionador ELVIVE Hialuronico Pure 200ml,7509552876420,"$5.429,00",200 ml,,40%Dto,"$3.257,40"
+ELVIVE,Acondicionador ELVIVE Hialuronico Pure 400ml,7509552876482,"$8.799,00",400 ml,,40%Dto,"$5.279,40"
+ELVIVE,Acondicionador ELVIVE Hialuronico Pure 750ml,7509552876550,"$13.399,00",750 ml,,40%Dto,"$8.039,40"
+ELVIVE,Acondicionador ELVIVE Hidra Hialuronico 200ml ,7509552902341,"$5.429,00",200 ml,,40%Dto,"$3.257,40"
+ELVIVE,Acondicionador ELVIVE Hidra Hialuronico 400ml ,7509552902358,"$8.799,00",400 ml,,40%Dto,"$5.279,40"
+ELVIVE,Acondicionador ELVIVE Hidra Hialuronico 750ml ,7509552902365,"$13.399,00",750 ml,,40%Dto,"$8.039,40"
+ELVIVE,Acondicionador ELVIVE Kera-Liso Mq 200ml ,7509552902853,"$5.429,00",200 ml,,40%Dto,"$3.257,40"
+ELVIVE,Acondicionador ELVIVE Kera-Liso Mq 400ml ,7509552902860,"$8.799,00",400 ml,,40%Dto,"$5.279,40"
+ELVIVE,Acondicionador ELVIVE Rt Extreme 200ml ,7509552902433,"$5.429,00",200 ml,,40%Dto,"$3.257,40"
+ELVIVE,Acondicionador ELVIVE Rt Extreme 400ml ,7509552902440,"$8.799,00",400 ml,,40%Dto,"$5.279,40"
+ELVIVE,Acondicionador ELVIVE Rt Extreme 750ml ,7509552902488,"$13.399,00",750 ml,,40%Dto,"$8.039,40"
+ELVIVE,Acondicionador ELVIVE Rt5 Keratin 200ml ,7509552903416,"$5.429,00",200 ml,,40%Dto,"$3.257,40"
+ELVIVE,Acondicionador ELVIVE Rt5 Keratin 400ml ,7509552902815,"$8.799,00",400 ml,,40%Dto,"$5.279,40"
+ELVIVE,Acondicionador ELVIVE Rt5 Keratin 750ml ,7509552902471,"$13.399,00",750 ml,,40%Dto,"$8.039,40"
+ELVIVE,Acondicionador Kera Liso Perfeccionador Elvive 200 Ml,7509552791440,"$4.869,00",200 Ml,,40%Dto,"$2.921,40"
+ELVIVE,Acondicionador Kera Liso Perfeccionador Elvive 400 Ml,7509552791303,"$7.989,00",400 Ml,,40%Dto,"$4.793,40"
+ELVIVE,Acondicionador Kera Liso Perfeccionador Elvive 750 Ml,7509552790252,"$12.169,00",750 Ml,,40%Dto,"$7.301,40"
+ELVIVE,Acondicionador Matizador Violeta Elvive 200 Ml,7509552816204,"$6.393,00",200 Ml,,40%Dto,"$3.835,80"
+ELVIVE,Acondicionador Ole Coco Elvive Bot 750 Ml,7509552795301,"$13.399,00",750 Ml,,40%Dto,"$8.039,40"
+ELVIVE,Acondicionador Oleo De Coco Elvive Bot 400 Ml,7509552790443,"$8.799,00",400 Ml,,40%Dto,"$5.279,40"
+ELVIVE,Acondicionador Oleo Extraordinario Nutricion Universal 200ml,7509552791457,"$5.429,00",200 ml,,40%Dto,"$3.257,40"
+ELVIVE,Acondicionador Oleo Extraordinario Nutricion Universal 400ml,7509552791280,"$8.799,00",400 ml,,40%Dto,"$5.279,40"
+ELVIVE,Acondicionador Oleo Extraordinario Nutricion Universal 750ml,7509552791273,"$13.399,00",750 ml,,40%Dto,"$8.039,40"
+ELVIVE,Acondicionador Sellador Liso ELVIVE 200ml,7509552964417,"$6.099,99",200 ml,,40%Dto,"$3.659,99"
+ELVIVE,Acondicionador Sellador Liso Elvive 400ml,7509552964394,"$9.699,99",400 ml,,40%Dto,"$5.819,99"
+ELVIVE,Acondicionador Óleo De Coco Elvive Bot 200 Ml,7509552840353,"$5.429,00",200 Ml,,40%Dto,"$3.257,40"
+ELVIVE,Acondicionador Óleo Extraordinario Rizos Definidos Elvive 200ml,7509552925906,"$5.429,00",200 ml,,40%Dto,"$3.257,40"
+ELVIVE,Acondicionador Óleo Extraordinario Rizos Definidos Elvive 400ml,7509552925913,"$8.799,00",400 ml,,40%Dto,"$5.279,40"
+ELVIVE,Tratamiento Capilar Intensivo Liso Elvive 300ml,7509552964561,"$9.569,99",300 ml,,40%Dto,"$5.741,99"
+ELVIVE,Crema Para Peinar Anti Frizz Elvive 250ml,7509552902372,"$6.949,00",250 ml,,40%Dto,"$4.169,40"
+ELVIVE,Crema Para Peinar ELVIVE Glycolic Gloss 250ml,7509552928860,"$7.849,00",250 ml,,40%Dto,"$4.709,40"
+ELVIVE,Crema Para Peinar Nutri Liss Elvive 250ml,7509552902884,"$6.949,00",250 ml,,40%Dto,"$4.169,40"
+ELVIVE,Mascarilla Hidratación Elvive 300g,7509552902389,"$8.699,00",300 g,,40%Dto,"$5.219,40"
+ELVIVE,Mascarilla Hidratación Ligera Elvive 300g,7509552876437,"$8.699,00",300 g,,40%Dto,"$5.219,40"
+ELVIVE,Mascarilla Nutri Liss Elvive 300g,7509552902877,"$8.699,00",300 g,,40%Dto,"$5.219,40"
+ELVIVE,Mascarilla Óleo Extraordinario Nutritivo Elvive 300 Ml,7509552859119,"$8.699,00",300 Ml,,40%Dto,"$5.219,40"
+ELVIVE,Óleo Extraordinario Elvive 100 Ml,7509552874204,"$16.669,00",100 Ml,,40%Dto,"$10.001,40"
+ELVIVE,Shampoo 2 En 1 ELVIVE Rt5 Keratin 400ml ,7509552902501,"$8.799,00",400 ml,,40%Dto,"$5.279,40"
+ELVIVE,Shampoo Dream Long ELVIVE Bot 200 Ml,7509552836585,"$5.429,00",200 Ml,,40%Dto,"$3.257,40"
+ELVIVE,Shampoo Dream Long Elvive Bot 400 Ml,7509552790191,"$8.799,00",400 Ml,,40%Dto,"$5.279,40"
+ELVIVE,Shampoo Dream Long Elvive Bot 750 Ml,7509552790177,"$13.399,00",750 Ml,,40%Dto,"$8.039,40"
+ELVIVE,Shampoo Dream Long Liss ELVIVE L´Oréal Paris 200ml,7509552843071,"$4.869,00",200 ml,,40%Dto,"$2.921,40"
+ELVIVE,Shampoo Dream Long Liss ELVIVE L´Oréal Paris 400ml,7509552843088,"$8.799,00",400 ml,,40%Dto,"$5.279,40"
+ELVIVE,Shampoo Dream Long Liss ELVIVE L´Oréal Paris 750ml,7509552843095,"$13.399,00",750 ml,,40%Dto,"$8.039,40"
+ELVIVE,Shampoo ELVIVE Colorvive 200ml ,7509552907759,"$5.429,00",200 ml,,40%Dto,"$3.257,40"
+ELVIVE,Shampoo ELVIVE Colorvive 750ml ,7509552902914,"$13.399,00",750 ml,,40%Dto,"$8.039,40"
+ELVIVE,Shampoo ELVIVE Dream Liso 750ml,7509552964424,"$14.499,99",750 ml,,40%Dto,"$8.699,99"
+ELVIVE,Shampoo ELVIVE Glycolic Gloss 200ml,7509552937343,"$6.099,00",200 ml,,40%Dto,"$3.659,40"
+ELVIVE,Shampoo ELVIVE Glycolic Gloss 400ml,7509552928846,"$9.699,00",400 ml,,40%Dto,"$5.819,40"
+ELVIVE,Shampoo ELVIVE Glycolic Gloss 750ml,7509552928266,"$14.499,00",750 ml,,40%Dto,"$8.699,40"
+ELVIVE,Shampoo ELVIVE Hialuronico Pure 200ml,7509552876413,"$5.429,00",200 ml,,40%Dto,"$3.257,40"
+ELVIVE,Shampoo ELVIVE Hialuronico Pure 400ml,7509552876444,"$8.799,00",400 ml,,40%Dto,"$5.279,40"
+ELVIVE,Shampoo ELVIVE Hialuronico Pure 750ml,7509552876260,"$13.399,00",750 ml,,40%Dto,"$8.039,40"
+ELVIVE,Shampoo ELVIVE Hidra Hialuronico 750ml,7509552902334,"$13.399,00",750 ml,,40%Dto,"$8.039,40"
+ELVIVE,Shampoo ELVIVE Kera-Liso Mq 200ml ,7509552902839,"$5.429,00",200 ml,,40%Dto,"$3.257,40"
+ELVIVE,Shampoo ELVIVE Kera-Liso Mq 400ml ,7509552902846,"$8.799,00",400 ml,,40%Dto,"$5.279,40"
+ELVIVE,Shampoo ELVIVE Rt Extreme 200ml ,7509552902402,"$5.429,00",200 ml,,40%Dto,"$3.257,40"
+ELVIVE,Shampoo ELVIVE Rt5 Keratin 400ml ,7509552902518,"$8.799,00",400 ml,,40%Dto,"$5.279,40"
+ELVIVE,Shampoo ELVIVE Rt5 Keratin 750ml ,7509552902495,"$13.399,00",750 ml,,40%Dto,"$8.039,40"
+ELVIVE,Shampoo Hidra Rellenador Elvive 200ml,7509552902112,"$5.429,00",200 ml,,40%Dto,"$3.257,40"
+ELVIVE,Shampoo Hidra Rellenador Elvive 400ml,7509552902327,"$8.799,00",400 ml,,40%Dto,"$5.279,40"
+ELVIVE,Shampoo Kera-Liso Perfeccionador Elvive 200 Ml,7509552791433,"$5.429,00",200 Ml,,40%Dto,"$3.257,40"
+ELVIVE,Shampoo Kera-Liso Perfeccionador Elvive 400 Ml,7509552791266,"$7.989,00",400 Ml,,40%Dto,"$4.793,40"
+ELVIVE,Shampoo Kera-Liso Perfeccionador Elvive 750 Ml,7509552790566,"$13.399,00",750 Ml,,40%Dto,"$8.039,40"
+ELVIVE,Shampoo Liso Efecto Keratina Elvive 200ml,7509552964554,"$6.099,99",200 ml,,40%Dto,"$3.659,99"
+ELVIVE,Shampoo Liso Efecto Keratina Elvive 400ml,7509552964387,"$9.699,99",400 ml,,40%Dto,"$5.819,99"
+ELVIVE,Shampoo Matizador Violeta Elvive 200 Ml,7509552815269,"$6.393,00",200 Ml,,40%Dto,"$3.835,80"
+ELVIVE,Shampoo Oleo Extra Coco ELVIVE Bot 750 Ml,7509552790436,"$13.399,00",750 Ml,,40%Dto,"$8.039,40"
+ELVIVE,Shampoo Oleo Extra Rizos Definidos Elvive 200ml,7509552925883,"$5.429,00",200 ml,,40%Dto,"$3.257,40"
+ELVIVE,Shampoo Oleo Extra Rizos Definidos Elvive 400ml,7509552925890,"$8.799,00",400 ml,,40%Dto,"$5.279,40"
+ELVIVE,Shampoo Oleo Extraordinario Coco Elvive Bot 200 Ml,7509552791860,"$5.429,00",200 Ml,,40%Dto,"$3.257,40"
+ELVIVE,Shampoo Oleo Extraordinario Coco Elvive Bot 400 Ml,7509552790498,"$8.799,00",400 Ml,,40%Dto,"$5.279,40"
+ELVIVE,Shampoo Oleo Extraordinario Nutricion Universal 400ml ,7509552859126,"$8.799,00",400 ml,,40%Dto,"$5.279,40"
+ELVIVE,Shampoo Oleo Extraordinario Nutricion Universal 750ml ,7509552791297,"$13.399,00",750 ml,,40%Dto,"$8.039,40"
+ELVIVE,Shampoo Protector Filtro Uv Elvive 400ml,7509552903461,"$8.799,00",400 ml,,40%Dto,"$5.279,40"
+ELVIVE,Shampoo Reconstructor Elvive 750ml,7509552902426,"$13.400,00",750 ml,,40%Dto,"$8.040,00"
+ELVIVE,Shampoo Reparador Elvive 200ml,7509552902532,"$5.429,00",200 ml,,40%Dto,"$3.257,40"
+ELVIVE,Shampoo Óleo Extraordinario Nutritivo Elvive 200 Ml,7509552859133,"$5.430,00",200 Ml,,40%Dto,"$3.258,00"
+ELVIVE,Crema Para Peinar 3x Menos Frizz Elvive 250ml,7509552979541,"$7.849,99",250 ml,,40%Dto,"$4.709,99"
+ELVIVE,Crema Para Peinar Cabello Muy Seco Elvive Bot 250 Ml,7509552851618,"$6.949,00",250 Ml,,40%Dto,"$4.169,40"
+ELVIVE,Crema Para Peinar Cabello Rizado Elvive 250ml,7509552935615,"$6.949,99",250 ml,,40%Dto,"$4.169,99"
+ELVIVE,Crema Para Peinar Dream Long Elvive L´Oréal Paris 250ml,7509552836592,"$6.949,00",250 ml,,40%Dto,"$4.169,40"
+ELVIVE,Crema Para Peinar Dream Long Liss ELVIVE L´Oréal Paris 250ml,7509552843736,"$6.949,00",250 ml,,40%Dto,"$4.169,40"
+ELVIVE,Mascarilla ELVIVE Glycolic Gloss 300gr,7509552928853,"$9.569,00",300 gr,,40%Dto,"$5.741,40"
+ELVIVE,Mascarilla Kera-Liso Perfeccionador Elvive 300 Grm,7509552791853,"$8.699,99",N/A,,40%Dto,"$5.219,99"
+ELVIVE,Mascarilla Nutrición Intensa Elvive Pot 300 Grm,7509552851625,"$8.699,00",N/A,,40%Dto,"$5.219,40"
+ELVIVE,Mascarilla Para Cabello Protectora De Color Elvive 300g,7509552902921,"$8.699,00",300 g,,40%Dto,"$5.219,40"
+ELVIVE,Mascarilla Para Cabello Reconstruccion Elvive 300g,7509552902464,"$8.699,00",300 g,,40%Dto,"$5.219,40"
+ELVIVE,Mascarilla Para Cabello Reparación Elvive 300g,7509552902822,"$8.699,00",300 g,,40%Dto,"$5.219,40"
+ELVIVE,Serum ELVIVE Glycolic Gloss 100ml,7509552928877,"$16.669,00",100 ml,,40%Dto,"$10.001,40"
+ELVIVE,Acondicionador Dream Long Elvive Bot 200 Ml,7509552836554,"$5.429,00",200 Ml,,40%Dto,"$3.257,40"
+ELVIVE,Acondicionador Dream Long Elvive Bot 400 Ml,7509552790160,"$8.799,00",400 Ml,,40%Dto,"$5.279,40"
+ELVIVE,Acondicionador Dream Long Elvive Bot 750 Ml,7509552790153,"$13.399,00",750 Ml,,40%Dto,"$8.039,40"
+ELVIVE,Acondicionador Dream Long Liss ELVIVE Loreal Paris 750ml,7509552843125,"$12.169,00",750 ml,,40%Dto,"$7.301,40"
+ELVIVE,Acondicionador Dream Long Liss ELVIVE L´Oréal Paris 400ml,7509552843118,"$7.989,00",400 ml,,40%Dto,"$4.793,40"
+ELVIVE,Acondicionador ELVIVE Colorvive 200ml ,7509552903423,"$5.429,00",200 ml,,40%Dto,"$3.257,40"
+ELVIVE,Acondicionador ELVIVE Colorvive 400ml ,7509552902891,"$8.799,00",400 ml,,40%Dto,"$5.279,40"
+ELVIVE,Acondicionador ELVIVE Colorvive 750ml ,7509552902976,"$13.399,00",750 ml,,40%Dto,"$8.039,40"
+ELVIVE,Acondicionador ELVIVE Dream Liso 750ml,7509552964400,"$14.499,99",750 ml,,40%Dto,"$8.699,99"
+ELVIVE,Acondicionador ELVIVE Glycolic Gloss 200ml,7509552930337,"$6.099,00",200 ml,,40%Dto,"$3.659,40"
+ELVIVE,Acondicionador ELVIVE Glycolic Gloss 400ml,7509552930344,"$9.699,00",400 ml,,40%Dto,"$5.819,40"
+ELVIVE,Acondicionador ELVIVE Glycolic Gloss 750ml,7509552928273,"$14.499,00",750 ml,,40%Dto,"$8.699,40"
+ELVIVE,Acondicionador ELVIVE Hialuronico Pure 200ml,7509552876420,"$5.429,00",200 ml,,40%Dto,"$3.257,40"
+ELVIVE,Acondicionador ELVIVE Hialuronico Pure 400ml,7509552876482,"$8.799,00",400 ml,,40%Dto,"$5.279,40"
+ELVIVE,Acondicionador ELVIVE Hialuronico Pure 750ml,7509552876550,"$13.399,00",750 ml,,40%Dto,"$8.039,40"
+ELVIVE,Acondicionador ELVIVE Hidra Hialuronico 200ml ,7509552902341,"$5.429,00",200 ml,,40%Dto,"$3.257,40"
+ELVIVE,Acondicionador ELVIVE Hidra Hialuronico 400ml ,7509552902358,"$8.799,00",400 ml,,40%Dto,"$5.279,40"
+ELVIVE,Acondicionador ELVIVE Hidra Hialuronico 750ml ,7509552902365,"$13.399,00",750 ml,,40%Dto,"$8.039,40"
+ELVIVE,Acondicionador ELVIVE Kera-Liso Mq 200ml ,7509552902853,"$5.429,00",200 ml,,40%Dto,"$3.257,40"
+ELVIVE,Acondicionador ELVIVE Kera-Liso Mq 400ml ,7509552902860,"$8.799,00",400 ml,,40%Dto,"$5.279,40"
+ELVIVE,Acondicionador ELVIVE Rt Extreme 200ml ,7509552902433,"$5.429,00",200 ml,,40%Dto,"$3.257,40"
+ELVIVE,Acondicionador ELVIVE Rt Extreme 400ml ,7509552902440,"$8.799,00",400 ml,,40%Dto,"$5.279,40"
+ELVIVE,Acondicionador ELVIVE Rt Extreme 750ml ,7509552902488,"$13.399,00",750 ml,,40%Dto,"$8.039,40"
+ELVIVE,Acondicionador ELVIVE Rt5 Keratin 200ml ,7509552903416,"$5.429,00",200 ml,,40%Dto,"$3.257,40"
+ELVIVE,Acondicionador ELVIVE Rt5 Keratin 400ml ,7509552902815,"$8.799,00",400 ml,,40%Dto,"$5.279,40"
+ELVIVE,Acondicionador ELVIVE Rt5 Keratin 750ml ,7509552902471,"$13.399,00",750 ml,,40%Dto,"$8.039,40"
+ELVIVE,Acondicionador Kera Liso Perfeccionador Elvive 200 Ml,7509552791440,"$4.869,00",200 Ml,,40%Dto,"$2.921,40"
+ELVIVE,Acondicionador Kera Liso Perfeccionador Elvive 400 Ml,7509552791303,"$7.989,00",400 Ml,,40%Dto,"$4.793,40"
+ELVIVE,Acondicionador Kera Liso Perfeccionador Elvive 750 Ml,7509552790252,"$12.169,00",750 Ml,,40%Dto,"$7.301,40"
+ELVIVE,Acondicionador Matizador Violeta Elvive 200 Ml,7509552816204,"$6.393,00",200 Ml,,40%Dto,"$3.835,80"
+ELVIVE,Acondicionador Ole Coco Elvive Bot 750 Ml,7509552795301,"$13.399,00",750 Ml,,40%Dto,"$8.039,40"
+ELVIVE,Acondicionador Oleo De Coco Elvive Bot 400 Ml,7509552790443,"$8.799,00",400 Ml,,40%Dto,"$5.279,40"
+ELVIVE,Acondicionador Oleo Extraordinario Nutricion Universal 200ml,7509552791457,"$5.429,00",200 ml,,40%Dto,"$3.257,40"
+ELVIVE,Acondicionador Oleo Extraordinario Nutricion Universal 400ml,7509552791280,"$8.799,00",400 ml,,40%Dto,"$5.279,40"
+ELVIVE,Acondicionador Oleo Extraordinario Nutricion Universal 750ml,7509552791273,"$13.399,00",750 ml,,40%Dto,"$8.039,40"
+ELVIVE,Acondicionador Sellador Liso ELVIVE 200ml,7509552964417,"$6.099,99",200 ml,,40%Dto,"$3.659,99"
+ELVIVE,Acondicionador Sellador Liso Elvive 400ml,7509552964394,"$9.699,99",400 ml,,40%Dto,"$5.819,99"
+ELVIVE,Acondicionador Óleo De Coco Elvive Bot 200 Ml,7509552840353,"$5.429,00",200 Ml,,40%Dto,"$3.257,40"
+ELVIVE,Acondicionador Óleo Extraordinario Rizos Definidos Elvive 200ml,7509552925906,"$5.429,00",200 ml,,40%Dto,"$3.257,40"
+ELVIVE,Acondicionador Óleo Extraordinario Rizos Definidos Elvive 400ml,7509552925913,"$8.799,00",400 ml,,40%Dto,"$5.279,40"
+ELVIVE,Tratamiento Capilar Intensivo Liso Elvive 300ml,7509552964561,"$9.569,99",300 ml,,40%Dto,"$5.741,99"
+ELVIVE,Crema Para Peinar Anti Frizz Elvive 250ml,7509552902372,"$6.949,00",250 ml,,40%Dto,"$4.169,40"
+ELVIVE,Crema Para Peinar ELVIVE Glycolic Gloss 250ml,7509552928860,"$7.849,00",250 ml,,40%Dto,"$4.709,40"
+ELVIVE,Crema Para Peinar Nutri Liss Elvive 250ml,7509552902884,"$6.949,00",250 ml,,40%Dto,"$4.169,40"
+ELVIVE,Mascarilla Hidratación Elvive 300g,7509552902389,"$8.699,00",300 g,,40%Dto,"$5.219,40"
+ELVIVE,Mascarilla Hidratación Ligera Elvive 300g,7509552876437,"$8.699,00",300 g,,40%Dto,"$5.219,40"
+ELVIVE,Mascarilla Nutri Liss Elvive 300g,7509552902877,"$8.699,00",300 g,,40%Dto,"$5.219,40"
+ELVIVE,Mascarilla Óleo Extraordinario Nutritivo Elvive 300 Ml,7509552859119,"$8.699,00",300 Ml,,40%Dto,"$5.219,40"
+ELVIVE,Óleo Extraordinario Elvive 100 Ml,7509552874204,"$16.669,00",100 Ml,,40%Dto,"$10.001,40"
+ELVIVE,Shampoo 2 En 1 ELVIVE Rt5 Keratin 400ml ,7509552902501,"$8.799,00",400 ml,,40%Dto,"$5.279,40"
+ELVIVE,Shampoo Dream Long ELVIVE Bot 200 Ml,7509552836585,"$5.429,00",200 Ml,,40%Dto,"$3.257,40"
+ELVIVE,Shampoo Dream Long Elvive Bot 400 Ml,7509552790191,"$8.799,00",400 Ml,,40%Dto,"$5.279,40"
+ELVIVE,Shampoo Dream Long Elvive Bot 750 Ml,7509552790177,"$13.399,00",750 Ml,,40%Dto,"$8.039,40"
+ELVIVE,Shampoo Dream Long Liss ELVIVE L´Oréal Paris 200ml,7509552843071,"$4.869,00",200 ml,,40%Dto,"$2.921,40"
+ELVIVE,Shampoo Dream Long Liss ELVIVE L´Oréal Paris 400ml,7509552843088,"$8.799,00",400 ml,,40%Dto,"$5.279,40"
+ELVIVE,Shampoo Dream Long Liss ELVIVE L´Oréal Paris 750ml,7509552843095,"$13.399,00",750 ml,,40%Dto,"$8.039,40"
+ELVIVE,Shampoo ELVIVE Colorvive 200ml ,7509552907759,"$5.429,00",200 ml,,40%Dto,"$3.257,40"
+ELVIVE,Shampoo ELVIVE Colorvive 750ml ,7509552902914,"$13.399,00",750 ml,,40%Dto,"$8.039,40"
+ELVIVE,Shampoo ELVIVE Dream Liso 750ml,7509552964424,"$14.499,99",750 ml,,40%Dto,"$8.699,99"
+ELVIVE,Shampoo ELVIVE Glycolic Gloss 200ml,7509552937343,"$6.099,00",200 ml,,40%Dto,"$3.659,40"
+ELVIVE,Shampoo ELVIVE Glycolic Gloss 400ml,7509552928846,"$9.699,00",400 ml,,40%Dto,"$5.819,40"
+ELVIVE,Shampoo ELVIVE Glycolic Gloss 750ml,7509552928266,"$14.499,00",750 ml,,40%Dto,"$8.699,40"
+ELVIVE,Shampoo ELVIVE Hialuronico Pure 200ml,7509552876413,"$5.429,00",200 ml,,40%Dto,"$3.257,40"
+ELVIVE,Shampoo ELVIVE Hialuronico Pure 400ml,7509552876444,"$8.799,00",400 ml,,40%Dto,"$5.279,40"
+ELVIVE,Shampoo ELVIVE Hialuronico Pure 750ml,7509552876260,"$13.399,00",750 ml,,40%Dto,"$8.039,40"
+ELVIVE,Shampoo ELVIVE Hidra Hialuronico 750ml,7509552902334,"$13.399,00",750 ml,,40%Dto,"$8.039,40"
+ELVIVE,Shampoo ELVIVE Kera-Liso Mq 200ml ,7509552902839,"$5.429,00",200 ml,,40%Dto,"$3.257,40"
+ELVIVE,Shampoo ELVIVE Kera-Liso Mq 400ml ,7509552902846,"$8.799,00",400 ml,,40%Dto,"$5.279,40"
+ELVIVE,Shampoo ELVIVE Rt Extreme 200ml ,7509552902402,"$5.429,00",200 ml,,40%Dto,"$3.257,40"
+ELVIVE,Shampoo ELVIVE Rt Extreme 400ml ,7509552902419,"$8.799,00",400 ml,,40%Dto,"$5.279,40"
+ELVIVE,Shampoo ELVIVE Rt5 Keratin 400ml ,7509552902518,"$8.799,00",400 ml,,40%Dto,"$5.279,40"
+ELVIVE,Shampoo ELVIVE Rt5 Keratin 750ml ,7509552902495,"$13.399,00",750 ml,,40%Dto,"$8.039,40"
+ELVIVE,Shampoo Hidra Rellenador Elvive 200ml,7509552902112,"$5.429,00",200 ml,,40%Dto,"$3.257,40"
+ELVIVE,Shampoo Hidra Rellenador Elvive 400ml,7509552902327,"$8.799,00",400 ml,,40%Dto,"$5.279,40"
+ELVIVE,Shampoo Kera-Liso Perfeccionador Elvive 200 Ml,7509552791433,"$5.429,00",200 Ml,,40%Dto,"$3.257,40"
+ELVIVE,Shampoo Kera-Liso Perfeccionador Elvive 400 Ml,7509552791266,"$7.989,00",400 Ml,,40%Dto,"$4.793,40"
+ELVIVE,Shampoo Kera-Liso Perfeccionador Elvive 750 Ml,7509552790566,"$13.399,00",750 Ml,,40%Dto,"$8.039,40"
+ELVIVE,Shampoo Liso Efecto Keratina Elvive 200ml,7509552964554,"$6.099,99",200 ml,,40%Dto,"$3.659,99"
+ELVIVE,Shampoo Liso Efecto Keratina Elvive 400ml,7509552964387,"$9.699,99",400 ml,,40%Dto,"$5.819,99"
+ELVIVE,Shampoo Matizador Violeta Elvive 200 Ml,7509552815269,"$6.393,00",200 Ml,,40%Dto,"$3.835,80"
+ELVIVE,Shampoo Oleo Extra Coco ELVIVE Bot 750 Ml,7509552790436,"$13.399,00",750 Ml,,40%Dto,"$8.039,40"
+ELVIVE,Shampoo Oleo Extra Rizos Definidos Elvive 200ml,7509552925883,"$5.429,00",200 ml,,40%Dto,"$3.257,40"
+ELVIVE,Shampoo Oleo Extra Rizos Definidos Elvive 400ml,7509552925890,"$8.799,00",400 ml,,40%Dto,"$5.279,40"
+ELVIVE,Shampoo Oleo Extraordinario Coco Elvive Bot 200 Ml,7509552791860,"$5.429,00",200 Ml,,40%Dto,"$3.257,40"
+ELVIVE,Shampoo Oleo Extraordinario Coco Elvive Bot 400 Ml,7509552790498,"$8.799,00",400 Ml,,40%Dto,"$5.279,40"
+ELVIVE,Shampoo Oleo Extraordinario Nutricion Universal 400ml ,7509552859126,"$8.799,00",400 ml,,40%Dto,"$5.279,40"
+ELVIVE,Shampoo Oleo Extraordinario Nutricion Universal 750ml ,7509552791297,"$13.399,00",750 ml,,40%Dto,"$8.039,40"
+ELVIVE,Shampoo Protector Filtro Uv Elvive 400ml,7509552903461,"$8.799,00",400 ml,,40%Dto,"$5.279,40"
+ELVIVE,Shampoo Reconstructor Elvive 750ml,7509552902426,"$13.400,00",750 ml,,40%Dto,"$8.040,00"
+ELVIVE,Shampoo Reparador Elvive 200ml,7509552902532,"$5.429,00",200 ml,,40%Dto,"$3.257,40"
+ELVIVE,Shampoo Óleo Extraordinario Nutritivo Elvive 200 Ml,7509552859133,"$5.430,00",200 Ml,,40%Dto,"$3.258,00"
+ELVIVE,Crema Para Peinar 3x Menos Frizz Elvive 250ml,7509552979541,"$7.849,99",250 ml,,40%Dto,"$4.709,99"
+ELVIVE,Crema Para Peinar Cabello Muy Seco Elvive Bot 250 Ml,7509552851618,"$6.949,00",250 Ml,,40%Dto,"$4.169,40"
+ELVIVE,Crema Para Peinar Cabello Rizado Elvive 250ml,7509552935615,"$6.949,99",250 ml,,40%Dto,"$4.169,99"
+ELVIVE,Crema Para Peinar Dream Long Elvive L´Oréal Paris 250ml,7509552836592,"$6.949,00",250 ml,,40%Dto,"$4.169,40"
+ELVIVE,Crema Para Peinar Dream Long Liss ELVIVE L´Oréal Paris 250ml,7509552843736,"$6.949,00",250 ml,,40%Dto,"$4.169,40"
+ELVIVE,Crema Para Peinar Reparacion Elvive 250ml,7509552902525,"$6.949,00",250 ml,,40%Dto,"$4.169,40"
+ELVIVE,Mascarilla ELVIVE Glycolic Gloss 300gr,7509552928853,"$9.569,00",300 gr,,40%Dto,"$5.741,40"
+ELVIVE,Mascarilla Kera-Liso Perfeccionador Elvive 300 Grm,7509552791853,"$8.699,99",N/A,,40%Dto,"$5.219,99"
+ELVIVE,Mascarilla Nutrición Intensa Elvive Pot 300 Grm,7509552851625,"$8.699,00",N/A,,40%Dto,"$5.219,40"
+ELVIVE,Mascarilla Para Cabello Protectora De Color Elvive 300g,7509552902921,"$8.699,00",300 g,,40%Dto,"$5.219,40"
+ELVIVE,Mascarilla Para Cabello Reconstruccion Elvive 300g,7509552902464,"$8.699,00",300 g,,40%Dto,"$5.219,40"
+ELVIVE,Mascarilla Para Cabello Reparación Elvive 300g,7509552902822,"$8.699,00",300 g,,40%Dto,"$5.219,40"
+ELVIVE,Serum ELVIVE Glycolic Gloss 100ml,7509552928877,"$16.669,00",100 ml,,40%Dto,"$10.001,40"
+DOVE,Shampoo DOVE Para Bebés Humectación Enriquecida Botella 400 ML,7891150025950,"$8.471,00",400 ML,,70% 2da,"$5.506,15"
+BABY DOVE,Shampoo Humectación Baby Dove Enriquecida Sin Lágrimas 200 Ml,7891150025929,"$5.102,00",200 Ml,,70% 2da,"$3.316,30"
+DOVE,Antitranspirante DOVE Original En Barra 50 G,75080136,"$5.277,00",50 G,,25%Dto,"$3.957,75"
+DOVE,Desodorante Antitranspirante DOVE Men Care Cuidado Total Roll-On 50 Ml,78927254,"$2.649,00",50 Ml,,25%Dto,"$1.986,75"
+DOVE,Antitranspirante DOVE Invisible Dry Roll-On 50 Ml,78924529,"$2.649,99",50 Ml,,25%Dto,"$1.987,49"
+DOVE,Jabón De Tocador DOVE Exfoliante 90 G,7898422746827,"$1.760,00",90 G,,25%Dto,"$1.320,00"
+DOVE,Antitranspirante Roll-On DOVE Go Fresh Granada Y Verbena 50 Ml,78935068,"$2.649,99",50 Ml,,25%Dto,"$1.987,49"
+DOVE BABY,Acondicionador Baby Dove Humectación Enriquecida 200 Ml,7891150036390,"$5.102,00",200 Ml,,70% 2da,"$3.316,30"
+DOVE BABY,Shampoo Cabello Claro Baby Dove Humectación Enriquecida Ph Neutro 200 Ml,7891150045316,"$5.102,00",200 Ml,,70% 2da,"$3.316,30"
+DOVE,Desodorante Antitranspirante DOVE Men Invisible Dry Roll-On 50 Ml,78933354,"$2.649,99",50 Ml,,25%Dto,"$1.987,49"
+DOVE,Jabón De Tocador DOVE Karité Y Vainilla 90 Gr,7891150019560,"$1.760,00",90 Gr,,25%Dto,"$1.320,00"
+DOVE MEN,Antitranspirante Extra Fresh Dove Men 50ml,78925519,"$2.649,99",50 ml,,25%Dto,"$1.987,49"
+DOVE,Antitranspirante Barra Clinical DOVE 58g,75079437,"$12.535,00",58 g,,25%Dto,"$9.401,25"
+DOVE,Antitranspirante En Barra Men Clinical Dove 58g,75079444,"$12.535,00",58 g,,25%Dto,"$9.401,25"
+DOVE,Antitranspirante Extra Fresh Dove Aer 150 Ml,7791293048017,"$4.253,00",150 Ml,,25%Dto,"$3.189,75"
+DOVE,Antitranspirante Go Fresh Granada Y Verbena Dove 150 Ml,7791293033266,"$4.253,00",150 Ml,,25%Dto,"$3.189,75"
+DOVE,Antitranspirante Go Fresh Pepino Y Te Verde Dove 150 Ml,7791293048475,"$4.253,00",150 Ml,,25%Dto,"$3.189,75"
+DOVE,Antitranspirante Go Fresh Pera Y Aloe Vera Dove 150 Ml,7791293048505,"$4.253,00",150 Ml,,25%Dto,"$3.189,75"
+DOVE,Antitranspirante Go Fresh Pomelo Y Hierbas Dove 150 Ml,7791293048482,"$4.253,00",150 Ml,,25%Dto,"$3.189,75"
+DOVE,Antitranspirante Invisible Dry Dove Aer 150 Ml,7791293048031,"$4.253,00",150 Ml,,25%Dto,"$3.189,75"
+DOVE,Antitranspirante Invisible Dry Violeta Y Fresa Dove 150 Ml,7506306241176,"$4.253,00",150 Ml,,25%Dto,"$3.189,75"
+DOVE,Antitranspirante Men Care Dove 150ml,7791293049625,"$6.082,00",150 ml,,20%Dto,"$4.659,42"
+DOVE,Antitranspirante Nutritive Coco Y Flor De Jazmín Dove 150 Ml,7791293033273,"$4.253,00",150 Ml,,25%Dto,"$3.189,75"
+DOVE,Antitranspirante Original Clinical Dove 150ml,7791293049618,"$6.082,00",150 ml,,20%Dto,"$4.659,42"
+DOVE,Antitranspirante Original Dove 150 Ml,7506306241183,"$4.253,00",150 Ml,,25%Dto,"$3.189,75"
+DOVE,Antitranspirante Original Dove 250 Ml,7791293048536,"$5.907,00",250 Ml,,25%Dto,"$4.430,25"
+DOVE,Antitranspirante Protección Total Dove Men 250ml,7891150081215,"$5.907,00",250 ml,,25%Dto,"$4.430,25"
+DOVE,Antitranspirante Roll-On DOVE Original 50 Ml,77976239,"$2.649,99",50 Ml,,25%Dto,"$1.987,49"
+DOVE,Desodorante Antitranspirante DOVE Men Cuidado Total En Aerosol 150 Ml,7791293048000,"$4.253,00",150 Ml,,25%Dto,"$3.189,75"
+DOVE,Acondicionador Brillo Dove 400ml,7791293050379,"$6.796,00",400 ml,,70% 2da,"$4.417,40"
+DOVE,Acondicionador DOVE Bond Intense Repair 250 Ml,7891150097148,"$7.214,00",250 Ml,,40%Dto,"$4.328,40"
+DOVE,Acondicionador Hidratacion Dove 400ml,7791293050355,"$6.796,00",400 ml,,70% 2da,"$4.417,40"
+DOVE,Acondicionador Largos Fortalecidos Dove 400ml,7791293050362,"$6.796,00",400 ml,,70% 2da,"$4.417,40"
+DOVE,Acondicionador Reconstrucción Completa DOVE 200 Ml,7791293047058,"$4.251,00",200 Ml,,70% 2da,"$2.763,15"
+DOVE,Acondicionador Reconstrucción Completa DOVE 400 Ml,7791293047508,"$6.796,00",400 Ml,,70% 2da,"$4.417,40"
+DOVE,Acondicionador Reconstrucción Completa DOVE 750 Ml,7791293047577,"$11.319,00",750 Ml,,70% 2da,"$7.357,35"
+DOVE,Acondicionador Regeneración Extrema DOVE 200 Ml,7791293047072,"$4.251,00",200 Ml,,70% 2da,"$2.763,15"
+DOVE,Acondicionador Regeneración Extrema DOVE 400 Ml,7791293047522,"$6.796,00",400 Ml,,70% 2da,"$4.417,40"
+DOVE,Acondicionador Regeneración Extrema DOVE 750 Ml,7791293047591,"$11.319,00",750 Ml,,70% 2da,"$7.357,35"
+DOVE,Acondicionador Ritual De Crecimiento DOVE 400 Ml,7791293047478,"$6.796,00",400 Ml,,70% 2da,"$4.417,40"
+DOVE,Acondicionador Ritual De Reparación Dove 200ml,7791293047041,"$4.251,00",200 ml,,70% 2da,"$2.763,15"
+DOVE,Acondicionador Ritual De Reparación DOVE 400 Ml,7791293047492,"$6.796,00",400 Ml,,70% 2da,"$4.417,40"
+DOVE,Acondicionador Ritual De Reparación DOVE 750 Ml,7791293047607,"$11.080,00",750 Ml,,70% 2da,"$7.202,00"
+DOVE,Acondicionador Óleo Nutricion DOVE 200 Ml,7791293047065,"$4.251,00",200 Ml,,70% 2da,"$2.763,15"
+DOVE,Acondicionador Óleo Nutricion DOVE 400 Ml,7791293047515,"$6.796,00",400 Ml,,70% 2da,"$4.417,40"
+DOVE,Acondicionador Óleo Nutricion DOVE 750 Ml,7791293047584,"$11.319,00",750 Ml,,70% 2da,"$7.357,35"
+DOVE,Jabón De Tocador DOVE Original Individual 90 G,7791293051208,"$1.760,00",90 G,,25%Dto,"$1.320,00"
+DOVE,Máscara De Tratamiento DOVE Bond Intense Repair 250 G,7891150097131,"$11.990,00",250 G,,40%Dto,"$7.194,00"
+DOVE,Shampoo + Acondicionador Caspa Control DOVE 400ml,7891150023529,"$7.130,00",400 ml,,70% 2da,"$4.634,50"
+DOVE,Shampoo 2en1 DOVE Fuerza Extrema Para Hombres 400 Ml,7791293045511,"$7.130,00",400 Ml,,70% 2da,"$4.634,50"
+DOVE,Shampoo 3en1 Sports Dove Bot 400 Ml,7791293045542,"$7.130,00",400 Ml,,70% 2da,"$4.634,50"
+DOVE,Shampoo Brillo Dove 400ml,7791293050348,"$6.796,00",400 ml,,70% 2da,"$4.417,40"
+DOVE,Shampoo DOVE Bond Intense Repair 200 Ml,7791293051024,"$4.542,00",200 Ml,,40%Dto,"$2.725,20"
+DOVE,Shampoo DOVE Bond Intense Repair 400 Ml,7791293051017,"$7.407,00",400 Ml,,40%Dto,"$4.444,20"
+DOVE,Shampoo Hidratacion Dove 400ml,7791293050324,"$6.796,00",400 ml,,70% 2da,"$4.417,40"
+DOVE,Shampoo Largos Fortalecidos Dove 400ml,7791293050331,"$6.796,00",400 ml,,70% 2da,"$4.417,40"
+DOVE,Shampoo Reconstrucción Completa DOVE 200 Ml,7791293046983,"$4.251,00",200 Ml,,70% 2da,"$2.763,15"
+DOVE,Shampoo Reconstrucción Completa DOVE 400 Ml,7791293047102,"$6.796,00",400 Ml,,70% 2da,"$4.417,40"
+DOVE,Shampoo Reconstrucción Completa DOVE 750 Ml,7791293047638,"$11.319,00",750 Ml,,70% 2da,"$7.357,35"
+DOVE,Shampoo Regeneración Extrema DOVE 200 Ml,7791293047003,"$4.251,00",200 Ml,,70% 2da,"$2.763,15"
+DOVE,Shampoo Regeneración Extrema DOVE 400 Ml,7791293047171,"$6.796,00",400 Ml,,70% 2da,"$4.417,40"
+DOVE,Shampoo Regeneración Extrema DOVE 750 Ml,7791293047652,"$11.319,00",750 Ml,,70% 2da,"$7.357,35"
+DOVE,Shampoo Ritual De Crecimiento DOVE 400 Ml,7791293047461,"$6.796,00",400 Ml,,70% 2da,"$4.417,40"
+DOVE,Shampoo Ritual De Reparación DOVE 200 Ml,7791293047034,"$4.251,00",200 Ml,,70% 2da,"$2.763,15"
+DOVE,Shampoo Ritual De Reparación DOVE 400 Ml,7791293047447,"$6.796,00",400 Ml,,70% 2da,"$4.417,40"
+DOVE,Shampoo Ritual De Reparación DOVE 750 Ml,7791293047621,"$11.298,00",750 Ml,,70% 2da,"$7.343,70"
+DOVE,Shampoo Óleo Nutricion DOVE 200 Ml,7791293046990,"$4.251,00",200 Ml,,70% 2da,"$2.763,15"
+DOVE,Shampoo Óleo Nutricion DOVE 400 Ml,7791293047164,"$6.796,00",400 Ml,,70% 2da,"$4.417,40"
+DOVE,Shampoo Óleo Nutricion DOVE 750 Ml,7791293047645,"$11.319,00",750 Ml,,70% 2da,"$7.357,35"
+DOVE,Mascara Para Cabello Hidratacion Dove 300g,7791293050881,"$6.719,00",300 g,,70% 2da,"$4.367,35"
+DOVE,Mascara Para Cabello Reconstruccion Completa Dove 300g,7791293048635,"$6.719,00",300 g,,70% 2da,"$4.367,35"
+DOVE,Mascara Para Cabello Regeneracion Extrema Dove 300g,7791293048659,"$6.719,00",300 g,,70% 2da,"$4.367,35"
+DOVE,Mascara Para Cabello Ritual Crecimiento Dove 300g,7791293049021,"$6.719,00",300 g,,70% 2da,"$4.367,35"
+DOVE,Mascara Para Cabello Ritual Reparacion Dove 300g,7791293049014,"$6.719,00",300 g,,70% 2da,"$4.367,35"
+DOVE,Máscara De Tratamiento DOVE Real Poder De Las Plantas Fuerza + Bambú 190 Ml,7891150079175,"$5.031,00",190 Ml,,70% 2da,"$3.270,15"
+DOVE,Máscara De Tratamiento DOVE Real Poder De Las Plantas Nutrición + Geranio 190 Ml,7891150079168,"$5.031,00",190 Ml,,70% 2da,"$3.270,15"
+DOVE,Oleo + Serum DOVE Bond Intense Repair 110 Ml,7891150097124,"$14.388,00",110 Ml,,40%Dto,"$8.632,80"
+DOVE,Jabón De Tocador Dove Original Multipack 3x90 Grs,7891150046481,"$4.743,00",N/A,,N/A,N/A
+DOVE,Jabón En Barra Baby DOVE Humectación Enriquecida 75 G,7891150026025,"$1.760,00",75 G,,N/A,N/A
+DOVE,Jabón En Barra Humectación Sensible DOVE 75g,7891150025998,"$1.760,00",75 g,,N/A,N/A
+DOVE,Jabón Liquido Bebe Humectación Enriquecida DOVE 200ml,7891150025981,"$5.153,00",200 ml,,N/A,N/A
+DOVE,Jabón Liquido Bebé Humectación Sensible DOVE Baby 200 Ml,7891150025967,"$5.153,00",200 Ml,,N/A,N/A
+DOVE BABY,Jabón Líquido Baby Dove Humectación Sensible Refill 180ml,7891150035881,"$3.612,00",180 ml,,N/A,N/A
+DOVE,Jabón Liquido Bebe Humectación Enriquecida DOVE 180 Ml,7891150035874,"$3.612,00",180 Ml,,N/A,N/A
+DOVE,Jabón Líquido Para Manos Dove Original 250 Ml,7791293046112,"$4.390,00",250 Ml,,N/A,N/A
+DOVE,Jabón Líquido Para Manos Dove Original 220 Ml Refill,7791293046136,"$3.145,00",220 Ml,,N/A,N/A
+REXONA,Jabon Glicerina Neutro Dove 270 Grm,7791293049205,"$3.379,00",N/A,,N/A,N/A
+REXONA,Jabon Glicerina Neutro Dove 90 Grm,7791293049175,"$1.250,00",N/A,,N/A,N/A
+DOVE,Jabon Liquido Antibacterial Dove 250ml,7791293046129,"$4.800,00",250 ml,,N/A,N/A
+DOVE,Jabon Liquido Glicerina Piel Sensible Dove 250ml,7891150095694,"$4.640,00",250 ml,,N/A,N/A
+DOVE,Jabón De Tocador Piel Sensible X3 Dove 270g,7891150095700,"$4.743,00",270 g,,N/A,N/A
+DOVE,Jabón En Barra Dove Antibacterial Cuida & Protege 90 G,7891150075382,"$1.760,00",90 G,,N/A,N/A
+DOVE,Jabón Líquido Nutrición Profunda Dove 250ml,7891150063105,"$4.640,00",250 ml,,N/A,N/A
+DOVE,Jabón Líquido Para Manos Antibacterial Dove 220ml,7791293046150,"$3.720,00",220 ml,,N/A,N/A
+DOVE,Jabón Líquido Para Manos Cuidado Reconforte DOVE 220ml,7791293046143,"$3.145,00",220 ml,,N/A,N/A
+DOVE,Jabón Tocador Piel Sensible Dove 90g,7891150095618,"$1.760,00",90 g,,N/A,N/A
+AYUDÍN,Fibra Espon. Doble Cuadricu Ayudin Paq 1 Uni,7793253002626,"$1.539,99",N/A,,25%Dto,"$1.154,99"
+AYUDÍN,Lavandina Liquida AYUDÍN Botella 1 L,7790132098459,"$1.256,99",1 L,,40%Dto,"$729,81"
+AYUDÍN,Fibra AYUDÍN Para Baño Y Cocina 2 Un,7793253002633,"$1.944,99",2 Un,,25%Dto,"$1.458,74"
+AYUDÍN,Toallitas Desinfectantes AYUDÍN Fresco (Frasco) 65u,7793253004361,"$8.020,99",N/A,,25%Dto,"$6.015,74"
+AYUDIN,Toallitas Desinfectantes Ayudín Fresco 24 Un,7793253003401,"$2.947,99",24 Un,,25%Dto,"$2.210,99"
+AYUDIN,Toallitas Desinfectantes Ayudín Fresco 35 Un,7793253003913,"$3.956,99",35 Un,,25%Dto,"$2.967,74"
+AYUDIN,Quitamanchas AYUDIN Ultra Doypack 450 Gr,7793253002565,"$7.400,99",450 Gr,,N/A,N/A
+AYUDIN,Quitamanchas AYUDIN Ultra Doypack 450 Gr,7793253002589,"$7.400,99",450 Gr,,N/A,N/A
+AYUDIN,Canasta Para Inodoro Ayudín 16 Gr,7793253300081,"$2.165,99",16 Gr,,N/A,N/A
+AYUDÍN,Aerosol Desinfectante Ayudin Expert Bebé 332 Ml,7793253005078,"$2.662,99",332 Ml,,N/A,N/A
+AYUDÍN,Aerosol Desinfectante Ayudin Expert Frescura Matinal 332 Ml,7793253005061,"$2.662,99",332 Ml,,N/A,N/A
+AYUDÍN,Aerosol Desinfectante Ayudin Expert Original 332 Ml,7793253005054,"$2.662,99",332 Ml,,N/A,N/A
+AYUDÍN,Aerosol Desinfectante Ayudin Expert Original 482 Ml,7793253005337,"$3.640,99",482 Ml,,N/A,N/A
+AYUDÍN,Lavandina AYUDÍN Anti-Splash1 L,7793253003777,"$1.698,99",N/A,,N/A,N/A
+AYUDÍN,Lavandina AYUDÍN Anti-Splash2 L,7793253003784,"$3.296,99",N/A,,N/A,N/A
+AYUDÍN,Lavandina AYUDÍN Triple Poder Lavanda 1 L,7793253003715,"$1.438,99",1 L,,N/A,N/A
+AYUDÍN,Lavandina AYUDÍN Triple Poder Pureza Glaciar 1l,7793253003746,"$1.438,99",1 l,,N/A,N/A
+AYUDIN,Lavandina En Gel Ayudín Cítrica 700 Ml,7793253003807,"$2.284,99",700 Ml,,N/A,N/A
+AYUDÍN,Lavandina En Gel AYUDÍN Floral 700 Ml,7793253003814,"$2.284,99",700 Ml,,N/A,N/A
+AYUDIN,Lavandina En Gel Ayudín Lavanda 700 Ml,7793253003838,"$2.284,99",700 Ml,,N/A,N/A
+AYUDÍN,Lavandina En Gel AYUDÍN Menta Fresca 700 Ml,7793253003821,"$2.284,99",700 Ml,,N/A,N/A
+AYUDIN,Lavandina En Gel Ayudín Original 700 Ml,7793253003791,"$2.284,99",700 Ml,,N/A,N/A
+AYUDIN,Lavandina En Gel Original Ayudin 500 Ml,7793253005856,"$1.949,99",500 Ml,,N/A,N/A
+AYUDIN,Lavandina Original Ayudin 2l,7793253006709,"$2.386,99",2 l,,N/A,N/A
+AYUDIN,Lavandina Original Ayudin 4l,7793253006716,"$4.766,99",4 l,,N/A,N/A
+AYUDIN,Limpiador Desinfectante Ayudín Lavanda 4 L,7793253004712,"$8.374,99",4 L,,N/A,N/A
+AYUDÍN,"Limpiador Desinfectante AYUDÍN Lavanda Botella 1,8 L",7793253004705,"$3.539,99",8 L,,N/A,N/A
+AYUDÍN,Limpiador Desinfectante AYUDÍN Lavanda Botella 900 Ml,7793253004699,"$2.095,99",900 Ml,,N/A,N/A
+AYUDÍN,Limpiador Desinfectante AYUDÍN Marina Botella 900 Ml,7793253004729,"$2.095,99",900 Ml,,N/A,N/A
+AYUDÍN,Quitamanchas AYUDÍN Blanco Supremo Botella 700 Ml,7793253003425,"$4.012,99",700 Ml,,N/A,N/A
+AYUDÍN,Quitamanchas AYUDÍN Blanco Supremo Doy Pack 400 Ml,7793253003258,"$2.015,99",400 Ml,,N/A,N/A
+AYUDÍN,Quitamanchas AYUDÍN Blancos Intensos Floral 1 L,7793253004774,"$2.071,99",1 L,,N/A,N/A
+AYUDÍN,Quitamanchas AYUDÍN Blancos Intensos Floral 2 L,7793253004781,"$3.744,99",2 L,,N/A,N/A
+AYUDÍN,Quitamanchas AYUDÍN Colores Vivos 1500 Ml,7793253003432,"$8.134,99",1500 Ml,,N/A,N/A
+AYUDÍN,Quitamanchas AYUDÍN Colores Vivos Botella 700 Ml,7793253003418,"$4.012,99",700 Ml,,N/A,N/A
+AYUDÍN,Quitamanchas AYUDÍN Colores Vivos Doy Pack 400 Ml,7793253003234,"$2.015,99",400 Ml,,N/A,N/A
+AYUDÍN,Quitamanchas AYUDÍN Colores Vivos Doy Pack 650 Ml,7793253003241,"$2.955,99",650 Ml,,N/A,N/A
+COLGATE,Cepillo De Dientes COLGATE Fresh Medio 3 U,7702010631405,"$5.450,00",N/A,,35%Dto,"$3.542,50"
+COLGATE,Crema Dental COLGATE Luminous White Brilliant 90g,7891024123027,"$5.955,00",90 g,,35%Dto,"$3.870,75"
+COLGATE,Enjuague Bucal COLGATE Plax Classic 250ml,7891024136300,"$4.990,00",250 ml,,30%Dto,"$3.493,00"
+COLGATE,Enjuague Bucal COLGATE Plax Soft Mint 500ml,7891024130957,"$6.792,00",500 ml,,30%Dto,"$4.754,40"
+COLGATE,Enjuague Bucal COLGATE Total Clean Mint 250 Ml,7891024028834,"$6.070,00",250 Ml,,30%Dto,"$4.249,00"
+COLGATE,Pasta Dental COLGATE Sensibilidad Blanqueadora 100 G,7891024134429,"$4.440,00",100 G,,40%Dto,"$2.664,00"
+COLGATE,Pasta Dental COLGATE Sensitive Pro-Alivio 110g,7891024132647,"$6.021,00",110 g,,40%Dto,"$3.612,60"
+COLGATE,Pasta Dental COLGATE Sensitive Pro-Alivio Real White 110g,7891024124628,"$6.020,00",110 g,,40%Dto,"$3.612,00"
+COLGATE,Cepillo De Dientes COLGATE Extra Clean Medio 1 U,5900273001566,"$2.200,00",N/A,,35%Dto,"$1.430,00"
+COLGATE,Cepillo De Dientes COLGATE Smiles Barbie 2u,7509546070285,"$4.082,00",N/A,,35%Dto,"$2.653,30"
+COLGATE,Cepillo De Dientes COLGATE Smiles Minions 2u,7509546068558,"$4.080,00",N/A,,35%Dto,"$2.652,00"
+COLGATE,Cepillo De Dientes COLGATE 360° Luminous White 2 U,7509546055152,"$5.603,00",N/A,,35%Dto,"$3.641,95"
+COLGATE,Cepillo De Dientes COLGATE Kids 2u,7509546073453,"$1.955,00",N/A,,35%Dto,"$1.270,75"
+COLGATE,Cepillo De Dientes COLGATE Max White Medio 2 U,99176316565,"$4.760,00",N/A,,35%Dto,"$3.094,00"
+COLGATE,Cepillo De Dientes COLGATE Pro Cuidado Suave 4u,7891024035825,"$9.212,00",N/A,,35%Dto,"$5.987,80"
+COLGATE,Cepillo Dental COLGATE Extra Clean Medio Cerdas Multinivel 3u,7891024116128,"$4.902,00",N/A,,35%Dto,"$3.186,30"
+COLGATE,Cepillo Dental Smiles 2-5 Años COLGATE 1u,7591083011098,"$2.721,00",N/A,,35%Dto,"$1.768,65"
+COLGATE,Enjuague Bucal COLGATE Plax Fresh Mint 500ml Promo Lleve 500ml Pague 350ml,7891024131183,"$6.795,00",500 ml,,30%Dto,"$4.756,50"
+COLGATE,Enjuague Bucal COLGATE Plax Kids Minions 250ml,7891024030806,"$4.990,00",250 ml,,30%Dto,"$3.493,00"
+COLGATE,Enjuague Bucal COLGATE Plax Soft Mint 250ml,7891024130940,"$4.990,00",250 ml,,30%Dto,"$3.493,00"
+COLGATE,Hilo Dental COLGATE Total 12 Fluor Y Menta 25m,7891024183083,"$2.951,00",N/A,,35%Dto,"$1.918,15"
+COLGATE,Pasta Dental COLGATE Luminous White Brilliant 140g,7891024005064,"$8.870,00",140 g,,35%Dto,"$5.765,50"
+COLGATE,Cepillo De Dientes COLGATE Triple Acción 3 U,99176369226,"$6.140,00",N/A,,35%Dto,"$3.991,00"
+COLGATE,Cepillo De Dientes COLGATE Smiles Batman/Wonder Woman 2u,7891024073001,"$4.080,00",N/A,,35%Dto,"$2.652,00"
+COLGATE,Cepillo De Dientes COLGATE Bamboo Carbon 2 U,7891024078174,"$6.320,00",N/A,,35%Dto,"$4.108,00"
+COLGATE,Cepillo De Dientes COLGATE Encías Therapy Carbón 2 U,7509546678733,"$9.982,00",N/A,,35%Dto,"$6.488,30"
+COLGATE,Cepillo De Dientes COLGATE Recyclean 100% Reciclado 2 U,7509546674841,"$6.531,00",N/A,,35%Dto,"$4.245,15"
+COLGATE,Cepillo De Dientes COLGATE Sensitive Pro Alivio Single,7509546686912,"$6.290,00",N/A,,35%Dto,"$4.088,50"
+COLGATE,Cepillo De Dientes COLGATE Slimsoft Charcoal 1 U,7891024073070,"$5.210,00",N/A,,30%Dto,"$3.647,00"
+COLGATE,Enjuague Bucal COLGATE Plax Fresh Mint 750 Ml,7509546679617,"$8.159,00",750 Ml,,30%Dto,"$5.711,30"
+COLGATE,Enjuague Bucal COLGATE Plax Ice Infinity 180ml,7891024039625,"$3.488,00",180 ml,,30%Dto,"$2.441,60"
+COLGATE,Enjuague Bucal COLGATE Plax Ice Infinity 60ml,7891024027363,"$1.540,00",60 ml,,30%Dto,"$1.078,00"
+COLGATE,Enjuague Bucal COLGATE Plax Menta Fresca 250ml,7509546686356,"$4.990,00",250 ml,,30%Dto,"$3.493,00"
+COLGATE,Enjuague Bucal COLGATE Plax Menta Suave 500 Ml,7509546686332,"$6.792,00",500 Ml,,30%Dto,"$4.754,40"
+COLGATE,Enjuague Bucal COLGATE Plax Odor Control 250 Ml,7509546679525,"$5.522,00",250 Ml,,30%Dto,"$3.865,40"
+COLGATE,Enjuague Bucal COLGATE Plax Odor Control 500 Ml,7509546679532,"$7.302,00",500 Ml,,30%Dto,"$5.111,40"
+COLGATE,Enjuague Bucal COLGATE Plax Rojo 250 Ml,7509546686325,"$4.990,00",250 Ml,,30%Dto,"$3.493,00"
+COLGATE,Enjuague Bucal COLGATE Plax Rojo 350 Ml,7509546686455,"$6.930,00",350 Ml,,30%Dto,"$4.851,00"
+COLGATE,Enjuague Bucal COLGATE Total 12 Encías Reforzadas 500ml,7509546666990,"$9.000,00",500 ml,,30%Dto,"$6.300,00"
+COLGATE,Enjuague Bucal COLGATE Total Carbón Activado 250 Ml,7509546686622,"$6.065,00",250 Ml,,30%Dto,"$4.245,50"
+COLGATE,Enjuague Bucal COLGATE Total Carbón Activado 500 Ml,7509546686615,"$8.702,00",500 Ml,,30%Dto,"$6.091,40"
+COLGATE,Enjuague Bucal COLGATE Total Encías Saludables 250 Ml,7509546666969,"$6.100,00",250 Ml,,30%Dto,"$4.270,00"
+COLGATE,Pasta Dental COLGATE Luminous Blanqueadora 90g,7509546688961,"$5.415,00",90 g,,35%Dto,"$3.519,75"
+COLGATE,Pasta Dental COLGATE Luminous Charcoal 90 G,7509546651057,"$5.953,00",90 G,,35%Dto,"$3.869,45"
+COLGATE,Pasta Dental COLGATE Luminous White Glow,7509546676258,"$7.440,99",N/A,,40%Dto,"$4.464,59"
+COLGATE,Pasta Dental COLGATE Luminous White Lovers Café 70g,7509546667577,"$6.701,00",70 g,,35%Dto,"$4.355,65"
+COLGATE,Pasta Dental COLGATE Sensitive Pro Alivio Inmediato Encias 110g,7509546690384,"$6.021,00",110 g,,40%Dto,"$3.612,60"
+COLGATE,Pasta Dental COLGATE Sensitive Pro Alivio Inmediato Original 140g,7509546653402,"$7.195,00",140 g,,40%Dto,"$4.317,00"
+COLGATE,Pasta Dental COLGATE Sensitive Pro Alivio Inmediato Original 60 G,7509546653396,"$3.600,00",60 G,,40%Dto,"$2.160,00"
+COLGATE,"""Pasta Dental COLGATE Triple Acción Extra Blancura 90g""",7509546056098,"$3.515,00",90 g,,N/A,N/A
+COLGATE,Pasta Dental COLGATE Smiles Barbie 100 G,7509546003122,"$3.305,00",100 G,,N/A,N/A
+COLGATE,Pasta Dental COLGATE Total Clean Mint Prevención Activa 90g,7793100111143,"$5.900,00",90 g,,N/A,N/A
+COLGATE,Pasta Dental COLGATE Total Whitening Con Flúor 90g,7891024135020,"$5.250,00",90 g,,N/A,N/A
+COLGATE,Pasta Dental COLGATE Ultra Blanco 90g,7793100111891,"$2.705,00",90 g,,N/A,N/A
+COLGATE,Pasta Dental COLGATE Max White Crystal Mint 180g,7891024123362,"$6.224,00",180 g,,N/A,N/A
+COLGATE,Crema Dental COLGATE Triple Acción Extra Blancura 125ml,7509546056111,"$5.565,00",125 ml,,N/A,N/A
+COLGATE,Enjuague Bucal COLGATE Sensitive Pro-Alivio 250ml,7891024030813,"$6.500,00",250 ml,,N/A,N/A
+COLGATE,Pasta Dental COLGATE Natural Extracts Reinforced Defense 90g,6920354822193,"$4.964,00",90 g,,N/A,N/A
+COLGATE,Cepillo De Dientes COLGATE Max White Charcoal 2 U,7509546690315,"$4.760,00",N/A,,N/A,N/A
+COLGATE,Cepillo De Dientes COLGATE Twister Medio 2u,7702010130632,"$4.480,00",N/A,,N/A,N/A
+COLGATE,Enjuague Bucal COLGATE Ice 350 Ml,7509546686417,"$7.740,00",350 Ml,,N/A,N/A
+COLGATE,Enjuague Bucal COLGATE Plax Menta Suave 250ml,7509546686349,"$3.766,00",250 ml,,N/A,N/A
+COLGATE,Pasta Dental COLGATE Herbal Natural Protect 90g,7509546692197,"$2.352,64",90 g,,N/A,N/A
+COLGATE,Pasta Dental COLGATE Natural Extracts Purificante 90g,6920354824395,"$4.965,00",90 g,,N/A,N/A
+COLGATE,Pasta Dental COLGATE Natural Herbal Protect 140g,7509546695525,"$3.757,00",140 g,,N/A,N/A
+COLGATE,Pasta Dental COLGATE Natural Herbal Protect 90g,7509546695518,"$2.631,00",90 g,,N/A,N/A
+COLGATE,Pasta Dental COLGATE Protección Anticaries 140g,7509546692159,"$3.157,99",140 g,,N/A,N/A
+COLGATE,Pasta Dental COLGATE Protección Anticaries 180g,7509546692166,"$4.156,00",180 g,,N/A,N/A
+COLGATE,Pasta Dental COLGATE Sensitive Pro Alivio Inmediato Xtreme Temperatures 110g,7509546690285,"$6.321,00",110 g,,N/A,N/A
+COLGATE,Pasta Dental COLGATE Total 12 Control Sarro 140g,7509546688459,"$8.094,00",140 g,,N/A,N/A
+COLGATE,Pasta Dental COLGATE Total 12 Control Sarro 90g,7509546688466,"$5.475,00",90 g,,N/A,N/A
+COLGATE,Pasta Dental COLGATE Total 12 Encias Sanas 140g,7509546688480,"$8.094,00",140 g,,N/A,N/A
+COLGATE,Pasta Dental COLGATE Total 12 Original 140g,7509546688404,"$7.357,99",140 g,,N/A,N/A
+COLGATE,Pasta Dental COLGATE Total 12 Original 90g,7509546688398,"$4.975,99",90 g,,N/A,N/A
+COLGATE,Pasta Dental COLGATE Total Carbón Activado Con Flúor 140g,7509546686035,"$7.356,00",140 g,,N/A,N/A
+COLGATE,Pasta Dental COLGATE Total Carbón Activado Con Flúor 90g,7509546686042,"$4.975,00",90 g,,N/A,N/A
+COLGATE,Pasta Dental COLGATE Total Clean Mint Prevención Activa 140g,7891024002490,"$7.355,00",140 g,,N/A,N/A
+COLGATE,Pasta Dental COLGATE Total Encías Saludables Con Flúor 90g,7509546668055,"$4.975,00",90 g,,N/A,N/A
+COLGATE,Pasta Dental COLGATE Triple Beneficio 140 G,7509546686516,"$4.391,00",140 G,,N/A,N/A
+COLGATE,Pasta Dental COLGATE Triple Beneficio 180 G,7509546686509,"$5.643,00",180 G,,N/A,N/A
+COLGATE,Pasta Dental COLGATE Triple Beneficio 90 G,7509546686523,"$3.052,00",90 G,,N/A,N/A
+COLGATE,Pasta Dental COLGATE Triple Beneficio Blanqueador 140 G,7509546686547,"$5.650,00",140 G,,N/A,N/A
+DOVE,Antitranspirante DOVE Original En Barra 50 G,75080136,"$5.277,00",50 G,,25%Dto,"$3.957,75"
+NIVEA,Desodorante Antitranspirante Femenino NIVEA Dry Comfort Roll On X 50 Ml,4005808257584,"$2.131,00",50 Ml,,35%Dto,"$1.385,15"
+BIC,Maquina De Afeitar BIC Comfort 3 Blister 2 Unidades,70330717510,"$3.349,99",N/A,,35%Dto,"$2.177,49"
+BIC,Maquina De Afeitar BIC Comfort 3 Blister 2 Unidades,70330717527,"$3.349,99",N/A,,35%Dto,"$2.177,49"
+BIC,Maquina De Afeitar Comfort 2 Bic 5 Uni,70330721838,"$3.699,99",N/A,,35%Dto,"$2.404,99"
+TRUPER,"Destornillador Phillips TRUPER Comfort Grip 1/4"" X 6""",7501206617915,"$6.799,00",N/A,,25%Dto,"$5.099,25"
+TRUPER,"Destornillador Phillips TRUPER Comfort Grip 1/4"" X 8""",7501206617922,"$8.999,00",N/A,,25%Dto,"$6.749,25"
+TRUPER,"Destornillador Phillips TRUPER Comfort Grip 1/8"" X 6""",7501206617861,"$4.999,00",N/A,,25%Dto,"$3.749,25"
+TRUPER,"Destornillador Phillips TRUPER Comfort Grip 3/16"" X 8""",7501206617892,"$7.999,00",N/A,,25%Dto,"$5.999,25"
+TRUPER,"Destornillador Plano TRUPER Comfort Grip 5/16"" X 6""",7501206617779,"$7.889,00",N/A,,25%Dto,"$5.916,75"
+TRUPER,"Destornillador Plano TRUPER Comfort Grip 1/4"" X 1 1/2""",7501206617786,"$4.879,00",N/A,,25%Dto,"$3.659,25"
+TRUPER,"Destornillador Plano TRUPER Comfort Grip 1/4"" X 4""",7501206617755,"$6.409,00",N/A,,25%Dto,"$4.806,75"
+TRUPER,"Destornillador Plano TRUPER Comfort Grip 1/4"" X 6""",7501206617762,"$6.779,00",N/A,,25%Dto,"$5.084,25"
+TRUPER,"Destornillador Plano TRUPER Comfort Grip 3/16"" X 4""",7501206617748,"$5.999,00",N/A,,25%Dto,"$4.499,25"
+HUGGIES,Pañal HUGGIES Flexi Comfort G X20 Edicion Limitada,7794626012976,"$14.349,00",N/A,,40%Dto,"$8.609,40"
+HUGGIES,Pañal HUGGIES Flexi Comfort G X40,7794626012846,"$27.938,00",N/A,,40%Dto,"$16.762,80"
+HUGGIES,Pañal HUGGIES Flexi Comfort G X60,7794626012860,"$39.939,00",N/A,,40%Dto,"$23.963,40"
+HUGGIES,Pañal HUGGIES Flexi Comfort M X68,7794626012853,"$39.939,00",N/A,,40%Dto,"$23.963,40"
+HUGGIES,Pañal HUGGIES Flexi Comfort Px50,7794626012938,"$24.935,00",N/A,,40%Dto,"$14.961,00"
+HUGGIES,Pañal HUGGIES Flexi Comfort Rnx34,7794626012914,"$16.307,00",N/A,,40%Dto,"$9.784,20"
+HUGGIES,Pañal HUGGIES Flexi Comfort Xg X16 Edicion Limitada,7794626012983,"$14.349,00",N/A,,40%Dto,"$8.609,40"
+HUGGIES,Pañal HUGGIES Flexi Comfort Xg X32,7794626012945,"$27.938,00",N/A,,40%Dto,"$16.762,80"
+HUGGIES,Pañal HUGGIES Flexi Comfort Xg X52,7794626012877,"$39.939,00",N/A,,40%Dto,"$23.963,40"
+HUGGIES,Pañal HUGGIES Flexi Comfort Xxg X15 Edicion Limitada,7794626012990,"$14.349,00",N/A,,40%Dto,"$8.609,40"
+HUGGIES,Pañal HUGGIES Flexi Comfort Xxg X30,7794626012952,"$27.938,00",N/A,,40%Dto,"$16.762,80"
+HUGGIES,Pañal HUGGIES Flexi Comfort Xxg X50,7794626012884,"$39.939,00",N/A,,40%Dto,"$23.963,40"
+HUGGIES,Pañal HUGGIES Flexi Comfort Xxxg X48,7794626012891,"$39.939,00",N/A,,40%Dto,"$23.963,40"
+VILEDA,Guantes Extra Sensación Talle M Mediano VILEDA,4023103073968,"$4.352,99",N/A,,N/A,N/A
+VILEDA,Guantes Extra Sensación Talle S Chico VILEDA,4023103073951,"$4.352,99",N/A,,N/A,N/A
+VILEDA,Guantes Extra Sensación Talle Xl Grande VILEDA,4023103093263,"$4.352,99",N/A,,N/A,N/A
+VILEDA,Guantes Fuerte Talle L Grande VILEDA,8001940003399,"$7.889,99",N/A,,N/A,N/A
+VILEDA,Guantes Fuerte Talle M Mediano VILEDA,8001940003382,"$7.889,99",N/A,,N/A,N/A
+VILEDA,Guantes Fuerte Talle S Chico VILEDA,8001940003375,"$7.889,99",N/A,,N/A,N/A
+GILLETTE PRESTOBARBA3,"Máquina De Afeitar GILLETTE PRESTOBARBA3 Fresh Con Eucalipto Y 3 Hojas, 4 Uds",7702018983902,"$10.148,00",N/A,,N/A,N/A
+GILLETTE PRESTOBARBA3,Máquinas Para Afeitar GILLETTE PRESTOBARBA3 2 Unidades,7702018874729,"$5.126,00",N/A,,N/A,N/A
+GILLETTE PRESTOBARBA3,Máquinas Para Afeitar GILLETTE PRESTOBARBA3 4 Unidades,7702018874750,"$9.242,00",N/A,,N/A,N/A
+GILLETTE PRESTOBARBA3,Máquinas Para Afeitar Gillette Prestobarba3 Sensitive 4 Unidades,7506339337532,"$10.132,00",N/A,,N/A,N/A
+GILLETTE PRESTOBARBA3,Máquinas Para Afeitar Gillette Prestobarba3 Sensitive 8 Unidades,7506339337549,"$19.157,00",N/A,,N/A,N/A
+GILLETTE,"GILLETTE Prestobarba3 Máquina De Afeitar Desechable Con Afeitadas Suaves, 4 Unidades",7500435189408,"$9.242,00",N/A,,N/A,N/A
+COMFORT,Suavizante Para Ropa Brisa Elegante Comfort 450ml,7791290795969,"$5.114,99",450 ml,,N/A,N/A
+COMFORT,Suavizante Para Ropa Clásico Comfort 3 Ltr,7791290793675,"$11.738,99",N/A,,N/A,N/A
+COMFORT,Suavizante Para Ropa Clásico Comfort 900 Ml,7791290793682,"$3.594,99",900 Ml,,N/A,N/A
+COMFORT,Suavizante Para Ropa Concentrado Cuidado Escencial Comfort 1 Ltr,7791290793576,"$10.402,99",N/A,,N/A,N/A
+COMFORT,Suavizante Para Ropa Concentrado Cuidado Esencial Comfort 450 Ml,7791290793583,"$5.114,99",450 Ml,,N/A,N/A
+COMFORT,Suavizante Para Ropa Concentrado Cuidado Essencial Comfort 500 Ml,7891150000971,"$6.299,99",500 Ml,,N/A,N/A
+COMFORT,Suavizante Para Ropa Concentrado Fiber Protect Comfort 1 Ltr,7791290793613,"$10.402,99",N/A,,N/A,N/A
+COMFORT,Suavizante Para Ropa Concentrado Fiber Protect Comfort 500 Ml,7891150045460,"$6.299,99",500 Ml,,N/A,N/A
+COMFORT,Suavizante Para Ropa Concentrado Puro Cuidado Comfort 1 Ltr,7791290793606,"$10.402,99",N/A,,N/A,N/A
+COMFORT,Suavizante Para Ropa Concentrado Puro Cuidado Comfort 500 Ml,7891150039001,"$6.299,99",500 Ml,,N/A,N/A
+COMFORT,Suavizante Para Ropa Energia Floral Comfort 1l,7791290795952,"$10.402,99",1 l,,N/A,N/A
