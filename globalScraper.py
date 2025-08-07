@@ -11,12 +11,8 @@ import csv, time, os, re, threading, signal, sys
 # ==== manejo de interrupción ====
 interrupted = threading.Event()
 
-def handle_sigint(signum, frame):
-    print("\n[!] Interrupción detectada. Cerrando procesos...")
-    interrupted.set()
-    sys.exit(0)
 
-signal.signal(signal.SIGINT, handle_sigint)
+
 
 # ==== opciones de Chrome y Grid ====
 Grid_URL = "http://localhost:4444/wd/hub"
@@ -29,16 +25,20 @@ def get_chrome_options():
 
 lock = threading.Lock()
 
-
-
 # ==== Clase base con toda la lógica original ====
 class BaseScraper:
-    def __init__(self, driver, config):
+    
+    
+    
+    def __init__(self, driver, config, location):
         self.driver = driver
         self.config = config
+        self.location = location
 
     def process_sku(self, sku_text):
         return sku_text 
+
+    
 
     def element_exists(self, xpath, timeout=4):
         try:
@@ -139,6 +139,7 @@ class BaseScraper:
 
             with lock:
                 writer.writerow({
+                    "location": self.location,
                     "brand": brand,
                     "name": name,
                     "SKU": sku,
@@ -210,6 +211,8 @@ class BaseScraper:
 # ==== Clase específica Jumbo ====
 class JumboScraper(BaseScraper):
     def __init__(self, driver):
+
+
         config = {
             'xpaths': {
                 'link_button': "//button[.//span[text()='Ver Producto']]",
@@ -225,9 +228,12 @@ class JumboScraper(BaseScraper):
                 'pagination_btn': "//button[contains(@class,'discoargentina-search-result-custom-1-x-option-before') and normalize-space(text())='{page}']"
             }
         }
-        super().__init__(driver, config)
-class CotoScraper   (BaseScraper):
+        super().__init__(driver, config, location= "Jumbo")
+class CotoScraper(BaseScraper):
     def __init__(self, driver):
+
+        
+
         config = {
             'xpaths' : {
                 'link_button': "//div[contains(@class, 'producto-card')]",
@@ -243,7 +249,7 @@ class CotoScraper   (BaseScraper):
                 'pagination_btn': "//li[contains(@class, 'page-item') and contains(@class, 'ng-star-inserted')]//a[normalize-space(text())='{page}']"
             }
         }
-        super().__init__(driver, config)
+        super().__init__(driver, config, location="Coto")
 
     def obtener_links_desde_botones(self):
         # Wait for all product card containers
@@ -283,15 +289,14 @@ class CotoScraper   (BaseScraper):
         return "N/A"
 
 # ==== Función para cada hilo ====
-
 def scrape_single_url(url):
     options = get_chrome_options()
     driver = Remote(command_executor=Grid_URL, options=options)
     try:
-        scraper = CotoScraper(driver)
+        scraper = JumboScraper(driver)
         with open("preciosV2.csv", mode="a", newline="", encoding="utf-8") as f:
             writer = csv.DictWriter(
-                f, fieldnames=["brand", "name", "SKU", "price", "weight", "PBW", "discount", "PWD"]
+                f, fieldnames=["location", "brand", "name", "SKU", "price", "weight", "PBW", "discount", "PWD"]
             )
     
             scraper.scrapear_url(url, writer)
@@ -300,23 +305,21 @@ def scrape_single_url(url):
 
 # ==== Lista de URLs y ejecución paralela ====
 if __name__ == "__main__":
-    """
+    
     urls = [
        
-        "https://www.jumbo.com.ar/sedal?_q=sedal&map=ft",
-        "https://www.jumbo.com.ar/johnson%20%26%20johnson?%20JOHNSON&_q=JOHNSON%20&map=ft",
-        "https://www.jumbo.com.ar/dove?_q=dove&map=ft",
-        "https://www.jumbo.com.ar/pantene?_q=pantene&map=ft",
+      
+       
+        
+       
         "https://www.jumbo.com.ar/downy?_q=downy&map=ft",
-        "https://www.jumbo.com.ar/elvive?_q=elvive&map=ft",
+       
         "https://www.jumbo.com.ar/comfort%20suavizante?_q=comfort%20suavizante&map=ft",
-        "https://www.jumbo.com.ar/gillete?_q=gillete&map=ft",
+        
         "https://www.jumbo.com.ar/vivere%20suavizante?_q=vivere%20suavizante&map=ft",
-        "https://www.jumbo.com.ar/bic%20cuidado%20personal?_q=BIC%20cuidado%20personal&map=ft",
-        "https://www.jumbo.com.ar/venus?_q=VENUS&map=ft",
-        "https://www.jumbo.com.ar/ayudin?_q=ayudin&map=ft",
-        "https://www.jumbo.com.ar/colgate?_q=colgate&map=ft",
+        
         ]
+    
     """
     urls = [
         "https://www.cotodigital.com.ar/sitios/cdigi/categoria?_dyncharset=utf-8&Dy=1&Ntt=downy&idSucursal=200",
@@ -336,11 +339,11 @@ if __name__ == "__main__":
         
     
     ]
-
+    """
 
     start = time.time()
     with open("preciosV2.csv", mode="w", newline="", encoding="utf-8") as f:
-        writer = csv.DictWriter(f, fieldnames=["brand", "name", "SKU", "price", "weight", "PBW", "discount", "PWD"])
+        writer = csv.DictWriter(f, fieldnames=["location", "brand", "name", "SKU", "price", "weight", "PBW", "discount", "PWD"])
         writer.writeheader()
     with ThreadPoolExecutor(max_workers=12) as executor:
         executor.map(scrape_single_url, urls)
