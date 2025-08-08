@@ -1,0 +1,4 @@
+<div _ngcontent-dnl-c119="" class="centro-precios">
+<h3 _ngcontent-dnl-c119="" class="nombre-producto cursor-pointer">Aromatizante Para Ropa Lush Downy 345g</h3>
+<small _ngcontent-dnl-c119="" class="offer-crum ng-star-inserted"> PRECIO CON 35%DTO </small>
+<h4 _ngcontent-dnl-c119="" class="card-title text-center mt-1 m-0 p-0 ng-star-inserted"> $25.205,04 </h4>
