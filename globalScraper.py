@@ -289,11 +289,16 @@ class CotoScraper(BaseScraper):
         return "N/A"
 
 # ==== Función para cada hilo ====
-def scrape_single_url(url):
+def scrape_single_url(url,model):
     options = get_chrome_options()
     driver = Remote(command_executor=Grid_URL, options=options)
     try:
-        scraper = JumboScraper(driver)
+        if model.lower() == "coto":
+            scraper = CotoScraper(driver)
+        elif model.lower() == "jumbo":
+            scraper = JumboScraper(driver)
+
+        
         with open("preciosV2.csv", mode="a", newline="", encoding="utf-8") as f:
             writer = csv.DictWriter(
                 f, fieldnames=["location", "brand", "name", "SKU", "price", "weight", "PBW", "discount", "PWD"]
