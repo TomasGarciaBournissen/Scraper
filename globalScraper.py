@@ -1,5 +1,6 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException
@@ -8,8 +9,6 @@ from selenium.webdriver import Remote
 from concurrent.futures import ThreadPoolExecutor
 import csv, time, os, re, threading, signal, sys
 
-# ==== manejo de interrupción ====
-interrupted = threading.Event()
 
 
 
@@ -51,11 +50,11 @@ class BaseScraper:
 
     def process_brand(self, brand_text):
         return brand_text
-
+    """
     def filter_weight(self, name):
         match = re.search(r'(?i)\b(?:x\s*)?(\d+(?:\.\d+)?)\s*(ml|g|gr|l|kg|un|cc)\b', name)
         return f"{match.group(1)} {match.group(2)}" if match else "N/A"
-
+    
     def filter_price(self, text):
         pattern = r"(x\s*\d*\s*(?:lt|ml|g|kg|un|cc)\.?:\s*\$[\d\.,]+)"
         match = re.search(pattern, text, re.IGNORECASE)
@@ -66,7 +65,7 @@ class BaseScraper:
         normalized = re.sub(r"(\d)\s+(?=(?:lt|ml|g|kg|un|cc))", r"\1", normalized, flags=re.IGNORECASE)
         normalized = re.sub(r"\s*:\s*", ": ", normalized)
         return normalized.strip()
-
+    """
     def obtener_links_desde_botones(self):
         botones = WebDriverWait(self.driver, 10).until(
             EC.presence_of_all_elements_located((By.XPATH, self.config['xpaths']['link_button']))
@@ -124,18 +123,14 @@ class BaseScraper:
                 EC.visibility_of_element_located((By.XPATH, self.config['xpaths']['name']))
             ).text
 
-            weight = self.filter_weight(name)
-            pbw_text = WebDriverWait(self.driver, 10).until(
-                EC.visibility_of_element_located((By.XPATH, self.config['xpaths']['pbw']))
-            ).text
-
+            
             sku_text = WebDriverWait(self.driver, 10).until(
                 EC.visibility_of_element_located((By.XPATH, self.config['xpaths']['sku']))
             ).text
 
             sku = self.process_sku(sku_text)
 
-            pbw = self.filter_price(pbw_text)
+           
 
             with lock:
                 writer.writerow({
@@ -144,8 +139,6 @@ class BaseScraper:
                     "name": name,
                     "SKU": sku,
                     "price": price,
-                    "weight": weight,
-                    "PBW": pbw,
                     "discount": sale,
                     "PWD": pwd,
                 })
@@ -170,11 +163,21 @@ class BaseScraper:
         except:
             return 1
 
-    def scrapear_url(self, url, writer):
-        self.driver.get(url)
+    def scrapear_url(self, product, writer):
+        self.driver.get(self.config['url'])
+        
+
+        search_box = WebDriverWait(self.driver, 10).until(
+        EC.visibility_of_element_located((By.XPATH, self.config["xpaths"]["search_box"]))
+        )
+        search_box.send_keys(product)
+        search_box.send_keys(Keys.RETURN)
+
+
+        
         time.sleep(2)
         total_paginas = self.obtener_total_paginas()
-        print(f" Total de páginas: {total_paginas} para la URL {url}")
+        print(f" Total de páginas: {total_paginas} para la URL ")
 
         for pagina in range(1, total_paginas + 1):
             print(f"\n Página {pagina}/{total_paginas}")
@@ -203,9 +206,6 @@ class BaseScraper:
             links = self.obtener_links_desde_botones()
             print(f" {len(links)} productos encontrados en esta página")
             for link in links:
-                if interrupted.is_set():
-                    print("[!] Cancelando procesamiento por interrupción.")
-                    return
                 self.procesar_producto(link, writer)
 
 # ==== Clase específica Jumbo ====
@@ -214,7 +214,12 @@ class JumboScraper(BaseScraper):
 
 
         config = {
+
+            'url': "https://www.jumbo.com.ar/almacen/snacks?gclsrc=aw.ds&&bidkw=jumbo%20snacks&dvc=c&h=https://clickserve.dartsearch.net/link/click?gad_source=1&gad_campaignid=11003013348&gbraid=0AAAAADR-xF0aollVpo7VHAfD8oFxvjocG&gclid=Cj0KCQjw5JXFBhCrARIsAL1ckPst7dzdelVOL9tTF9urlplT7SYoOvkEk9BA7QDKqbj2xnpx2B8xPQ0aAtbeEALw_wcB",
+
+
             'xpaths': {
+                'search_box': "//input[@placeholder='Buscar...']",
                 'link_button': "//button[.//span[text()='Ver Producto']]",
                 'brand': "//span[contains(@class,'vtex-store-components-3-x-productBrandName')]",
                 'name': "//span[contains(@class,'vtex-store-components-3-x-productBrand')]",
@@ -223,7 +228,6 @@ class JumboScraper(BaseScraper):
                 'price_normal': "//div[contains(@class,'vtex-price-format-gallery')]",
                 'discount': "//span[contains(@class, 'jumboargentinaio-store-theme-3Hc7_vKK9au6dX_Su4b0Ae')]",
                 'pwd': "//div[contains(@class,'vtex-price-format-gallery')]",
-                'pbw': "//span[contains(@class,'vtex-custom-unit-price')]",
                 'pagination': "//button[contains(@class,'discoargentina-search-result-custom-1-x-option-before')]",
                 'pagination_btn': "//button[contains(@class,'discoargentina-search-result-custom-1-x-option-before') and normalize-space(text())='{page}']"
             }
@@ -236,6 +240,7 @@ class CotoScraper(BaseScraper):
 
         config = {
             'xpaths' : {
+                'search_box': "",
                 'link_button': "//div[contains(@class, 'producto-card')]",
                 'brand': "//td[span[normalize-space()='MARCA']]",
                 'name': "//h2[contains(@class, 'title') and contains(@class, 'text-dark')]",
@@ -244,7 +249,6 @@ class CotoScraper(BaseScraper):
                 'price_normal': "//var[contains(@class,'price')]",
                 'discount': "//b[@class='text-success']",
                 'pwd': "//var[contains(@class,'price')]", 
-                'pbw': "//div[contains(@class,'small') and contains(@class,'ng-star-inserted') and b[contains(text(),'por')]]",
                 'pagination': "//li[contains(@class, 'page-item') and contains(@class, 'ng-star-inserted')]",
                 'pagination_btn': "//li[contains(@class, 'page-item') and contains(@class, 'ng-star-inserted')]//a[normalize-space(text())='{page}']"
             }
@@ -289,38 +293,41 @@ class CotoScraper(BaseScraper):
         return "N/A"
 
 # ==== Función para cada hilo ====
-def scrape_single_url(url):
+def scrape_single_category(product):
     options = get_chrome_options()
     driver = Remote(command_executor=Grid_URL, options=options)
     try:
-        scraper = CotoScraper(driver)
+        scraper = JumboScraper(driver)
         
 
 
         
         with open("preciosV2.csv", mode="a", newline="", encoding="utf-8") as f:
             writer = csv.DictWriter(
-                f, fieldnames=["location", "brand", "name", "SKU", "price", "weight", "PBW", "discount", "PWD"]
+                f, fieldnames=["location", "brand", "name", "SKU", "price", "discount", "PWD"]
             )
     
-            scraper.scrapear_url(url, writer)
+            scraper.scrapear_url(product, writer)
     finally:
         driver.quit()
 
 # ==== Lista de URLs y ejecución paralela ====
 if __name__ == "__main__":
     
-    urls = [
+    products = [
        
       
        
         
        
-        "https://www.jumbo.com.ar/downy?_q=downy&map=ft",
+        "pantene",
+        "jabon",
+        "oreo",
+        "dove",
+        "downy",
+        "pan",
        
-        "https://www.jumbo.com.ar/comfort%20suavizante?_q=comfort%20suavizante&map=ft",
-        
-        "https://www.jumbo.com.ar/vivere%20suavizante?_q=vivere%20suavizante&map=ft",
+       
         
         ]
     
@@ -350,7 +357,7 @@ if __name__ == "__main__":
         writer = csv.DictWriter(f, fieldnames=["location", "brand", "name", "SKU", "price", "weight", "PBW", "discount", "PWD"])
         writer.writeheader()
     with ThreadPoolExecutor(max_workers=12) as executor:
-        executor.map(scrape_single_url, urls)
+        executor.map(scrape_single_category, products)
         time.sleep(1)
 
     end = time.time()
