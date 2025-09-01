@@ -7,8 +7,17 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver import Remote
 from concurrent.futures import ThreadPoolExecutor
 import csv,time,os,re,threading
+import signal
+import sys
 
+interrupted = threading.Event()
 
+def handle_sigint(signum, frame):
+    print("\n[!] Interrupción detectada. Cerrando procesos...")
+    interrupted.set()
+    sys.exit(0)
+
+signal.signal(signal.SIGINT, handle_sigint)
 # Setup ChromeService
 Grid_URL = "http://localhost:4444/wd/hub"
 def get_chrome_options():
@@ -18,6 +27,7 @@ def get_chrome_options():
     #prefs = {"profile.managed_default_content_settings.images": 2}
     #options.add_experimental_option("prefs", prefs)
     #options.set_capability("pageLoadStrategy", "eager")
+    options.add_argument("--start-maximized")
     return options
 
 
@@ -26,16 +36,17 @@ def get_chrome_options():
 
 
 def filter_weight(name):
-    match = re.search(r'(?i)\b(\d+(?:\.\d+)?)(\s*)(ml|g|gr|l)\b', name)
+    match = re.search( r'(?i)\b(?:x\s*)?(\d+(?:\.\d+)?)\s*(ml|g|gr|l|kg|un|cc)(?:\s*x)?\b', name)
     if match:
         number = match.group(1)
-        unit = match.group(3).lower()
+        unit = match.group(2).lower()
         return f"{number} {unit}"
     return "N/A"
 
 #definir si el elemento existe o no 
 def element_exists(driver,xpath):
     try:
+
         WebDriverWait(driver, 4).until(EC.presence_of_element_located((By.XPATH, xpath)))
         return True
     except TimeoutException:
@@ -45,7 +56,7 @@ def element_exists(driver,xpath):
 
 #filtra el precio por litro o gramo de un producto
 def filter_price(text):
-    pattern = r"(x\s*\d*\s*(?:lt|ml|g)\.?:\s*\$[\d\.,]+)"
+    pattern = r"(x\s*\d*\s*(?:lt|ml|g|kg|un|cc)\.?:\s*\$[\d\.,]+)"
     match = re.search(pattern, text, re.IGNORECASE)
     if not match:
         return ""
@@ -54,7 +65,7 @@ def filter_price(text):
     # Normalize spacing after x
     normalized = re.sub(r"^x\s*", "x ", raw, flags=re.IGNORECASE)
     # Remove spaces between number and unit for consistency
-    normalized = re.sub(r"(\d)\s+(?=(?:lt|ml|g))", r"\1", normalized, flags=re.IGNORECASE)
+    normalized = re.sub(r"(\d)\s+(?=(?:lt|ml|g|kg|un|cc))", r"\1", normalized, flags=re.IGNORECASE)
     # Ensure single space before colon
     normalized = re.sub(r"\s*:\s*", ": ", normalized)
     return normalized.strip()
@@ -86,29 +97,54 @@ def procesar_producto(driver,link, writer,lock):
 
         
         
-        
-        element_exists(driver,"//div[contains(@class,'vtex-price-format-gallery')]")
-        time.sleep(0.5)
-        if  element_exists(driver,"//span[contains(@class, 'jumboargentinaio-store-theme-3Hc7_vKK9au6dX_Su4b0Ae')]"):
-            sale  = driver.find_element(By.XPATH, "//span[contains(@class, 'jumboargentinaio-store-theme-3Hc7_vKK9au6dX_Su4b0Ae')]").text
-            pwd = driver.find_element(By.XPATH, "//div[contains(@class,'vtex-price-format-gallery')]").text
-            price = driver.find_element(By.XPATH, "//div[@class='jumboargentinaio-store-theme-2t-mVsKNpKjmCAEM_AMCQH']").text
+        WebDriverWait(driver, 10).until(
+            EC.presence_of_element_located((By.XPATH, "//span[contains(@class,'vtex-store-components-3-x-productBrandName')]"))
+        )
+
+        # Check if discount span is present and visible
+        discount_xpath = "//span[contains(@class, 'jumboargentinaio-store-theme-3Hc7_vKK9au6dX_Su4b0Ae')]"
+        if element_exists(driver, discount_xpath):
+            sale = WebDriverWait(driver, 5).until(
+                EC.visibility_of_element_located((By.XPATH, discount_xpath))
+            ).text
+            pwd = WebDriverWait(driver, 5).until(
+                EC.visibility_of_element_located((By.XPATH, "//div[contains(@class,'vtex-price-format-gallery')]"))
+            ).text
+            price = WebDriverWait(driver, 5).until(
+                EC.visibility_of_element_located((By.XPATH, "//div[@class='jumboargentinaio-store-theme-2t-mVsKNpKjmCAEM_AMCQH']"))
+            ).text
         else:
-            price = driver.find_element(By.XPATH, "//div[contains(@class,'vtex-price-format-gallery')]").text
+            price = WebDriverWait(driver, 10).until(
+                EC.visibility_of_element_located((By.XPATH, "//div[contains(@class,'vtex-price-format-gallery')]"))
+            ).text
             sale = "N/A"
             pwd = "N/A"
 
-        brand = driver.find_element(By.XPATH, "//span[contains(@class,'vtex-store-components-3-x-productBrandName')]").text
-        name = driver.find_element(By.XPATH, "//span[contains(@class,'vtex-store-components-3-x-productBrand')]").text
+        # Wait and collect the rest of the required fields
+        brand = WebDriverWait(driver, 10).until(
+            EC.visibility_of_element_located((By.XPATH, "//span[contains(@class,'vtex-store-components-3-x-productBrandName')]"))
+        ).text
+
+        name = WebDriverWait(driver, 10).until(
+            EC.visibility_of_element_located((By.XPATH, "//span[contains(@class,'vtex-store-components-3-x-productBrand')]"))
+        ).text
+
         weight = filter_weight(name)
-        pbw_text = driver.find_element(By.XPATH, "//span[contains(@class,'vtex-custom-unit-price')]").text
-        print(f" PBW text: {pbw_text}")
-        sku = driver.find_element(By.XPATH, "//span[contains(@class,'vtex-product-identifier-0-x-product-identifier__value')]").text
+
+        pbw_text = WebDriverWait(driver, 10).until(
+            EC.visibility_of_element_located((By.XPATH, "//span[contains(@class,'vtex-custom-unit-price')]"))
+        ).text
+        print(f"PBW text: {pbw_text}")
+
+        sku = WebDriverWait(driver, 10).until(
+            EC.visibility_of_element_located((By.XPATH, "//span[contains(@class,'vtex-product-identifier-0-x-product-identifier__value')]"))
+        ).text
+
         pbw = filter_price(pbw_text)
         with lock:
-            writer.writerow({"brand": brand, "name": name, "price": price, "PBW": pbw, "SKU": sku, "discount": sale, "PWD": pwd, "weight": weight})
+            writer.writerow({"brand": brand, "name": name, "SKU": sku, "price": price, "weight": weight, "PBW": pbw, "discount": sale, "PWD": pwd,})
 
-        print(f" {brand} | {name} | {price} | {pbw} | {sku} | {sale} | {pwd} | {weight} " )
+        print(f" Producto procesado:")
 
         driver.close()
         driver.switch_to.window(orig)
@@ -139,7 +175,7 @@ def scrapear_url(driver,url, writer, lock):
     time.sleep(2)
 
     total_paginas = obtener_total_paginas(driver)
-    print(f" Total de páginas: {total_paginas}")
+    print(f" Total de páginas: {total_paginas} para la URL {url}")
 
     for pagina in range(1, total_paginas + 1):
         print(f"\n Página {pagina}/{total_paginas}")
@@ -155,6 +191,9 @@ def scrapear_url(driver,url, writer, lock):
         links = obtener_links_desde_botones(driver)
         print(f" {len(links)} productos encontrados en esta página")
         for link in links:
+            if interrupted.is_set():
+                print("[!] Cancelando procesamiento por interrupción.")
+                return
             procesar_producto(driver,link, writer, lock)
 
 
@@ -177,15 +216,19 @@ def scrape_single_url(url, lock):
 
 # URLs a scrapear
 urls = [
+    "https://www.jumbo.com.ar/colgate?_q=colgate&map=ft",
+    "https://www.jumbo.com.ar/sedal?_q=sedal&map=ft",
+    "https://www.jumbo.com.ar/johnson%20%26%20johnson?%20JOHNSON&_q=JOHNSON%20&map=ft",
     "https://www.jumbo.com.ar/dove?_q=dove&map=ft",
-    #"https://www.jumbo.com.ar/pantene?_q=pantene&map=ft",
-    #"https://www.jumbo.com.ar/downy?_q=downy&map=ft",
-    #"https://www.jumbo.com.ar/elvive?_q=elvive&map=ft",
-    #"https://www.jumbo.com.ar/comfort%20suavizante?_q=comfort%20suavizante&map=ft",
-    #"https://www.jumbo.com.ar/gillete?_q=gillete&map=ft",
-    #"https://www.jumbo.com.ar/vivere%20suavizante?_q=vivere%20suavizante&map=ft",
-    #"https://www.jumbo.com.ar/bic%20cuidado%20personal?_q=BIC%20cuidado%20personal&map=ft",
-    #"https://www.jumbo.com.ar/venus?_q=VENUS&map=ft",
+    "https://www.jumbo.com.ar/pantene?_q=pantene&map=ft",
+    "https://www.jumbo.com.ar/downy?_q=downy&map=ft",
+    "https://www.jumbo.com.ar/elvive?_q=elvive&map=ft",
+    "https://www.jumbo.com.ar/comfort%20suavizante?_q=comfort%20suavizante&map=ft",
+    "https://www.jumbo.com.ar/gillete?_q=gillete&map=ft",
+    "https://www.jumbo.com.ar/vivere%20suavizante?_q=vivere%20suavizante&map=ft",
+    "https://www.jumbo.com.ar/bic%20cuidado%20personal?_q=BIC%20cuidado%20personal&map=ft",
+    "https://www.jumbo.com.ar/venus?_q=VENUS&map=ft",
+    "https://www.jumbo.com.ar/ayudin?_q=ayudin&map=ft",
 
 
 ]
@@ -194,7 +237,7 @@ start = time.time()
 
 lock = threading.Lock()
 
-with ThreadPoolExecutor(max_workers=9) as executor:
+with ThreadPoolExecutor(max_workers=12) as executor:
     with open("preciosV2.csv", mode="a", newline="", encoding="utf-8") as f:
             writer = csv.DictWriter(f, fieldnames=["brand", "name", "price", "PBW", "SKU", "discount", "PWD", "weight"])
             file_exists = os.path.isfile("preciosV2.csv") and os.stat("preciosV2.csv").st_size > 0
@@ -212,4 +255,4 @@ with ThreadPoolExecutor(max_workers=9) as executor:
 
 
 end = time.time()
-print(f"\n Scraping completado en {end - start:.2f} segundos.")
+print(f"\n Scraping completado en {end - start:.2f} segundos.") 

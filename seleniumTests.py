@@ -14,11 +14,11 @@ driver = webdriver.Chrome(service=service)
 
 
 # Obtain price \
-link = "https://www.jumbo.com.ar/?gclsrc=aw.ds&&bidkw=jumbo&dvc=c&h=https://clickserve.dartsearch.net/link/click?gad_source=1&gad_campaignid=11003013348&gbraid=0AAAAADR-xF0aollVpo7VHAfD8oFxvjocG&gclid=Cj0KCQjw5JXFBhCrARIsAL1ckPuQPvb-iGXjvjq2hn8tNuJ2SNrtqz5ywymwBaxwM9fkIxTj4QzspW8aAu4nEALw_wcB"
+link = "https://www.cotodigital.com.ar/sitios/cdigi/nuevositio"
 driver.get(link)
 time.sleep(1)
 search_box = WebDriverWait(driver, 10).until(
-    EC.visibility_of_element_located((By.XPATH, "//input[@placeholder='Buscar...']"))
+    EC.visibility_of_element_located((By.XPATH, "//input[@placeholder='¿Qué querés comprar hoy?']"))
 )
 search_box.send_keys("arroz")
 search_box.send_keys(Keys.RETURN)

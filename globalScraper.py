@@ -39,33 +39,32 @@ class BaseScraper:
 
     
 
-    def element_exists(self, xpath, timeout=4):
-        try:
-            WebDriverWait(self.driver, timeout).until(
-                EC.presence_of_element_located((By.XPATH, xpath))
-            )
-            return True
-        except TimeoutException:
-            return False
+    def element_exists(self, xpaths, timeout=5):
+        # string
+        if isinstance(xpaths, str):
+            try:
+                WebDriverWait(self.driver, timeout).until(
+                    EC.presence_of_element_located((By.XPATH, xpaths))
+                )
+                return True, xpaths
+            except TimeoutException:
+                return False, None
+
+        #list
+        elif isinstance(xpaths, list):
+            for xp in xpaths:
+                try:
+                    WebDriverWait(self.driver, timeout).until(
+                        EC.presence_of_element_located((By.XPATH, xp))
+                    )
+                    return True, xp
+                except TimeoutException:
+                    continue
+            return False, None
 
     def process_brand(self, brand_text):
         return brand_text
-    """
-    def filter_weight(self, name):
-        match = re.search(r'(?i)\b(?:x\s*)?(\d+(?:\.\d+)?)\s*(ml|g|gr|l|kg|un|cc)\b', name)
-        return f"{match.group(1)} {match.group(2)}" if match else "N/A"
     
-    def filter_price(self, text):
-        pattern = r"(x\s*\d*\s*(?:lt|ml|g|kg|un|cc)\.?:\s*\$[\d\.,]+)"
-        match = re.search(pattern, text, re.IGNORECASE)
-        if not match:
-            return ""
-        raw = match.group(1)
-        normalized = re.sub(r"^x\s*", "x ", raw, flags=re.IGNORECASE)
-        normalized = re.sub(r"(\d)\s+(?=(?:lt|ml|g|kg|un|cc))", r"\1", normalized, flags=re.IGNORECASE)
-        normalized = re.sub(r"\s*:\s*", ": ", normalized)
-        return normalized.strip()
-    """
     def obtener_links_desde_botones(self):
         botones = WebDriverWait(self.driver, 10).until(
             EC.presence_of_all_elements_located((By.XPATH, self.config['xpaths']['link_button']))
@@ -94,10 +93,13 @@ class BaseScraper:
             WebDriverWait(self.driver, 10).until(
                 EC.presence_of_element_located((By.XPATH, self.config['xpaths']['brand']))
             )
-
-            if self.element_exists(self.config['xpaths']['discount']):
+            
+            found, discount_xpath = self.element_exists(self.config['xpaths']['discount'])
+            
+            if  found:
+                print(" Producto en oferta detectado")
                 sale = WebDriverWait(self.driver, 5).until(
-                    EC.visibility_of_element_located((By.XPATH, self.config['xpaths']['discount']))
+                    EC.visibility_of_element_located((By.XPATH, discount_xpath))
                 ).text
                 pwd = WebDriverWait(self.driver, 5).until(
                     EC.visibility_of_element_located((By.XPATH, self.config['xpaths']['pwd']))
@@ -134,6 +136,7 @@ class BaseScraper:
 
             with lock:
                 writer.writerow({
+                    "date": time.strftime("%Y-%m-%d %H:%M:%S"),
                     "location": self.location,
                     "brand": brand,
                     "name": name,
@@ -226,7 +229,7 @@ class JumboScraper(BaseScraper):
                 'sku': "//span[contains(@class,'vtex-product-identifier-0-x-product-identifier__value')]",
                 'price_special': "//div[@class='jumboargentinaio-store-theme-2t-mVsKNpKjmCAEM_AMCQH']",
                 'price_normal': "//div[contains(@class,'vtex-price-format-gallery')]",
-                'discount': "//span[contains(@class, 'jumboargentinaio-store-theme-3Hc7_vKK9au6dX_Su4b0Ae')]",
+                'discount': ["//span[contains(@class, 'jumboargentinaio-store-theme-MnHW0PCgcT3ih2-RUT-t_')]","//span[contains(@class, 'jumboargentinaio-store-theme-Aq2AAEuiQuapu8IqwN0Aj')]"],
                 'pwd': "//div[contains(@class,'vtex-price-format-gallery')]",
                 'pagination': "//button[contains(@class,'discoargentina-search-result-custom-1-x-option-before')]",
                 'pagination_btn': "//button[contains(@class,'discoargentina-search-result-custom-1-x-option-before') and normalize-space(text())='{page}']"
@@ -239,8 +242,14 @@ class CotoScraper(BaseScraper):
         
 
         config = {
+
+
+            'url': "https://www.cotodigital.com.ar/sitios/cdigi/nuevositio",
+
+
+
             'xpaths' : {
-                'search_box': "",
+                'search_box': "//input[@placeholder='¿Qué querés comprar hoy?']",
                 'link_button': "//div[contains(@class, 'producto-card')]",
                 'brand': "//td[span[normalize-space()='MARCA']]",
                 'name': "//h2[contains(@class, 'title') and contains(@class, 'text-dark')]",
@@ -296,20 +305,20 @@ class CotoScraper(BaseScraper):
 def scrape_single_category(product):
     options = get_chrome_options()
     driver = Remote(command_executor=Grid_URL, options=options)
+    scrapers = [JumboScraper(driver), CotoScraper(driver)]
     try:
-        scraper = JumboScraper(driver)
-        
-
-
-        
-        with open("preciosV2.csv", mode="a", newline="", encoding="utf-8") as f:
-            writer = csv.DictWriter(
-                f, fieldnames=["location", "brand", "name", "SKU", "price", "discount", "PWD"]
-            )
+        for scraper in scrapers:
+            with open("preciosV2.csv", mode="a", newline="", encoding="utf-8") as f:
+                writer = csv.DictWriter(
+                    f, fieldnames=["date","location", "brand", "name", "SKU", "price", "discount", "PWD"]
+                )
     
-            scraper.scrapear_url(product, writer)
+                scraper.scrapear_url(product, writer)
     finally:
         driver.quit()
+
+        
+        
 
 # ==== Lista de URLs y ejecución paralela ====
 if __name__ == "__main__":
@@ -319,42 +328,24 @@ if __name__ == "__main__":
       
        
         
-       
+        "alfajor oreo",
         "pantene",
-        "jabon",
-        "oreo",
-        "dove",
-        "downy",
-        "pan",
+        #"jabon",
+        #"oreo",
+        #"dove",
+        #"downy",
+        #"pan",
        
        
         
         ]
     
-    """
-    urls = [
-        "https://www.cotodigital.com.ar/sitios/cdigi/categoria?_dyncharset=utf-8&Dy=1&Ntt=downy&idSucursal=200",
-        "https://www.cotodigital.com.ar/sitios/cdigi/categoria?_dyncharset=utf-8&Dy=1&Ntt=elvive&idSucursal=200", 
-        "https://www.cotodigital.com.ar/sitios/cdigi/categoria?_dyncharset=utf-8&Dy=1&Ntt=pantene&idSucursal=200",
-        "https://www.cotodigital.com.ar/sitios/cdigi/categoria?_dyncharset=utf-8&Dy=1&Ntt=sedal&idSucursal=200",
-        "https://www.cotodigital.com.ar/sitios/cdigi/categoria?_dyncharset=utf-8&Dy=1&Ntt=dove&idSucursal=200",
-        "https://www.cotodigital.com.ar/sitios/cdigi/categoria?_dyncharset=utf-8&Dy=1&Ntt=gillete&idSucursal=200",
-        "https://www.cotodigital.com.ar/sitios/cdigi/categoria?_dyncharset=utf-8&Dy=1&Ntt=comfort&idSucursal=200",
-        "https://www.cotodigital.com.ar/sitios/cdigi/categoria?_dyncharset=utf-8&Dy=1&Ntt=ayudin&idSucursal=200",
-        "https://www.cotodigital.com.ar/sitios/cdigi/categoria?_dyncharset=utf-8&Dy=1&Ntt=colgate&idSucursal=200",
-        "https://www.cotodigital.com.ar/sitios/cdigi/categoria?_dyncharset=utf-8&Dy=1&Ntt=venus&idSucursal=200",
-        "https://www.cotodigital.com.ar/sitios/cdigi/categoria?_dyncharset=utf-8&Dy=1&Ntt=bic%20afeitar&idSucursal=200",
-        "https://www.cotodigital.com.ar/sitios/cdigi/categoria?_dyncharset=utf-8&Dy=1&Ntt=vivere&idSucursal=200",
-        "https://www.cotodigital.com.ar/sitios/cdigi/categoria/brand-johnson-johnson/_/N-133sd2p?Dy=1&Nf=product.startDate%7CLTEQ%201.7522784E12%7C%7Cproduct.endDate%7CGTEQ%201.7522784E12&Nr=AND(product.sDisp_200:1004,product.language:español,OR(product.siteId:CotoDigital))&assemblerContentCollection=%2Fcontent%2FShared%2FAuto-Suggest%20Panels&idSucursal=200",
-        "https://www.cotodigital.com.ar/sitios/cdigi/categoria?_dyncharset=utf-8&Dy=1&Ntt=elvive&idSucursal=200",
-        
-    
-    ]
-    """
+   
+   
 
     start = time.time()
     with open("preciosV2.csv", mode="w", newline="", encoding="utf-8") as f:
-        writer = csv.DictWriter(f, fieldnames=["location", "brand", "name", "SKU", "price", "weight", "PBW", "discount", "PWD"])
+        writer = csv.DictWriter(f, fieldnames=["date","location", "brand", "name", "SKU", "price", "discount", "PWD"])
         writer.writeheader()
     with ThreadPoolExecutor(max_workers=12) as executor:
         executor.map(scrape_single_category, products)
