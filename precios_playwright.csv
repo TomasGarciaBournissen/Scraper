@@ -1,0 +1,96 @@
+date,location,brand,name,SKU,price,discount,PWD
+2025-09-19 11:31:28,Coto,MILKA,Alfajor Triple MILKA Oreo 61g,7622300835620,N/A,N/A,N/A
+2025-09-19 11:31:29,Coto,OREO,Alfajor OREO Triple 56g,77976307,N/A,N/A,N/A
+2025-09-19 11:31:38,Jumbo,MILKA,Alfajor Oreo Triple 56 Gr Milka,11849101005,$1.900,N/A,N/A
+2025-09-19 11:31:28,Coto,PANTENE,Acondicionador PANTENE Restauración Pomada 170 ML,7500435106382,N/A,N/A,N/A
+2025-09-19 11:31:29,Coto,PANTENE,Crema Para Peinar PANTENE Restauración   Botella 300 Ml,7506309837246,N/A,N/A,N/A
+2025-09-19 11:31:31,Coto,PANTENE,Tratamiento Capilar PANTENE Restauración   Ampolla 15 Ml,7506195196694,N/A,N/A,N/A
+2025-09-19 11:31:33,Coto,PANTENE,Acondicionador Cabellos Frágiles Pantene 250ml,7500435247955,N/A,N/A,N/A
+2025-09-19 11:31:34,Coto,PANTENE,Acondicionador Cabellos Frágiles Pantene 510ml,7500435248044,N/A,N/A,N/A
+2025-09-19 11:31:35,Coto,PANTENE,Acondicionador Equilibrio Raíz Y Puntas PANTENE 200ml,7500435230001,N/A,N/A,N/A
+2025-09-19 11:31:37,Coto,PANTENE,Acondicionador Hidrata Y Fortalece Pantene 200ml,7500435230070,N/A,N/A,N/A
+2025-09-19 11:31:38,Coto,PANTENE,Acondicionador Hidrata Y Fortalece PANTENE 400ml,7500435230117,N/A,N/A,N/A
+2025-09-19 11:31:46,Coto,PANTENE,Acondicionador Keratina Pantene 510ml,7500435241045,N/A,N/A,N/A
+2025-09-19 11:31:48,Coto,PANTENE,Acondicionador PANTENE Keratina 200 Ml,7500435241090,N/A,N/A,N/A
+2025-09-19 11:31:49,Coto,PANTENE,Acondicionador PANTENE Nutrición 170 Ml,7500435243698,N/A,N/A,N/A
+2025-09-19 11:31:50,Coto,PANTENE,Acondicionador PANTENE Pro-V Miracles  Detox Limpia - Purifica 200 Ml,7500435229852,N/A,N/A,N/A
+2025-09-19 11:31:52,Coto,PANTENE,Acondicionador Pro Colágeno PANTENE 200 Ml,7500435138222,N/A,N/A,N/A
+2025-09-19 11:31:53,Coto,PANTENE,Acondicionador Pro Colágeno Pantene 250ml,7500435191586,N/A,N/A,N/A
+2025-09-19 11:31:55,Coto,PANTENE,Acondicionador Pro-V Colágeno Pantene 510ml,7500435191494,N/A,N/A,N/A
+2025-09-19 11:31:56,Coto,PANTENE,Acondicionador Restauración PANTENE 400 Ml,7500435211857,N/A,N/A,N/A
+2025-09-19 11:31:57,Coto,PANTENE,PANTENE Crema Para Peinar Colágeno Nutre & Revitaliza 300 Ml,7500435191548,N/A,N/A,N/A
+2025-09-19 11:31:58,Coto,PANTENE,PANTENE Pro-V Miracles Liso Infinito Suave Y Brillante Acondicionador Hidratante 200 Ml,7500435235372,N/A,N/A,N/A
+2025-09-19 11:32:00,Coto,PANTENE,PANTENE Pro-V Miracles Liso Infinito Suave Y Brillante Acondicionador Hidratante 400 Ml,7500435235365,N/A,N/A,N/A
+2025-09-19 11:32:01,Coto,PANTENE,PANTENE Pro-V Miracles Revitalización Repara & Hidrata Acondicionador Hidratante 200 Ml,7500435235433,N/A,N/A,N/A
+2025-09-19 11:32:09,Coto,PANTENE,PANTENE Pro-V Miracles Volumen Suavidad & Fuerza Acondicionador Hidratante 200 Ml,7500435235341,N/A,N/A,N/A
+2025-09-19 11:32:10,Coto,PANTENE,PANTENE Pro-V Miracles Volumen Suavidad & Fuerza Acondicionador Hidratante 400 Ml,7500435235334,N/A,N/A,N/A
+2025-09-19 11:32:16,Coto,PANTENE,Sellador De Puntas Abiertas PANTENE Colágeno Nutre Y Revitaliza 90ml,7500435191524,N/A,N/A,N/A
+2025-09-19 11:32:17,Coto,PANTENE,Crema Para Peinar Fortalecedora Pantene 300ml,7500435248075,N/A,N/A,N/A
+2025-09-19 11:32:18,Coto,PANTENE,Tónico Capilar Anticaspa Pantene 300ml,7500435247900,N/A,N/A,N/A
+2025-09-19 11:32:20,Coto,PANTENE,PANTENE Pro-V Miracles Detox Limpia - Purifica Shampoo Detox 200 Ml,7500435229845,N/A,N/A,N/A
+2025-09-19 11:32:21,Coto,PANTENE,PANTENE Pro-V Miracles Equilibrio Raíz & Puntas Shampoo Equilibrante 700 Ml,7500435229999,N/A,N/A,N/A
+2025-09-19 11:32:22,Coto,PANTENE,PANTENE Pro-V Miracles Liso Infinito Suave Y Brillante Shampoo 200 Ml,7500435235402,N/A,N/A,N/A
+2025-09-19 11:32:24,Coto,PANTENE,PANTENE Pro-V Miracles Liso Infinito Suave Y Brillante Shampoo 400 Ml,7500435235396,N/A,N/A,N/A
+2025-09-19 11:32:25,Coto,PANTENE,PANTENE Pro-V Miracles Revitalización Repara & Hidrata Shampoo Reparador 200 Ml,7500435235464,N/A,N/A,N/A
+2025-09-19 11:32:27,Coto,PANTENE,PANTENE Pro-V Miracles Revitalización Repara & Hidrata Shampoo Reparador 400 Ml,7500435235457,N/A,N/A,N/A
+2025-09-19 11:32:28,Coto,PANTENE,PANTENE Pro-V Miracles Volumen Suavidad & Fuerza Shampoo Voluminizador 200 Ml,7500435235310,N/A,N/A,N/A
+2025-09-19 11:32:29,Coto,PANTENE,PANTENE Pro-V Miracles Volumen Suavidad & Fuerza Shampoo Voluminizador 400 Ml,7500435235297,N/A,N/A,N/A
+2025-09-19 11:32:31,Coto,PANTENE,Shampoo Cabellos Débiles Pantene 300ml,7500435248037,N/A,N/A,N/A
+2025-09-19 11:32:38,Coto,PANTENE,Shampoo Equilibrante PANTENE Equilibrio Raíz Y Puntas Pro-V Miracles 400 Ml,7500435209694,N/A,N/A,N/A
+2025-09-19 11:32:40,Coto,PANTENE,Shampoo Hidrata Y Fortalece Pantene 200ml,7500435230100,N/A,N/A,N/A
+2025-09-19 11:32:42,Coto,PANTENE,Shampoo Hidrata Y Fortalece PANTENE 400ml,7500435230094,N/A,N/A,N/A
+2025-09-19 11:32:43,Coto,PANTENE,Shampoo Hidrata Y Fortalece Pantene 700ml,7500435244381,N/A,N/A,N/A
+2025-09-19 11:32:44,Coto,PANTENE,Shampoo Keratina Pantene 300ml,7500435241113,N/A,N/A,N/A
+2025-09-19 11:32:46,Coto,PANTENE,Shampoo Keratina Pantene 510ml,7500435241052,N/A,N/A,N/A
+2025-09-19 11:32:47,Coto,PANTENE,Shampoo Liso Infinito Pantene 700ml,7500435244442,N/A,N/A,N/A
+2025-09-19 11:32:49,Coto,PANTENE,Shampoo PANTENE Keratina 200 Ml,7500435241069,N/A,N/A,N/A
+2025-09-19 11:32:50,Coto,PANTENE,Shampoo PANTENE Pro-V Miracles  Detox Limpia - Purifica 400 Ml,7500435229821,N/A,N/A,N/A
+2025-09-19 11:32:51,Coto,PANTENE,Shampoo Pro-V Miracles Colágeno PANTENE 200 Ml,7500435191418,N/A,N/A,N/A
+2025-09-19 11:32:53,Coto,PANTENE,Shampoo Pro-V Miracles Colágeno Pantene 300ml,7500435191425,N/A,N/A,N/A
+2025-09-19 11:32:58,Coto,PANTENE,Shampoo Pro-V Miracles Colágeno Pantene 510ml,7500435191456,N/A,N/A,N/A
+2025-09-19 11:32:59,Coto,PANTENE,Shampoo Restauración PANTENE 400 Ml,7500435211826,N/A,N/A,N/A
+2025-09-19 11:33:01,Coto,PANTENE,Crema Para Peinar PANTENE Keratina 300 Ml,7500435241076,N/A,N/A,N/A
+2025-09-19 11:33:02,Coto,PANTENE,Mascarilla Nutricion PANTENE 270ml,7500435243667,N/A,N/A,N/A
+2025-09-19 11:33:03,Coto,PANTENE,Mascarilla PANTENE Hidratación 270 Ml,7500435243681,N/A,N/A,N/A
+2025-09-19 11:33:05,Coto,PANTENE,Mascarilla Restauracion PANTENE 270ml,7500435243674,N/A,N/A,N/A
+2025-09-19 11:33:13,Jumbo,PANTENE,Shampoo Pro-v Miracles Detox Equilibrio 400 Ml Pantene,13710771099,$8.585,N/A,N/A
+2025-09-19 11:33:15,Jumbo,PANTENE,Acondicionador Pro-v Miracles Equilibrio 400 Ml Pantene,13720184063,$8.585,N/A,N/A
+2025-09-19 11:33:17,Jumbo,PANTENE,Acondicionador Pro-v Miracles Con Detox 400 Ml Pantene,13720184061,$8.585,N/A,N/A
+2025-09-19 11:33:18,Jumbo,PANTENE,Crema Para Peinar Colágeno Nutre Y Revitaliza 300 Ml Pantene,13730404001,$7.950,N/A,N/A
+2025-09-19 11:33:20,Jumbo,PANTENE,Acondicionador Revilitacion 400 Ml Pantene,13720119109,$8.585,N/A,N/A
+2025-09-19 11:33:22,Jumbo,PANTENE,Sahmpoo Pro-v Miracles Volumen 400 Ml Pantene,13710757109,$8.585,N/A,N/A
+2025-09-19 11:33:24,Jumbo,PANTENE,Acondicionador Pro-v Miracles Volumen 400 Ml Pantene,13720119106,$8.585,N/A,N/A
+2025-09-19 11:33:26,Jumbo,PANTENE,Shampoo Pro-v Miracles Detox Limpia-purifica 750 Ml Pantene,13710771098,$14.800,N/A,N/A
+2025-09-19 11:33:28,Jumbo,PANTENE,Acondicionador Pro-v Miracles Liso Infinito 400 Ml Pantene,13720119101,$8.585,N/A,N/A
+2025-09-19 11:33:30,Jumbo,PANTENE,Shampoo Pantene Pro-v Miracles Hidrata Y Fortalece 400 Ml,13711225003,$8.585,N/A,N/A
+2025-09-19 11:33:32,Jumbo,PANTENE,Acondicionador Pantene Hidrata Y Fortalece 400 Ml,13720908002,$8.585,N/A,N/A
+2025-09-19 11:33:34,Jumbo,PANTENE,Shampoo Pro-v Solutions Restauración 400 Ml Pantene,13710381001,$7.505,N/A,N/A
+2025-09-19 11:33:35,Jumbo,PANTENE,Acondicionador Pro-v Solutions Restauración 400 Ml Pantene,13720872001,$7.505,N/A,N/A
+2025-09-19 11:33:37,Jumbo,PANTENE,Acondicionador Colageno X 510 Ml Pantene,13720119117,$13.200,N/A,N/A
+2025-09-19 11:33:39,Jumbo,PANTENE,Acondicionador 3 Minute Miracle Nutrición 170 Ml Pantene,13730112019,$8.550,N/A,N/A
+2025-09-19 11:33:41,Jumbo,PANTENE,Shampoo Colageno X 510 Ml Pantene,13710757116,$13.200,N/A,N/A
+2025-09-19 11:33:43,Jumbo,PANTENE,Shampoo Keratina X 510 Ml Pantene,13710757121,$13.200,N/A,N/A
+2025-09-19 11:33:45,Jumbo,PANTENE,Acondicionador Anti Caida X 510 Ml Pantene,13720119114,$13.200,N/A,N/A
+2025-09-19 11:33:47,Jumbo,PANTENE,Shampoo Pro-v Hidrata Y Fortalece 200 Ml Pantene,13711225001,$5.600,N/A,N/A
+2025-09-19 11:33:49,Jumbo,PANTENE,Serum Puntas Abiertas Colágeno 90 Ml Pantene,13730403001,$7.450,N/A,N/A
+2025-09-19 11:33:54,Jumbo,PANTENE,Mascarilla Intensiva Nutrición 270 Ml Pantene,13730112021,$8.800,N/A,N/A
+2025-09-19 11:33:56,Jumbo,PANTENE,Shampoo Anti Caida 300 Ml Pantene,13710757114,$8.250,N/A,N/A
+2025-09-19 11:33:58,Jumbo,PANTENE,Shampoo Colageno X 300 Ml Pantene,13710757120,$8.250,N/A,N/A
+2025-09-19 11:34:00,Jumbo,PANTENE,Shampoo Keratina X 300 Ml Pantene,13710757122,$8.250,N/A,N/A
+2025-09-19 11:34:02,Jumbo,PANTENE,Crema Para Peinar Keratina 300 Ml Pantene,13730112017,$7.950,N/A,N/A
+2025-09-19 11:34:04,Jumbo,PANTENE,Acondicionador Pro-v Miracles Revilitacion 400 Ml Pantene,13720119110,$14.800,N/A,N/A
+2025-09-19 11:34:06,Jumbo,PANTENE,Mascarilla Intensiva Restauración 270 Ml Pantene,13730112020,$8.800,N/A,N/A
+2025-09-19 11:34:08,Jumbo,PANTENE,Acondicionador Keratina X 250 Ml Pantene,13720119119,$8.250,N/A,N/A
+2025-09-19 11:34:10,Jumbo,PANTENE,Shampoo Provmir Liso Infinito X 700 Ml Pantene,13710757119,$14.800,N/A,N/A
+2025-09-19 11:34:11,Jumbo,PANTENE,Mascarilla Intensiva Hidratación 270 Ml Pantene,13730112018,$8.800,N/A,N/A
+2025-09-19 11:34:13,Jumbo,PANTENE,Shampoo Anti Caida 510 Ml Pantene,13710757115,$13.200,N/A,N/A
+2025-09-19 11:34:15,Jumbo,PANTENE,Acondicionador Pro-v Miracles 200 Ml Pantene,13720908001,$5.600,N/A,N/A
+2025-09-19 11:34:17,Jumbo,PANTENE,Acondicionador Colageno X 250 Ml Pantene,13720119116,$8.250,N/A,N/A
+2025-09-19 11:34:19,Jumbo,PANTENE,Shampoo Pro-v Miracles Volumizador X 700 Ml Pantene,13710757118,$14.800,N/A,N/A
+2025-09-19 11:34:21,Jumbo,PANTENE,Shampoo Pro-v Miracles Revitalización X 700 Ml Pantene,13710757117,$14.800,N/A,N/A
+2025-09-19 11:34:23,Jumbo,PANTENE,Acondicionador Anti Caida X 250 Ml Pantene,13720119115,$8.250,N/A,N/A
+2025-09-19 11:34:25,Jumbo,PANTENE,Acondicionador Pro-v Miracles Volumen 200 Ml Pantene,13720119107,$5.600,N/A,N/A
+2025-09-19 11:34:26,Jumbo,PANTENE,Tonico Capilar Anticaida X 60 Ml Pantene,13730708004,$22.600,N/A,N/A
+2025-09-19 11:34:29,Jumbo,PANTENE,Crema Peinar Anti Caida X 300 Ml Pantene,13730116010,$7.950,N/A,N/A
+2025-09-19 11:34:31,Jumbo,PANTENE,Acondicionador Pro-v Miracles Detox 200 Ml Pantene,13720184059,$5.600,N/A,N/A
+2025-09-19 11:34:36,Jumbo,PANTENE,Shampoo Pro-v Miracles Volumen 200 Ml Pantene,13710757108,$5.600,N/A,N/A
