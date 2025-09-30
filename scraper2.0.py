@@ -5,6 +5,7 @@ import re
 from concurrent.futures import ThreadPoolExecutor
 from playwright.async_api import async_playwright
 from playwright.async_api import Error
+import csv_manager
 
 lock = asyncio.Lock()
 
@@ -220,23 +221,116 @@ class CotoScraper(BaseScraper):
         return match.group(0).strip() if match else "N/A"
 
 # ==== Function to scrape single category ====
-async def scrape_single_category(product):
-    async with async_playwright() as p:
-        browser = await p.chromium.launch(headless=False, slow_mo=300)
-        context = await browser.new_context()
-        page = await context.new_page()
+MAX_WORKERS = 2  # cantidad máxima de navegadores concurrentes
+semaphore = asyncio.Semaphore(MAX_WORKERS)
 
-        scrapers = [CotoScraper(page), JumboScraper(page)]
-        try:
-            for scraper in scrapers:
-                with open("precios_playwright.csv", mode="a", newline="", encoding="utf-8") as f:
-                    writer = csv.DictWriter(f, fieldnames=["date","location","brand","name","SKU","price","discount","PWD"])
-                    await scraper.scrapear_url(product, writer)
-        finally:
-            await browser.close()
+async def scrape_single_category(product):
+    async with semaphore:  # asegura que no se superen los MAX_WORKERS
+        async with async_playwright() as p:
+            browser = await p.chromium.launch(headless=False, slow_mo=300)
+            context = await browser.new_context()
+            page = await context.new_page()
+
+            scrapers = [CotoScraper(page), JumboScraper(page)]
+            try:
+                for scraper in scrapers:
+                    with open("precios.csv", mode="a", newline="", encoding="utf-8") as f:
+                        writer = csv.DictWriter(f, fieldnames=["date","location","brand","name","SKU","price","discount","PWD"])
+                        await scraper.scrapear_url(product, writer)
+            finally:
+                await browser.close()
+
 
 # ==== Parallel execution ====
-products = ["alfajor oreo",]
+products = products = codes = [
+    "7702018072392",
+    "7702018072408",
+    "7506339315905",
+    "7506339315486",
+    "7702018874729",
+    "7702018874750",
+    "7500435219334",
+    "7500435225366",
+    "7500435229517",
+    "7500435229609",
+    "7500435229531",
+    "7500435229654",
+    "7500435233033",
+    "7500435233057",
+    "7500435233026",
+    "7500435229500",
+    "7799111033450",
+    "7796962998358",
+    "7500435211826",
+    "7500435247979",
+    "7500435241007",
+    "7500435249348",
+    "7500435237628",
+    "7500435237543",
+    "7500435237642",
+    "7500435228763",
+    "7500435228596",
+    "7500435172714",
+    "7500435201285",
+    "7506195143834",
+    "7500435201292",
+    "7500435124638",
+    "7506295388487",
+    "7500435177054",
+    "7500435153164",
+    "7500435221443",
+    "7501086453955",
+    "7702018913664",
+    "7500435129947",
+    "20800307642",
+    "7501001163983",
+    "7500435143196",
+    "7500435144636",
+    "70330731745",
+    "70330731745",
+    "7501843502926",
+    "7501843502926",
+    "70330717510",
+    "70330717510",
+    "7702018874729",
+    "7500435219334",
+    "7790010002677",
+    "7790010002646",
+    "7790770601899",
+    "7790010002639",
+    "7790010002837",
+    "7790010002837",
+    "7790010002844",
+    "7790010002615",
+    "39800011329",
+    "39800099099",
+    "7791293047102",
+    "7791293047102",
+    "7791293047102",
+    "7791293047102",
+    "7794626013294",
+    "7794626013331",
+    "7794626013362",
+    "7794626012945",
+    "7794626011894",
+    "7794626013973",
+    "7791290793576",
+    "7891150000971",
+    "7891150091986",
+    "7891024134610",
+    "7509546651057",
+    "7891024005064",
+    "7509546688398",
+    "7509546688404",
+    "7509546055152",
+    "75024956",
+    "75024956",
+    "13320183014",
+    "7791293043791",
+    "75080150",
+    "75079437"
+]
+
 
 async def main():
     # This gathers the coroutines correctly
@@ -246,12 +340,14 @@ if __name__ == "__main__":
     start = time.time()
 
     # Prepare CSV file
-    with open("precios_playwright.csv", mode="w", newline="", encoding="utf-8") as f:
+    with open("precios.csv", mode="w", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(f, fieldnames=["date","location","brand","name","SKU","price","discount","PWD"])
         writer.writeheader()
 
     # Run async main coroutine
     asyncio.run(main())
+
+    csv_manager.procesar_csv("precios.csv")
 
     end = time.time()
     print(f"\n✅ Scraping completado en {end - start:.2f} segundos.")
