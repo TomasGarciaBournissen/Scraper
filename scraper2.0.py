@@ -4,6 +4,7 @@ import time
 import re
 from concurrent.futures import ThreadPoolExecutor
 from playwright.async_api import async_playwright
+from playwright.async_api import Error
 
 lock = asyncio.Lock()
 
@@ -14,21 +15,32 @@ class BaseScraper:
         self.config = config
         self.location = location
 
-    async def element_exists(self, xpaths, timeout=5000):
-        if isinstance(xpaths, str):
-            try:
-                await self.page.wait_for_selector(f"xpath={xpaths}", timeout=timeout)
-                return True, xpaths
-            except:
-                return False, None
-        elif isinstance(xpaths, list):
-            for xp in xpaths:
-                try:
-                    await self.page.wait_for_selector(f"xpath={xp}", timeout=timeout)
-                    return True, xp
-                except:
-                    continue
+
+  
+    
+   
+
+
+    async def element_exists(self,page, xpaths, timeout=10000):
+        if not xpaths:  # handles '' or None
             return False, None
+
+        if isinstance(xpaths, str):
+            xpaths = [xpaths]
+
+        for xp in xpaths:
+            if not xp.strip():  # skip empty entries in a list
+                continue
+            try:
+                await page.wait_for_selector(f"xpath={xp}", timeout=timeout)
+                return True, xp
+            except:
+                continue
+
+        return False, None
+
+
+
 
     async def obtener_links_desde_botones(self):
         botones = await self.page.query_selector_all(f"xpath={self.config['xpaths']['link_button']}")
@@ -50,15 +62,18 @@ class BaseScraper:
             # wait for essential elements
             await new_page.wait_for_selector(f"xpath={self.config['xpaths']['brand']}", timeout=5000)
 
-            found, discount_xpath = await self.element_exists(self.config.get('discount', ''))
+            found, discount_xpath = await self.element_exists(new_page, self.config['xpaths']['discount'], timeout=10000)
             if found:
+                print("Descuento encontrado con XPath:", discount_xpath)
                 sale = await new_page.text_content(f"xpath={discount_xpath}") or "N/A"
                 pwd = await new_page.text_content(f"xpath={self.config['xpaths'].get('pwd','')}") or "N/A"
-                price_text = await new_page.text_content(f"xpath={self.config['xpaths']['price_special']}") or "N/A"
+                price_text = await new_page.text_content(f"xpath={self.config['xpaths']['price_special']}") or "N/A"   
             else:
+                print("No se encontró descuento.")
                 sale = "N/A"
                 pwd = "N/A"
                 price_text = await new_page.text_content(f"xpath={self.config['xpaths']['price_normal']}") or "N/A"
+                
 
             brand_text = await new_page.text_content(f"xpath={self.config['xpaths']['brand']}") or "N/A"
             name_text = await new_page.text_content(f"xpath={self.config['xpaths']['name']}") or "N/A"
@@ -161,7 +176,7 @@ class CotoScraper(BaseScraper):
                 'sku': "//span[i[contains(@class, 'fa-shopping-basket')]]",
                 'price_special': "//div[@class='mt-2 small ng-star-inserted' and b[text()='Precio regular :']]",
                 'price_normal': "//var[contains(@class,'price')]",
-                'discount': "//b[@class='text-success']",
+                'discount': "//div[@class='mb-2 ng-star-inserted']",
                 'pwd': "//var[contains(@class,'price')]", 
                 'pagination': "//li[contains(@class, 'page-item') and contains(@class, 'ng-star-inserted')]",
                 'pagination_btn': "//li[contains(@class, 'page-item') and contains(@class, 'ng-star-inserted')]//a[normalize-space(text())='{page}']"
@@ -201,8 +216,8 @@ class CotoScraper(BaseScraper):
         return match.group(1).strip() if match else "N/A"
 
     def process_price(self, text):
-        match = re.search(r'\b(?:regular)\s*:\s*(.+)', text, re.IGNORECASE)
-        return match.group(1).strip() if match else "N/A"
+        match = re.search(r'[\$€]?\s*\d{1,3}(?:[.,]\d{3})*(?:[.,]\d{2})', text)
+        return match.group(0).strip() if match else "N/A"
 
 # ==== Function to scrape single category ====
 async def scrape_single_category(product):
@@ -221,7 +236,7 @@ async def scrape_single_category(product):
             await browser.close()
 
 # ==== Parallel execution ====
-products = ["alfajor oreo", "pantene"]
+products = ["alfajor oreo",]
 
 async def main():
     # This gathers the coroutines correctly

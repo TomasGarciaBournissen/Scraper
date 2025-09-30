@@ -255,4 +255,4 @@ with ThreadPoolExecutor(max_workers=12) as executor:
 
 
 end = time.time()
-print(f"\n Scraping completado en {end - start:.2f} segundos.") 
+print(f"\n Scraping completado en {end - start:.2f} segundos.")
