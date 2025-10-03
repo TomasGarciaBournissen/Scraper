@@ -285,7 +285,7 @@ async def scrape_single_category(product):
                 await browser.close()
 
 
-# ==== Parallel execution ====
+'''
 products = [
     "DOVE",
     "DOWNY",
@@ -296,23 +296,27 @@ products = [
     "HEAD & SHOULDERS",
 
 ]
+'''
 
 
-async def main():
-    # This gathers the coroutines correctly
-    await asyncio.gather(*(scrape_single_category(prod) for prod in products))
+def run_scraping(products):
+    async def main(produ):
+        await asyncio.gather(*(scrape_single_category(prod) for prod in produ))
 
-if __name__ == "__main__":
     start = time.time()
 
-    # Prepare CSV file
+    # Crear CSV vacío con cabecera
     with open("precios.csv", mode="w", newline="", encoding="utf-8") as f:
-        writer = csv.DictWriter(f, fieldnames=["date","location","brand","name","SKU","price","discount","PWD"])
+        writer = csv.DictWriter(
+            f,
+            fieldnames=["date","location","brand","name","SKU","price","discount","PWD"]
+        )
         writer.writeheader()
 
-    # Run async main coroutine
-    asyncio.run(main())
+    # Ejecutar scraping asincrónico
+    asyncio.run(main(products))
 
+    # Procesar el CSV generado
     csv_manager.procesar_csv("precios.csv")
 
     end = time.time()
