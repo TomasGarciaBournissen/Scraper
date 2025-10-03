@@ -22,7 +22,7 @@ class BaseScraper:
    
 
 
-    async def element_exists(self,page, xpaths, timeout=10000):
+    async def element_exists(self,page, xpaths, timeout=4000):
         if not xpaths:  # handles '' or None
             return False, None
 
@@ -44,8 +44,20 @@ class BaseScraper:
 
 
     async def obtener_links_desde_botones(self):
+    # wait until at least one button exists
+        try:
+            await self.page.wait_for_selector(
+                f"xpath={self.config['xpaths']['link_button']}", 
+                timeout=10000  # 10s max wait
+            )
+        except Exception:
+            print("⚠ No se encontraron botones de producto en el timeout")
+            return []
+
         botones = await self.page.query_selector_all(f"xpath={self.config['xpaths']['link_button']}")
+        print(f"Botones encontrados: {len(botones)}")
         links = []
+
         for btn in botones:
             try:
                 href = await btn.evaluate("el => el.closest('a')?.href")
@@ -53,49 +65,72 @@ class BaseScraper:
                     links.append(href)
             except:
                 continue
+
         return links
+
+    
 
     async def procesar_producto(self, link, writer):
         context = self.page.context
         new_page = await context.new_page()
         try:
-            await new_page.goto(link)
-            # wait for essential elements
-            await new_page.wait_for_selector(f"xpath={self.config['xpaths']['brand']}", timeout=5000)
-
-            found, discount_xpath = await self.element_exists(new_page, self.config['xpaths']['discount'], timeout=10000)
-            if found:
-                print("Descuento encontrado con XPath:", discount_xpath)
-                sale = await new_page.text_content(f"xpath={discount_xpath}") or "N/A"
-                pwd = await new_page.text_content(f"xpath={self.config['xpaths'].get('pwd','')}") or "N/A"
-                price_text = await new_page.text_content(f"xpath={self.config['xpaths']['price_special']}") or "N/A"   
-            else:
-                print("No se encontró descuento.")
-                sale = "N/A"
-                pwd = "N/A"
-                price_text = await new_page.text_content(f"xpath={self.config['xpaths']['price_normal']}") or "N/A"
-                
-
-            brand_text = await new_page.text_content(f"xpath={self.config['xpaths']['brand']}") or "N/A"
-            name_text = await new_page.text_content(f"xpath={self.config['xpaths']['name']}") or "N/A"
-            sku_text = await new_page.text_content(f"xpath={self.config['xpaths'].get('sku','')}") or "N/A"
-
-            async with lock:
-                writer.writerow({
-                    "date": time.strftime("%Y-%m-%d %H:%M:%S"),
-                    "location": self.location,
-                    "brand": self.process_brand(brand_text),
-                    "name": name_text.strip(),
-                    "SKU": self.process_sku(sku_text),
-                    "price": self.process_price(price_text),
-                    "discount": sale.strip(),
-                    "PWD": pwd.strip(),
-                })
-            print(f"✔ Producto procesado: {name_text}")
+            # Timeout wrapper for the whole product
+            await asyncio.wait_for(self._procesar_producto_inner(new_page, link, writer), timeout=20)
+        except asyncio.TimeoutError:
+            print(f"⏱ Timeout procesando producto {link}, saltando...")
         except Exception as e:
             print(f"❌ Error con producto {link}: {e}")
         finally:
             await new_page.close()
+
+
+    async def _procesar_producto_inner(self, new_page, link, writer):
+        # Page.goto with its own timeout
+        try:
+            await new_page.goto(link, timeout=8000, wait_until="domcontentloaded")
+        except Exception as e:
+            print(f"⚠️ Error cargando {link}: {e}")
+            return
+
+        # wait for essential elements (brand)
+        try:
+            await new_page.wait_for_selector(f"xpath={self.config['xpaths']['brand']}", timeout=4000)
+        except Exception:
+            print(f"⚠️ No se encontró 'brand' en {link}, saltando...")
+            return
+
+        # --- discount logic ---
+        found, discount_xpath = await self.element_exists(new_page, self.config['xpaths']['discount'], timeout=4000)
+        if found:
+            print("Descuento encontrado con XPath:", discount_xpath)
+            sale = await new_page.text_content(f"xpath={discount_xpath}") or "N/A"
+            pwd = await new_page.text_content(f"xpath={self.config['xpaths'].get('pwd','')}") or "N/A"
+            price_text = await new_page.text_content(f"xpath={self.config['xpaths']['price_special']}") or "N/A"
+        else:
+            print("No se encontró descuento.")
+            sale = "N/A"
+            pwd = "N/A"
+            price_text = await new_page.text_content(f"xpath={self.config['xpaths']['price_normal']}") or "N/A"
+
+        # --- other fields ---
+        brand_text = await new_page.text_content(f"xpath={self.config['xpaths']['brand']}") or "N/A"
+        name_text = await new_page.text_content(f"xpath={self.config['xpaths']['name']}") or "N/A"
+        sku_text = await new_page.text_content(f"xpath={self.config['xpaths'].get('sku','')}") or "N/A"
+
+        # --- write to CSV ---
+        async with lock:
+            writer.writerow({
+                "date": time.strftime("%Y-%m-%d %H:%M:%S"),
+                "location": self.location,
+                "brand": self.process_brand(brand_text),
+                "name": name_text.strip(),
+                "SKU": self.process_sku(sku_text),
+                "price": self.process_price(price_text),
+                "discount": sale.strip(),
+                "PWD": pwd.strip(),
+            })
+        print(f"✔ Producto procesado: {name_text}")
+
 
     async def obtener_total_paginas(self):
         pagination_xpath = self.config['xpaths'].get('pagination')
@@ -124,11 +159,20 @@ class BaseScraper:
 
         for pagina in range(1, total_paginas + 1):
             if pagina > 1:
+                
+                viewport = self.page.viewport_size
+                if viewport:
+                    x = 5
+                    y = viewport['height'] // 2
+                    await self.page.mouse.click(x, y)
+                    await self.page.wait_for_timeout(200)  # short pause
+
                 btn_xpath = self.config['xpaths']['pagination_btn'].format(page=pagina)
-                element = await self.page.wait_for_selector(f"xpath={btn_xpath}")
+                element = await self.page.wait_for_selector(f"xpath={btn_xpath}", timeout=5000)
                 await element.scroll_into_view_if_needed()
                 await element.click()
                 await self.page.wait_for_timeout(2000)
+
 
             # scroll down halfway
             await self.page.evaluate("window.scrollTo(0, document.body.scrollHeight / 2.7)")
@@ -189,7 +233,7 @@ class CotoScraper(BaseScraper):
         base_url = "https://www.cotodigital.com.ar"
         botones = await self.page.query_selector_all(f"xpath={self.config['xpaths']['link_button']}")
         links = []
-
+        print(f"Botones encontrados: {len(botones)}")
         for btn in botones:
             try:          
                 href_element = await btn.query_selector("xpath=.//a[contains(@href, '/sitios/cdigi/productos/')]")
@@ -221,7 +265,7 @@ class CotoScraper(BaseScraper):
         return match.group(0).strip() if match else "N/A"
 
 # ==== Function to scrape single category ====
-MAX_WORKERS = 2  # cantidad máxima de navegadores concurrentes
+MAX_WORKERS = 4  # cantidad máxima de navegadores concurrentes
 semaphore = asyncio.Semaphore(MAX_WORKERS)
 
 async def scrape_single_category(product):
@@ -231,7 +275,7 @@ async def scrape_single_category(product):
             context = await browser.new_context()
             page = await context.new_page()
 
-            scrapers = [CotoScraper(page), JumboScraper(page)]
+            scrapers = [ CotoScraper(page), JumboScraper(page)]
             try:
                 for scraper in scrapers:
                     with open("precios.csv", mode="a", newline="", encoding="utf-8") as f:
@@ -242,93 +286,15 @@ async def scrape_single_category(product):
 
 
 # ==== Parallel execution ====
-products = products = codes = [
-    "7702018072392",
-    "7702018072408",
-    "7506339315905",
-    "7506339315486",
-    "7702018874729",
-    "7702018874750",
-    "7500435219334",
-    "7500435225366",
-    "7500435229517",
-    "7500435229609",
-    "7500435229531",
-    "7500435229654",
-    "7500435233033",
-    "7500435233057",
-    "7500435233026",
-    "7500435229500",
-    "7799111033450",
-    "7796962998358",
-    "7500435211826",
-    "7500435247979",
-    "7500435241007",
-    "7500435249348",
-    "7500435237628",
-    "7500435237543",
-    "7500435237642",
-    "7500435228763",
-    "7500435228596",
-    "7500435172714",
-    "7500435201285",
-    "7506195143834",
-    "7500435201292",
-    "7500435124638",
-    "7506295388487",
-    "7500435177054",
-    "7500435153164",
-    "7500435221443",
-    "7501086453955",
-    "7702018913664",
-    "7500435129947",
-    "20800307642",
-    "7501001163983",
-    "7500435143196",
-    "7500435144636",
-    "70330731745",
-    "70330731745",
-    "7501843502926",
-    "7501843502926",
-    "70330717510",
-    "70330717510",
-    "7702018874729",
-    "7500435219334",
-    "7790010002677",
-    "7790010002646",
-    "7790770601899",
-    "7790010002639",
-    "7790010002837",
-    "7790010002837",
-    "7790010002844",
-    "7790010002615",
-    "39800011329",
-    "39800099099",
-    "7791293047102",
-    "7791293047102",
-    "7791293047102",
-    "7791293047102",
-    "7794626013294",
-    "7794626013331",
-    "7794626013362",
-    "7794626012945",
-    "7794626011894",
-    "7794626013973",
-    "7791290793576",
-    "7891150000971",
-    "7891150091986",
-    "7891024134610",
-    "7509546651057",
-    "7891024005064",
-    "7509546688398",
-    "7509546688404",
-    "7509546055152",
-    "75024956",
-    "75024956",
-    "13320183014",
-    "7791293043791",
-    "75080150",
-    "75079437"
+products = [
+    "DOVE",
+    "DOWNY",
+    "VIVERE",
+    "GILLETE",
+    "COMFORT",
+    "PANTENE",
+    "HEAD & SHOULDERS",
+
 ]
 
 

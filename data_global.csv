@@ -2,3 +2,315 @@ date,location,brand,name,SKU,price,discount,PWD
 2025-09-30 11:33:58,Coto,MILKA,Alfajor Triple MILKA Oreo 61g,7622300835620,"$1.974,00",80% 2da,"$1.184,40"
 2025-09-30 11:34:01,Coto,OREO,Alfajor OREO Triple 56g,77976307,"$1.752,00",3x2,"$1.168,06"
 2025-09-30 11:34:21,Jumbo,MILKA,Alfajor Oreo Triple 56 Gr Milka,11849101005,$1.900,2do al 80%,$1.140
+2025-10-02 16:56:55,Coto,DOWNY,Aromatizante Para Ropa April Fresh Downy 345g,30772097953,"$38.776,99",40%Dto,"$23.266,19"
+2025-10-02 16:56:58,Coto,DOWNY,Aromatizante Para Ropa Fresh Downy 141g,30772087251,"$18.208,99",40%Dto,"$10.925,39"
+2025-10-02 16:57:01,Coto,DOWNY,Aromatizante Para Ropa Fresh Downy 345g,30772095713,"$38.776,99",40%Dto,"$23.266,19"
+2025-10-02 16:57:03,Coto,DOWNY,Aromatizante Para Ropa Lush Downy 141g,30772087343,"$18.208,99",40%Dto,"$10.925,39"
+2025-10-02 16:57:06,Coto,DOWNY,Aromatizante Para Ropa Lush Downy 345g,30772095720,"$38.776,99",40%Dto,"$23.266,19"
+2025-10-02 16:57:09,Coto,DOWNY,Enjuague Concentrado Adorable Downy 900ml,7500435160070,"$13.098,99",40%Dto,"$7.859,39"
+2025-10-02 16:57:12,Coto,DOWNY,Enjuague Concentrado Downy 450ml,7500435159999,"$7.637,99",40%Dto,"$4.582,79"
+2025-10-02 16:57:15,Coto,DOWNY,Enjuague Concentrado Místico Downy 450ml,7500435160087,"$7.637,99",40%Dto,"$4.582,79"
+2025-10-02 16:57:18,Coto,DOWNY,Enjuague Concentrado Místico Downy 900ml,7500435160001,"$13.098,99",40%Dto,"$7.859,39"
+2025-10-02 16:57:20,Coto,DOWNY,Enjuague Concentrado Perfume Brisa Suave Downy 1l,7500435243650,"$13.098,99",40%Dto,"$7.859,39"
+2025-10-02 16:57:23,Coto,DOWNY,Enjuague Concentrado Perfume Brisa Suave Downy 500ml,7500435243612,"$7.637,99",40%Dto,"$4.582,79"
+2025-10-02 16:57:26,Coto,DOWNY,Suavizante De Telas DOWNY Concentrado Brisa De Verano 1 L,7506339332643,"$13.098,99",40%Dto,"$7.859,39"
+2025-10-02 16:57:29,Coto,DOWNY,Suavizante De Telas DOWNY Concentrado Brisa De Verano 500 Ml,7506195143834,"$7.637,99",40%Dto,"$4.582,79"
+2025-10-02 16:56:58,Coto,GILLETTE,Máquina De Afeitar Eléctrica 3 En 1 GILLETTE Styler 1 Kit,7702018330126,"$47.423,00",,
+2025-10-02 16:57:04,Coto,GILLETTE PRESTOBARBA3,"Máquina De Afeitar GILLETTE PRESTOBARBA3 Fresh Con Eucalipto Y 3 Hojas, 4 Uds",7702018983902,"$10.148,00",,
+2025-10-02 16:57:10,Coto,GILLETTE PRESTOBARBA3,Máquinas Para Afeitar GILLETTE PRESTOBARBA3 2 Unidades,7702018874729,"$5.126,00",,
+2025-10-02 16:57:16,Coto,GILLETTE PRESTOBARBA3,Máquinas Para Afeitar GILLETTE PRESTOBARBA3 4 Unidades,7702018874750,"$9.242,00",,
+2025-10-02 16:57:21,Coto,GILLETTE PRESTOBARBA3,Máquinas Para Afeitar Gillette Prestobarba3 Sensitive 4 Unidades,7506339337532,"$10.132,00",,
+2025-10-02 16:57:27,Coto,GILLETTE PRESTOBARBA3,Máquinas Para Afeitar Gillette Prestobarba3 Sensitive 8 Unidades,7506339337549,"$19.157,00",,
+2025-10-02 16:57:33,Coto,GILLETTE VENUS,Máquinas Para Afeitar Gillette Venus Simply3 2 Unidades,7702018072392,"$5.638,00",,
+2025-10-02 16:57:39,Coto,GILLETTE VENUS,Repuesto Para Máquina De Afeitar Mujer GILLETTE VENUS Original Con Hojas 2 Ud,7702018072477,"$7.600,00",,
+2025-10-02 16:57:45,Coto,GILLETTE,Máquina De Afeitar Prestobarba Ultragrip2 5 Un,7500435160674,"$5.589,00",,
+2025-10-02 16:57:51,Coto,GILLETTE,Repuestos De Afeitar GILLETTE Mach3 Sensitive 4 Un,7702018037896,"$12.985,00",,
+2025-10-02 16:57:57,Coto,GILLETTE,"GILLETTE Prestobarba3 Máquina De Afeitar Desechable Con Afeitadas Suaves, 4 Unidades",7500435189408,"$9.242,00",,
+2025-10-02 16:58:03,Coto,GILLETTE,Máquina De Afeitar GILLETTE Proshield 1 Un,7702018382323,"$25.986,00",,
+2025-10-02 16:57:47,Jumbo,DOWNY,Suavizante Concentrado Brisa Intenso 500 Ml Downy,14130206004,$7.635,2do al 70%,"$4.962,75"
+2025-10-02 16:57:54,Jumbo,DOWNY,Suavizante Concentrado Brisa Intenso Downy,14130206011,$6.100,2do al 70%,$3.965
+2025-10-02 16:58:00,Jumbo,DOWNY,Suavizante Concentrado Brisa Intenso 1 L Downy,14130206003,$13.800,2do al 70%,$8.970
+2025-10-02 16:58:13,Jumbo,PRINGLES,Papas Fritas Pringles Original X104gs,11130104095,$4.950,,
+2025-10-02 16:58:23,Jumbo,LAY´S,Papas Fritas Lays Clásicas 330 G,11130101217,$8.950,,
+2025-10-02 16:58:34,Jumbo,PRINGLES,Papas Fritas Pringles Crema Y Cebolla X109gs,11130104096,$4.950,,
+2025-10-02 16:58:46,Jumbo,Cuisine & CO,Papas Fritas Tradicionales 250 Grs Cuisine & Co,11130167001,$3.437,,
+2025-10-02 16:58:57,Jumbo,DORITOS,Nachos Doritos Queso 200 G,11131154043,$6.240,,
+2025-10-02 16:59:08,Jumbo,DORITOS,Nachos Doritos Queso 129 G,11131154042,$3.760,,
+2025-10-02 16:59:18,Jumbo,LAY´S,Papas Fritas Lays Clásicas 134 G,11130101210,$3.800,,
+2025-10-02 16:59:28,Jumbo,PRINGLES,Papas Fritas Pringles Queso X109gs,11130104097,$4.950,,
+2025-10-02 16:59:39,Jumbo,LAY´S,Papas Fritas Lays Clásicas 230 G,11130101213,$6.320,,
+2025-10-02 16:59:50,Jumbo,KRACH-ITOS,Papas Fritas Americana X 275 Gr Krach-itos,11130118074,$5.450,,
+2025-10-02 17:00:01,Jumbo,MANI KING,Maní Salado Sin Piel Mani King 350 Gr,11130961020,$4.150,,
+2025-10-02 17:00:11,Jumbo,KRACH-ITOS,Palitos Salados Krachitos 110 Gr,11130709009,$1.400,,
+2025-10-02 17:00:21,Jumbo,CUISINE & CO PREMIUM,Papas Chips Clásicas 140 Grs Cuisine & Co,11130154001,$3.290,,
+2025-10-02 17:00:33,Jumbo,Cuisine & CO,Papas Fritas Corte Americano 150 Grs Cuisine & Co,11130167003,$2.205,,
+2025-10-02 17:00:38,Jumbo,MANI KING,Maní Salado Sin Piel Mani King 100 Gr,11130961017,$1.200,2do al 50%,$900
+2025-10-02 17:00:49,Jumbo,PRINGLES,Papas Fritas Pringles Original X37g,11130104098,$2.650,,
+2025-10-02 17:01:03,Jumbo,CUISINE & CO PREMIUM,Papas Chips Crema Y Cebolla 140 Grs Cuisine & Co,11130154003,$3.290,,
+2025-10-02 17:01:15,Jumbo,LAY´S,Papas Fritas Lays Clásicas 85 G,11130101209,$2.720,,
+2025-10-02 17:01:25,Jumbo,Cuisine & CO,Palitos Salados 120 Grs Cuisine & Co,11130732002,$931,,
+2025-10-02 17:01:35,Jumbo,MACRITAS,Nachos Macritas Restaurant Style 250gr,11131704032,$4.400,,
+2025-10-02 16:58:21,Jumbo,GILLETTE,Repuesto Máquina De Afeitar Mach3 Carbono 3 Hojas 2 Un Gilette,13330715001,$10.150,,
+2025-10-02 16:58:32,Jumbo,GILLETTE,Espuma De Afeitar Foamy Mentol Refrescante 322 Ml Gillette,13330127002,$11.750,,
+2025-10-02 16:58:45,Jumbo,GILLETTE,Mach3 Sensitive Afeitadora Recargable 1 Un Gillette,13331118001,$11.600,,
+2025-10-02 16:58:57,Jumbo,GILLETTE,Repuesto Mach3 Carbono 4 Un Gilette,13330715002,$18.250,,
+2025-10-02 16:59:06,Jumbo,GILLETTE,Crema De Afeitar Cara Y Cuerpo 150 Ml Gillette,13330507001,$7.200,,
+2025-10-02 16:59:16,Jumbo,GILLETTE,Antitranspirante Sport Triumph Clear Gel 82 Gr Gillette,13320706015,$8.050,,
+2025-10-02 16:59:28,Jumbo,GILLETTE,Antitranspirante Antibacterial Clear Gel 82 Gr Gillette,13320706016,$8.000,,
+2025-10-02 16:59:39,Jumbo,GILLETTE,Máquina De Afeitar Recargable Proshield 1 Un Gillette,13331121001,$27.300,,
+2025-10-02 16:59:50,Jumbo,GILLETTE,Desodorante Masculino Gel Aloe Antitranspirante Gillette,13320706019,$7.700,,
+2025-10-02 17:00:00,Jumbo,GILLETTE,Antitranspirante En Gel Specialized Cool Wave 82 Gr Gillete,13320706014,$8.000,,
+2025-10-02 17:00:11,Jumbo,GILLETTE,Repuesto Gillette Mach3 Extra Lubricante X6u,13330714006,$27.900,,
+2025-10-02 17:00:21,Jumbo,GILLETTE,Repuestos De Afeitar Con Hojas Más Afiladas Gillette Mach3 2 Un,13330714005,$9.600,,
+2025-10-02 17:00:31,Jumbo,GILLETTE,Loción Aftershave Para Piel Sensible 75 Ml Gillette,13340508001,$9.250,,
+2025-10-02 17:00:42,Jumbo,GILLETTE,Maquina Gillette Mach3 Extra Lubricante X1u,13330936001,$13.150,,
+2025-10-02 17:00:53,Jumbo,GILLETTE,Afeitadora Recargable + Mach3 1 Un Gillette,13331123001,$10.400,,
+2025-10-02 17:01:04,Jumbo,PRESTOBARBA,Maquina De Afeitar Gillette Prestobarba 3 Carbono 4 Un,13330901149,$10.350,,
+2025-10-02 17:01:15,Jumbo,PRESTOBARBA,Maquina De Afeitar Fixed 3 Un Gillette Prestobarba,13331101013,$4.950,,
+2025-10-02 17:01:26,Jumbo,PRESTOBARBA,Maquina Mach3 Sensitive 1 Un Gillette Prestobarba,13330901083,$14.650,,
+2025-10-02 17:01:36,Jumbo,PRESTOBARBA,Maquina De Afeitar Fixed 10 Un Gillette Prestobarba,13331101012,$13.950,,
+2025-10-02 17:01:47,Jumbo,BIC,Afeitadora Planet Kind 2 Cartuchos Gillette,13331134002,$20.350,,
+2025-10-02 17:02:02,Coto,VIVERE,Suavizante P/Ropa Clásico Vivere  3 Ltr,7791290793743,"$10.371,99",,
+2025-10-02 17:02:08,Coto,VIVERE,Suavizante P/Ropa Flores Silvest Vivere 900 Ml,7791290793736,"$3.192,99",,
+2025-10-02 17:02:14,Coto,VIVERE,Suavizante P/Ropa Plancha Fácil Vivere  810 Ml,7791290793774,"$2.879,99",,
+2025-10-02 17:02:20,Coto,VIVERE,Suavizante P/Ropa Violetas Y Flr Vivere  900 Ml,7791290793729,"$3.192,99",,
+2025-10-02 17:02:26,Coto,VIVERE,Suavizante P/Ropa Violetas Y Flr Vivere Doy 3 Ltr,7791290793712,"$10.371,99",,
+2025-10-02 17:02:32,Coto,VIVERE,Suavizante Para Ropa Clásico Vivere  3 Ltr,7791290793866,"$11.441,99",,
+2025-10-02 17:02:38,Coto,VIVERE,Suavizante Para Ropa Clásico Vivere 900 Ml,7791290793750,"$3.192,99",,
+2025-10-02 17:01:59,Coto,VILEDA,Guantes Extra Sensación Talle M Mediano VILEDA,4023103073968,"$4.352,99",35%Dto,"$2.829,44"
+2025-10-02 17:02:02,Coto,VILEDA,Guantes Extra Sensación Talle S Chico VILEDA,4023103073951,"$4.352,99",35%Dto,"$2.829,44"
+2025-10-02 17:02:05,Coto,VILEDA,Guantes Extra Sensación Talle Xl Grande VILEDA,4023103093263,"$4.352,99",35%Dto,"$2.829,44"
+2025-10-02 17:02:07,Coto,VILEDA,Guantes Fuerte Talle L Grande VILEDA,8001940003399,"$7.889,99",35%Dto,"$5.128,49"
+2025-10-02 17:02:10,Coto,VILEDA,Guantes Fuerte Talle S Chico VILEDA,8001940003375,"$7.889,99",35%Dto,"$5.128,49"
+2025-10-02 17:02:13,Coto,NIVEA,Desodorante Antitranspirante Femenino NIVEA Dry Comfort Roll On X 50 Ml,4005808257584,"$2.281,00",3x2,"$1.520,74"
+2025-10-02 17:02:16,Coto,COMFORT,Suavizante Para Ropa Brisa Elegante Comfort 450ml,7791290795969,"$5.473,99",35%Dto,"$3.558,09"
+2025-10-02 17:02:20,Coto,COMFORT,Suavizante Para Ropa Clásico Comfort 3 Ltr,7791290793675,"$12.560,99",35%Dto,"$8.164,64"
+2025-10-02 17:02:23,Coto,COMFORT,Suavizante Para Ropa Clásico Comfort 900 Ml,7791290793682,"$3.846,99",35%Dto,"$2.500,54"
+2025-10-02 17:02:25,Coto,COMFORT,Suavizante Para Ropa Concentrado Cuidado Escencial Comfort 1 Ltr,7791290793576,"$11.131,99",35%Dto,"$7.235,79"
+2025-10-02 17:02:28,Coto,COMFORT,Suavizante Para Ropa Concentrado Cuidado Esencial Comfort 450 Ml,7791290793583,"$5.473,99",35%Dto,"$3.558,09"
+2025-10-02 17:02:31,Coto,COMFORT,Suavizante Para Ropa Concentrado Cuidado Essencial Comfort 500 Ml,7891150000971,"$6.740,99",35%Dto,"$4.381,64"
+2025-10-02 17:02:34,Coto,COMFORT,Suavizante Para Ropa Concentrado Fiber Protect Comfort  1 Ltr,7791290793613,"$11.131,99",35%Dto,"$7.235,79"
+2025-10-02 17:02:37,Coto,COMFORT,Suavizante Para Ropa Concentrado Fiber Protect Comfort 500 Ml,7891150045460,"$6.740,99",35%Dto,"$4.381,64"
+2025-10-02 17:02:39,Coto,COMFORT,Suavizante Para Ropa Concentrado Puro Cuidado  Comfort  1 Ltr,7791290793606,"$11.131,99",35%Dto,"$7.235,79"
+2025-10-02 17:02:42,Coto,COMFORT,Suavizante Para Ropa Concentrado Puro Cuidado Comfort 500 Ml,7891150039001,"$6.740,99",35%Dto,"$4.381,64"
+2025-10-02 17:02:45,Coto,COMFORT,Suavizante Para Ropa Energia Floral Comfort 1l,7791290795952,"$10.402,99",35%Dto,"$6.761,94"
+2025-10-02 17:02:54,Coto,COMFORT,Suavizante Para Ropa Secretos 36 Comfort 500ml,7891150091979,"$6.607,99",35%Dto,"$4.295,19"
+2025-10-02 17:02:57,Coto,COMFORT,Suavizante Para Ropa Secretos 48 Confort 500ml,7891150091986,"$6.607,99",35%Dto,"$4.295,19"
+2025-10-02 17:03:00,Coto,TRUPER,"Destornillador Phillips TRUPER Comfort Grip 1/4"" X 4""",7501206617908,"$7.999,00",1 Pago 25% con Comunidad,"$5.999,25"
+2025-10-02 17:03:03,Coto,TRUPER,"Destornillador Phillips TRUPER Comfort Grip 1/4"" X 6""",7501206617915,"$6.799,00",1 Pago 25% con Comunidad,"$5.099,25"
+2025-10-02 17:03:06,Coto,TRUPER,"Destornillador Phillips TRUPER Comfort Grip 1/4"" X 8""",7501206617922,"$8.999,00",1 Pago 25% con Comunidad,"$6.749,25"
+2025-10-02 17:03:09,Coto,TRUPER,"Destornillador Phillips TRUPER Comfort Grip 1/8"" X 6""",7501206617861,"$4.999,00",1 Pago 25% con Comunidad,"$3.749,25"
+2025-10-02 17:02:57,Jumbo,VIVERE,Suavizante para ropa Explosión Floral Clásico Doypack 3 L Vivere,14130195003,$7.635,2do al 70%,$10.900
+2025-10-02 17:03:04,Jumbo,VIVERE,Suavizante Para Ropa Explosión Floral Violetas Y Flores Blancas 3 L Doypack Vivere,14130195012,$7.635,2do al 70%,$10.900
+2025-10-02 17:03:10,Jumbo,VIVERE,Suavizantes Para Ropa Vivere Explosión Clásico Doypack 900 Ml,14130195002,$7.635,2do al 70%,$3.400
+2025-10-02 17:03:18,Jumbo,VIVERE,Suavizante Para Ropa Floral Plancha Fácil 810 Ml Vivere,14130195005,$7.635,2do al 70%,$3.050
+2025-10-02 17:03:26,Jumbo,VIVERE,Suavizante Para Ropa Floral Clásico 3 Lts Vivere,14130195004,$7.635,2do al 70%,$12.050
+2025-10-02 17:03:38,Coto,PANTENE,Acondicionador PANTENE Restauración Pomada 170 ML,7500435106382,"$8.122,00",40%Dto,"$4.873,20"
+2025-10-02 17:03:41,Coto,PANTENE,Crema Para Peinar PANTENE Restauración   Botella 300 Ml,7506309837246,"$7.489,00",40%Dto,"$4.493,40"
+2025-10-02 17:03:45,Coto,PANTENE,Tratamiento Capilar PANTENE Restauración   Ampolla 15 Ml,7506195196694,"$6.300,00",40%Dto,"$3.780,00"
+2025-10-02 17:03:48,Coto,PANTENE,Acondicionador Cabellos Frágiles Pantene 250ml,7500435247955,"$7.829,00",40%Dto,"$4.697,40"
+2025-10-02 17:03:51,Coto,PANTENE,Acondicionador Cabellos Frágiles Pantene 510ml,7500435248044,"$12.527,00",40%Dto,"$7.516,20"
+2025-10-02 17:03:54,Coto,PANTENE,Acondicionador Equilibrio Raíz Y Puntas PANTENE 200ml,7500435230001,"$5.328,00",40%Dto,"$3.196,80"
+2025-10-02 17:03:57,Coto,PANTENE,Acondicionador Hidrata Y Fortalece Pantene 200ml,7500435230070,"$5.328,00",40%Dto,"$3.196,80"
+2025-10-02 17:04:00,Coto,PANTENE,Acondicionador Hidrata Y Fortalece PANTENE 400ml,7500435230117,"$8.587,00",40%Dto,"$5.152,20"
+2025-10-02 17:04:03,Coto,PANTENE,Acondicionador Keratina Pantene 250ml,7500435241106,"$7.829,00",40%Dto,"$4.697,40"
+2025-10-02 17:04:06,Coto,PANTENE,Acondicionador Keratina Pantene 510ml,7500435241045,"$12.527,00",40%Dto,"$7.516,20"
+2025-10-02 17:04:09,Coto,PANTENE,Acondicionador PANTENE Keratina 200 Ml,7500435241090,"$5.328,00",40%Dto,"$3.196,80"
+2025-10-02 17:04:12,Coto,PANTENE,Acondicionador PANTENE Nutrición 170 Ml,7500435243698,"$8.122,00",40%Dto,"$4.873,20"
+2025-10-02 17:04:15,Coto,PANTENE,Acondicionador PANTENE Pro-V Miracles  Detox Limpia - Purifica 200 Ml,7500435229852,"$5.328,00",40%Dto,"$3.196,80"
+2025-10-02 17:04:18,Coto,PANTENE,Acondicionador Pro Colágeno PANTENE 200 Ml,7500435138222,"$5.328,00",40%Dto,"$3.196,80"
+2025-10-02 17:04:21,Coto,PANTENE,Acondicionador Pro Colágeno Pantene 250ml,7500435191586,"$7.829,00",40%Dto,"$4.697,40"
+2025-10-02 17:04:24,Coto,PANTENE,Acondicionador Pro-V Colágeno Pantene 510ml,7500435191494,"$12.527,00",40%Dto,"$7.516,20"
+2025-10-02 17:04:27,Coto,PANTENE,Acondicionador Restauración PANTENE 400 Ml,7500435211857,"$7.506,00",40%Dto,"$4.503,60"
+2025-10-02 17:04:30,Coto,PANTENE,PANTENE Crema Para Peinar Colágeno Nutre & Revitaliza 300 Ml,7500435191548,"$7.524,00",40%Dto,"$4.514,40"
+2025-10-02 17:04:33,Coto,PANTENE,PANTENE Pro-V Miracles Liso Infinito Suave Y Brillante Acondicionador Hidratante 200 Ml,7500435235372,"$5.328,00",40%Dto,"$3.196,80"
+2025-10-02 17:04:36,Coto,PANTENE,PANTENE Pro-V Miracles Liso Infinito Suave Y Brillante Acondicionador Hidratante 400 Ml,7500435235365,"$8.587,00",40%Dto,"$5.152,20"
+2025-10-02 17:04:40,Coto,PANTENE,PANTENE Pro-V Miracles Revitalización Repara & Hidrata Acondicionador Hidratante 200 Ml,7500435235433,"$5.328,00",40%Dto,"$3.196,80"
+2025-10-02 17:04:43,Coto,PANTENE,PANTENE Pro-V Miracles Revitalización Repara & Hidrata Acondicionador Hidratante 400 Ml,7500435235426,"$8.587,00",40%Dto,"$5.152,20"
+2025-10-02 17:04:46,Coto,PANTENE,PANTENE Pro-V Miracles Volumen Suavidad & Fuerza Acondicionador Hidratante 200 Ml,7500435235341,"$5.328,00",40%Dto,"$3.196,80"
+2025-10-02 17:04:49,Coto,PANTENE,PANTENE Pro-V Miracles Volumen Suavidad & Fuerza Acondicionador Hidratante 400 Ml,7500435235334,"$8.587,00",40%Dto,"$5.152,20"
+2025-10-02 17:05:16,Jumbo,PANTENE,Shampoo Pro-v Miracles Detox Equilibrio 400 Ml Pantene,13710771099,$8.585,,
+2025-10-02 17:05:27,Jumbo,PANTENE,Acondicionador Pro-v Miracles Equilibrio 400 Ml Pantene,13720184063,$7.950,,
+2025-10-02 17:05:39,Jumbo,PANTENE,Acondicionador Pro-v Miracles Con Detox 400 Ml Pantene,13720184061,$7.950,,
+2025-10-02 17:05:49,Jumbo,PRINGLES,Papas Fritas Pringles Original X104gs,11130104095,$4.950,,
+2025-10-02 17:05:58,Jumbo,LAY´S,Papas Fritas Lays Clásicas 330 G,11130101217,$8.950,,
+2025-10-02 17:06:07,Jumbo,PRINGLES,Papas Fritas Pringles Crema Y Cebolla X109gs,11130104096,$4.950,,
+2025-10-02 17:06:17,Jumbo,Cuisine & CO,Papas Fritas Tradicionales 250 Grs Cuisine & Co,11130167001,$3.437,,
+2025-10-02 17:06:26,Jumbo,DORITOS,Nachos Doritos Queso 200 G,11131154043,$6.240,,
+2025-10-02 17:06:34,Jumbo,DORITOS,Nachos Doritos Queso 129 G,11131154042,$3.760,,
+2025-10-02 17:06:43,Jumbo,LAY´S,Papas Fritas Lays Clásicas 134 G,11130101210,$3.800,,
+2025-10-02 17:03:36,Jumbo,COMFORT,Suavizante Comfort Clásico Cápsulas De Fragancia 3 L Doypack,14130194002,$13.200,,
+2025-10-02 17:03:44,Jumbo,COMFORT,Suavizante Concentrado Comfort Frescor Intenso 500 Ml,14130209001,$7.635,2do al 70%,$6.720
+2025-10-02 17:03:52,Jumbo,COMFORT,Suavizante Concentrado Comfort Brisa Elegante 500 Ml,14130209006,$7.635,2do al 70%,$6.720
+2025-10-02 17:03:58,Jumbo,COMFORT,Suavizante Concentrado Energia Floral 500 Ml Comfort,14130202016,$7.635,2do al 70%,$6.720
+2025-10-02 17:04:05,Jumbo,COMFORT,Suavizante Concentrado Puro Cuidado 500 Ml Comfort,14130209005,$7.635,2do al 70%,$6.720
+2025-10-02 17:04:12,Jumbo,COMFORT,Suavizante Secrets 48 500ml Comfort,14130202018,$7.100,2do al 70%,$4.615
+2025-10-02 17:04:19,Jumbo,COMFORT,Suavizante Para Ropa Clásico Cápsulas De Fragancia 900 Ml Doypack Comfort,14130194001,$7.635,2do al 70%,$4.050
+2025-10-02 17:04:26,Jumbo,COMFORT,Suavizante Concentrado Puro Cuidado Doypack 1 L Comfort,14130209007,$7.635,2do al 70%,$11.700
+2025-10-02 17:04:32,Jumbo,COMFORT,Suavizante Concentrado Frescor Intenso Doypack 450 Ml Comfort,14130209002,$7.635,2do al 70%,$5.750
+2025-10-02 17:04:42,Jumbo,LADYSOFT,Toallitas Comfort Soft 8 Un Ladysoft,13440356051,$2.000,,
+2025-10-02 17:04:55,Jumbo,HUGGIES,Pañales Huggies Flexi Comfort Disney Rn 34u,13810294001,$18.000,,
+2025-10-02 17:05:07,Jumbo,GUM,Palillo Interdental Gum Soft Picks Comfort Mint,13230701009,$10.500,,
+2025-10-02 17:05:19,Jumbo,NIVEA,Desodorante Femenino Nivea Dry Comfort Roll On 50 Ml,13421114001,$1.800,,
+2025-10-02 17:05:31,Jumbo,HUGGIES,Pañales Huggies Flexi Comfort Disney Xxg X50,13810298002,$44.050,,
+2025-10-02 17:05:41,Jumbo,BIC,Máquina De Afeitar Bic Comfort 3 2 U,13330914037,$3.550,,
+2025-10-02 17:05:52,Jumbo,HUGGIES,Pañales Huggies Flexi Comfort Disney G X60,13810296002,$44.050,,
+2025-10-02 17:06:05,Jumbo,HUGGIES,Pañales Huggies Flexi Comfort Disney M 48u,13810295001,$30.850,,
+2025-10-02 17:06:18,Jumbo,HUGGIES,Pañales Huggies Flexi Comfort Disney Xxg X30 U,13810298001,$30.850,,
+2025-10-02 17:06:29,Jumbo,HUGGIES,Pañales Huggies Flexi Comfort Disney Xg X32,13810297001,$30.850,,
+2025-10-02 17:06:40,Jumbo,HUGGIES,Pañales Huggies Flexi Comfort Disney G 40 U,13810296001,$30.850,,
+2025-10-02 17:50:24,Coto,HEAD & SHOULDERS,HEAD & SHOULDERS Manzana Fresh Shampoo Control Caspa 375 Ml,7500435019880,"$10.197,00",35%Dto,"$6.628,05"
+2025-10-02 17:50:25,Coto,HEAD & SHOULDERS,HEAD & SHOULDERS Men 3 En 1 Shampoo Control Caspa 180 Ml,7500435019484,"$6.074,00",35%Dto,"$3.948,10"
+2025-10-02 17:50:26,Coto,HEAD & SHOULDERS,Shampoo HEAD & SHOULDERS     Botella 375 ML,7500435019545,"$10.197,00",35%Dto,"$6.628,05"
+2025-10-02 17:50:27,Coto,HEAD & SHOULDERS,Shampoo Manzana Fresh Head&Shoulders 180ml,7500435019873,"$6.074,00",35%Dto,"$3.948,10"
+2025-10-02 17:50:28,Coto,HEAD & SHOULDERS,Shampoo Old Spice Head&Shoulders 180ml,7500435019521,"$6.074,00",35%Dto,"$3.948,10"
+2025-10-02 17:50:29,Coto,HEAD & SHOULDERS,Shampoo 3 En 1 Head&Shoulders 375ml,7500435019491,"$10.197,00",35%Dto,"$6.628,05"
+2025-10-02 17:50:30,Coto,HEAD & SHOULDERS,HEAD & SHOULDERS Acondicionador Control Caspa  Crece Fuerte Desde La Raíz  300ml,7500435159234,"$9.383,00",35%Dto,"$6.098,95"
+2025-10-02 17:50:31,Coto,HEAD & SHOULDERS,HEAD & SHOULDERS Hidratación Aceite De Coco Acondicionador Control Caspa 300 Ml,7500435147583,"$9.383,00",35%Dto,"$6.098,95"
+2025-10-02 17:50:32,Coto,HEAD & SHOULDERS,HEAD & SHOULDERS Manzana Fresh Acondicionador 300 Ml,7500435147569,"$9.383,00",35%Dto,"$6.098,95"
+2025-10-02 17:50:33,Coto,HEAD & SHOULDERS,HEAD & SHOULDERS Revitalización Y Suavidad Aceite De Argán Dermo - Acondicionador 300 Ml,7500435202732,"$9.383,00",35%Dto,"$6.098,95"
+2025-10-02 17:50:34,Coto,HEAD & SHOULDERS,HEAD & SHOULDERS Crece Fuerte Desde La Raíz Shampoo Control Caspa 180 Ml,7500435159241,"$6.074,00",35%Dto,"$3.948,10"
+2025-10-02 17:50:35,Coto,HEAD & SHOULDERS,HEAD & SHOULDERS Crece Fuerte Desde La Raíz Shampoo Control Caspa 375 Ml,7500435159210,"$10.197,00",35%Dto,"$6.628,05"
+2025-10-02 17:50:36,Coto,HEAD & SHOULDERS,HEAD & SHOULDERS Dermo Sensitive Shampoo Control Caspa 180 Ml,7500435148047,"$6.074,00",35%Dto,"$3.948,10"
+2025-10-02 17:50:37,Coto,HEAD & SHOULDERS,HEAD & SHOULDERS Dermo Sensitive Shampoo Control Caspa 375 Ml,7500435148061,"$10.197,00",35%Dto,"$6.628,05"
+2025-10-02 17:50:38,Coto,HEAD & SHOULDERS,HEAD & SHOULDERS Hidratación Shampoo Control Caspa 180 Ml,7500435142564,"$6.074,00",35%Dto,"$3.948,10"
+2025-10-02 17:50:39,Coto,HEAD & SHOULDERS,HEAD & SHOULDERS Hidratación Shampoo Control Caspa 375 Ml,7500435142557,"$10.197,00",35%Dto,"$6.628,05"
+2025-10-02 17:50:40,Coto,HEAD & SHOULDERS,HEAD & SHOULDERS Limpieza Y Revitalización Shampoo Control Caspa 180 Ml,7500435202671,"$6.074,00",35%Dto,"$3.948,10"
+2025-10-02 17:50:51,Coto,HEAD & SHOULDERS,Shampoo Anti Comezón Head & Shoulders 180ml,7500435231244,"$6.074,00",35%Dto,"$3.948,10"
+2025-10-02 17:50:52,Coto,HEAD & SHOULDERS,Shampoo Anti Comezón Head & Shoulders 375ml,7500435231237,"$10.197,00",35%Dto,"$6.628,05"
+2025-10-02 17:50:53,Coto,HEAD & SHOULDERS,Shampoo Anti Comezón Head & Shoulders 650ml,7500435231268,"$15.774,00",35%Dto,"$10.253,10"
+2025-10-02 17:50:54,Coto,HEAD & SHOULDERS,Shampoo Anti Resequedad Miel Head & Shoulders 180ml,7500435249355,"$6.074,00",35%Dto,"$3.948,10"
+2025-10-02 17:50:55,Coto,HEAD & SHOULDERS,Shampoo Anti Resequedad Miel Head & Shoulders 375ml,7500435249348,"$10.197,00",35%Dto,"$6.628,05"
+2025-10-02 17:51:00,Coto,HEAD & SHOULDERS,Shampoo Anti Resequedad Miel Head & Shoulders 650ml,7500435249331,"$15.774,00",35%Dto,"$10.253,10"
+2025-10-02 17:51:01,Coto,HEAD & SHOULDERS,Shampoo Crecimiento Fuerte Desde La Raiz Head And Shoulders 650ml,7500435176224,"$15.774,00",35%Dto,"$10.253,10"
+2025-10-02 17:51:02,Coto,HEAD & SHOULDERS,Shampoo Dermo Sensitive Head And Shoulders 650ml,7500435189545,"$15.774,00",35%Dto,"$10.253,10"
+2025-10-02 17:51:04,Coto,HEAD & SHOULDERS,Shampoo H&S Limpieza Y Revitalización 375 Ml,7500435202695,"$10.197,00",35%Dto,"$6.628,05"
+2025-10-02 17:51:05,Coto,HEAD & SHOULDERS,Shampoo Hidratacion Head And Shoulders 650ml,7500435161602,"$15.774,00",35%Dto,"$10.253,10"
+2025-10-02 17:51:06,Coto,HEAD & SHOULDERS,Shampoo Limpieza Y Revitalizacion Head And Shoulders 650ml,7500435202701,"$15.774,00",35%Dto,"$10.253,10"
+2025-10-02 17:51:07,Coto,HEAD & SHOULDERS,Shampoo Manzana Fresh Head And Shoulders 650ml,7500435162135,"$15.774,00",35%Dto,"$10.253,10"
+2025-10-02 17:51:08,Coto,HEAD & SHOULDERS,Shampoo Men 3en1 Head And Shoulders 650ml,7500435162913,"$15.774,00",35%Dto,"$10.253,10"
+2025-10-02 17:51:09,Coto,HEAD & SHOULDERS,Shampoo Men Con Old Spice Head And Shoulders 650ml,7500435166249,"$15.774,00",35%Dto,"$10.253,10"
+2025-10-02 17:51:10,Coto,HEAD & SHOULDERS,Shampoo Proteccion Caida Con Cafeina Head And Shoulders 650ml,7500435162586,"$15.774,00",35%Dto,"$10.253,10"
+2025-10-02 17:51:11,Coto,HEAD & SHOULDERS,Shampoo Purificacion Capilar Head And Shoulders 650ml,7500435161596,"$15.774,00",35%Dto,"$10.253,10"
+2025-10-02 17:50:24,Coto,PANTENE,Acondicionador PANTENE Restauración Pomada 170 ML,7500435106382,"$8.122,00",40%Dto,"$4.873,20"
+2025-10-02 17:50:25,Coto,PANTENE,Crema Para Peinar PANTENE Restauración   Botella 300 Ml,7506309837246,"$7.489,00",40%Dto,"$4.493,40"
+2025-10-02 17:50:26,Coto,PANTENE,Tratamiento Capilar PANTENE Restauración   Ampolla 15 Ml,7506195196694,"$6.300,00",40%Dto,"$3.780,00"
+2025-10-02 17:50:27,Coto,PANTENE,Acondicionador Cabellos Frágiles Pantene 250ml,7500435247955,"$7.829,00",40%Dto,"$4.697,40"
+2025-10-02 17:50:28,Coto,PANTENE,Acondicionador Cabellos Frágiles Pantene 510ml,7500435248044,"$12.527,00",40%Dto,"$7.516,20"
+2025-10-02 17:50:29,Coto,PANTENE,Acondicionador Equilibrio Raíz Y Puntas PANTENE 200ml,7500435230001,"$5.328,00",40%Dto,"$3.196,80"
+2025-10-02 17:50:30,Coto,PANTENE,Acondicionador Hidrata Y Fortalece Pantene 200ml,7500435230070,"$5.328,00",40%Dto,"$3.196,80"
+2025-10-02 17:50:31,Coto,PANTENE,Acondicionador Hidrata Y Fortalece PANTENE 400ml,7500435230117,"$8.587,00",40%Dto,"$5.152,20"
+2025-10-02 17:50:32,Coto,PANTENE,Acondicionador Keratina Pantene 250ml,7500435241106,"$7.829,00",40%Dto,"$4.697,40"
+2025-10-02 17:50:33,Coto,PANTENE,Acondicionador Keratina Pantene 510ml,7500435241045,"$12.527,00",40%Dto,"$7.516,20"
+2025-10-02 17:50:34,Coto,PANTENE,Acondicionador PANTENE Keratina 200 Ml,7500435241090,"$5.328,00",40%Dto,"$3.196,80"
+2025-10-02 17:50:35,Coto,PANTENE,Acondicionador PANTENE Nutrición 170 Ml,7500435243698,"$8.122,00",40%Dto,"$4.873,20"
+2025-10-02 17:50:36,Coto,PANTENE,Acondicionador PANTENE Pro-V Miracles  Detox Limpia - Purifica 200 Ml,7500435229852,"$5.328,00",40%Dto,"$3.196,80"
+2025-10-02 17:50:37,Coto,PANTENE,Acondicionador Pro Colágeno PANTENE 200 Ml,7500435138222,"$5.328,00",40%Dto,"$3.196,80"
+2025-10-02 17:50:38,Coto,PANTENE,Acondicionador Pro Colágeno Pantene 250ml,7500435191586,"$7.829,00",40%Dto,"$4.697,40"
+2025-10-02 17:50:39,Coto,PANTENE,Acondicionador Pro-V Colágeno Pantene 510ml,7500435191494,"$12.527,00",40%Dto,"$7.516,20"
+2025-10-02 17:50:40,Coto,PANTENE,Acondicionador Restauración PANTENE 400 Ml,7500435211857,"$7.506,00",40%Dto,"$4.503,60"
+2025-10-02 17:50:41,Coto,PANTENE,PANTENE Crema Para Peinar Colágeno Nutre & Revitaliza 300 Ml,7500435191548,"$7.524,00",40%Dto,"$4.514,40"
+2025-10-02 17:50:42,Coto,PANTENE,PANTENE Pro-V Miracles Liso Infinito Suave Y Brillante Acondicionador Hidratante 200 Ml,7500435235372,"$5.328,00",40%Dto,"$3.196,80"
+2025-10-02 17:50:43,Coto,PANTENE,PANTENE Pro-V Miracles Liso Infinito Suave Y Brillante Acondicionador Hidratante 400 Ml,7500435235365,"$8.587,00",40%Dto,"$5.152,20"
+2025-10-02 17:50:44,Coto,PANTENE,PANTENE Pro-V Miracles Revitalización Repara & Hidrata Acondicionador Hidratante 200 Ml,7500435235433,"$5.328,00",40%Dto,"$3.196,80"
+2025-10-02 17:50:45,Coto,PANTENE,PANTENE Pro-V Miracles Revitalización Repara & Hidrata Acondicionador Hidratante 400 Ml,7500435235426,"$8.587,00",40%Dto,"$5.152,20"
+2025-10-02 17:50:46,Coto,PANTENE,PANTENE Pro-V Miracles Volumen Suavidad & Fuerza Acondicionador Hidratante 200 Ml,7500435235341,"$5.328,00",40%Dto,"$3.196,80"
+2025-10-02 17:50:47,Coto,PANTENE,PANTENE Pro-V Miracles Volumen Suavidad & Fuerza Acondicionador Hidratante 400 Ml,7500435235334,"$8.587,00",40%Dto,"$5.152,20"
+2025-10-02 17:50:52,Coto,PANTENE,Sellador De Puntas Abiertas PANTENE Colágeno Nutre Y Revitaliza 90ml,7500435191524,"$7.079,00",40%Dto,"$4.247,40"
+2025-10-02 17:50:53,Coto,PANTENE,Crema Para Peinar Fortalecedora Pantene 300ml,7500435248075,"$7.524,00",40%Dto,"$4.514,40"
+2025-10-02 17:50:54,Coto,PANTENE,Tónico Capilar Anticaspa Pantene 300ml,7500435247900,"$21.505,00",40%Dto,"$12.903,00"
+2025-10-02 17:50:55,Coto,PANTENE,PANTENE Pro-V Miracles Detox Limpia - Purifica Shampoo Detox 200 Ml,7500435229845,"$5.328,00",40%Dto,"$3.196,80"
+2025-10-02 17:50:56,Coto,PANTENE,PANTENE Pro-V Miracles Equilibrio Raíz & Puntas Shampoo Equilibrante 700 Ml,7500435229999,"$14.048,00",40%Dto,"$8.428,80"
+2025-10-02 17:50:57,Coto,PANTENE,PANTENE Pro-V Miracles Liso Infinito Suave Y Brillante Shampoo 200 Ml,7500435235402,"$5.328,00",40%Dto,"$3.196,80"
+2025-10-02 17:50:58,Coto,PANTENE,PANTENE Pro-V Miracles Liso Infinito Suave Y Brillante Shampoo 400 Ml,7500435235396,"$8.587,00",40%Dto,"$5.152,20"
+2025-10-02 17:50:59,Coto,PANTENE,PANTENE Pro-V Miracles Revitalización Repara & Hidrata Shampoo Reparador 200 Ml,7500435235464,"$5.328,00",40%Dto,"$3.196,80"
+2025-10-02 17:51:00,Coto,PANTENE,PANTENE Pro-V Miracles Revitalización Repara & Hidrata Shampoo Reparador 400 Ml,7500435235457,"$8.587,00",40%Dto,"$5.152,20"
+2025-10-02 17:51:01,Coto,PANTENE,PANTENE Pro-V Miracles Volumen Suavidad & Fuerza Shampoo Voluminizador 200 Ml,7500435235310,"$5.328,00",40%Dto,"$3.196,80"
+2025-10-02 17:51:02,Coto,PANTENE,PANTENE Pro-V Miracles Volumen Suavidad & Fuerza Shampoo Voluminizador 400 Ml,7500435235297,"$8.587,00",40%Dto,"$5.152,20"
+2025-10-02 17:51:03,Coto,PANTENE,Shampoo Cabellos Débiles Pantene 300ml,7500435248037,"$7.829,00",40%Dto,"$4.697,40"
+2025-10-02 17:51:04,Coto,PANTENE,Shampoo Equilibrante PANTENE Equilibrio Raíz Y Puntas Pro-V Miracles 200 Ml,7500435209632,"$5.328,00",40%Dto,"$3.196,80"
+2025-10-02 17:51:06,Coto,PANTENE,Shampoo Equilibrante PANTENE Equilibrio Raíz Y Puntas Pro-V Miracles 400 Ml,7500435209694,"$8.587,00",40%Dto,"$5.152,20"
+2025-10-02 17:51:07,Coto,PANTENE,Shampoo Hidrata Y Fortalece Pantene 200ml,7500435230100,"$5.328,00",40%Dto,"$3.196,80"
+2025-10-02 17:51:07,Coto,PANTENE,Shampoo Hidrata Y Fortalece PANTENE 400ml,7500435230094,"$8.587,00",40%Dto,"$5.152,20"
+2025-10-02 17:51:13,Coto,PANTENE,Shampoo Keratina Pantene 300ml,7500435241113,"$7.829,00",40%Dto,"$4.697,40"
+2025-10-02 17:51:14,Coto,PANTENE,Shampoo Keratina Pantene 510ml,7500435241052,"$12.527,00",40%Dto,"$7.516,20"
+2025-10-02 17:51:15,Coto,PANTENE,Shampoo Liso Infinito Pantene 700ml,7500435244442,"$14.048,00",40%Dto,"$8.428,80"
+2025-10-02 17:51:16,Coto,PANTENE,Shampoo PANTENE Keratina 200 Ml,7500435241069,"$5.328,00",40%Dto,"$3.196,80"
+2025-10-02 17:51:17,Coto,PANTENE,Shampoo PANTENE Pro-V Miracles  Detox Limpia - Purifica 400 Ml,7500435229821,"$8.587,00",40%Dto,"$5.152,20"
+2025-10-02 17:51:18,Coto,PANTENE,Shampoo Pro-V Miracles Colágeno PANTENE 200 Ml,7500435191418,"$5.328,00",40%Dto,"$3.196,80"
+2025-10-02 17:51:19,Coto,PANTENE,Shampoo Pro-V Miracles Colágeno Pantene 300ml,7500435191425,"$7.829,00",40%Dto,"$4.697,40"
+2025-10-02 17:51:25,Coto,PANTENE,Shampoo Pro-V Miracles Colágeno Pantene 510ml,7500435191456,"$12.527,00",40%Dto,"$7.516,20"
+2025-10-02 17:51:26,Coto,PANTENE,Shampoo Restauración PANTENE 400 Ml,7500435211826,"$7.506,00",40%Dto,"$4.503,60"
+2025-10-02 17:51:27,Coto,PANTENE,Crema Para Peinar PANTENE Keratina 300 Ml,7500435241076,"$7.524,00",40%Dto,"$4.514,40"
+2025-10-02 17:51:28,Coto,PANTENE,Mascarilla Nutricion PANTENE 270ml,7500435243667,"$8.366,00",40%Dto,"$5.019,60"
+2025-10-02 17:51:29,Coto,PANTENE,Mascarilla PANTENE Hidratación 270 Ml,7500435243681,"$8.366,00",40%Dto,"$5.019,60"
+2025-10-02 17:51:30,Coto,PANTENE,Mascarilla Restauracion PANTENE 270ml,7500435243674,"$8.366,00",40%Dto,"$5.019,60"
+2025-10-02 17:51:26,Jumbo,HEAD & SHOULDERS,Shampoo Anticomezón 375 Ml Head & Shoulders,13710104188,$10.750,,
+2025-10-02 17:51:34,Jumbo,HEAD & SHOULDERS,Shampoo 3 En 1 650 Ml Head & Shoulders,13710104180,$16.600,,
+2025-10-02 17:51:43,Jumbo,HEAD & SHOULDERS,Shampoo Apple 375 Ml Head & Shoulders,13710104155,$10.750,,
+2025-10-02 17:51:52,Jumbo,HEAD & SHOULDERS,Shampoo Antifall 650 Ml Head & Shoulders,13710104178,$16.600,,
+2025-10-02 17:52:00,Jumbo,HEAD & SHOULDERS,Shampoo 3 En 1 180 Ml Head & Shoulders,13710104159,$6.400,,
+2025-10-02 17:52:09,Jumbo,HEAD & SHOULDERS,Shampoo Argan 650 Ml Head & Shoulders,13710104185,$16.600,,
+2025-10-02 17:52:17,Jumbo,HEAD & SHOULDERS,Shampoo Fuerza 650 Ml Head & Shoulders,13710104182,$16.600,,
+2025-10-02 17:52:26,Jumbo,HEAD & SHOULDERS,Shampoo Coconut 375 Ml Head & Shoulders,13710210002,$10.750,,
+2025-10-02 17:52:35,Jumbo,HEAD & SHOULDERS,Shampoo Anticomezón 180 Ml Head & Shoulders,13710104187,$6.400,,
+2025-10-02 17:52:43,Jumbo,HEAD & SHOULDERS,Shampoo Sensitive 180 Ml Head & Shoulders,13710171002,$6.400,,
+2025-10-02 17:52:52,Jumbo,HEAD & SHOULDERS,Acondicionador Dermo Protección Caída 300 Ml Head & Shoulders,13720181019,$9.900,,
+2025-10-02 17:53:00,Jumbo,HEAD & SHOULDERS,Shampoo Coconut 180 Ml Head & Shoulders,13710210003,$6.400,,
+2025-10-02 17:53:09,Jumbo,HEAD & SHOULDERS,Shampoo Aceite De Argán Shampoo 180 Ml Head & Shoulders,13710387001,$6.400,,
+2025-10-02 17:53:18,Jumbo,HEAD & SHOULDERS,Acondicionador Manzana Fresh 300 Ml Head & Shoulders,13720181023,$9.900,,
+2025-10-02 17:53:26,Jumbo,HEAD & SHOULDERS,Acondicionador Crece Fuerte 300 Ml Head & Shoulders,13720730001,$9.900,,
+2025-10-02 17:53:35,Jumbo,HEAD & SHOULDERS,Acondicionador Hidratación Aceite De Coco 300 Ml Head & Shoulders,13720712001,$9.900,,
+2025-10-02 17:53:43,Jumbo,HEAD & SHOULDERS,Shampoo Apple 180 Ml Head & Shoulders,13710104156,$6.400,,
+2025-10-02 17:53:52,Jumbo,HEAD & SHOULDERS,Shampoo Charcoal 650 Ml Head & Shoulders,13710104181,$16.600,,
+2025-10-02 17:54:01,Jumbo,HEAD & SHOULDERS,Shampoo Sensitive 375 Ml Head & Shoulders,13710171003,$10.750,,
+2025-10-02 17:54:09,Jumbo,HEAD & SHOULDERS,Shampoo Old Spice 180 Ml Head & Shoulders,13710104157,$6.400,,
+2025-10-02 17:54:22,Jumbo,HEAD & SHOULDERS,Shampoo Charcoal 180 Ml Head & Shoulders,13710104174,$6.400,,
+2025-10-02 17:54:31,Jumbo,HEAD & SHOULDERS,Shampoo Nuhoney 180 Ml Head & Shoulders,13710104190,$6.400,,
+2025-10-02 17:54:40,Jumbo,HEAD & SHOULDERS,Shampoo Sensitive 650 Ml Head & Shoulders,13710104179,$16.600,,
+2025-10-02 17:54:48,Jumbo,HEAD & SHOULDERS,Acondicionador Revitalización 300 Ml  Head & Shoulders,13720879002,$9.900,,
+2025-10-02 17:54:57,Jumbo,HEAD & SHOULDERS,Shampoo Limpieza Y Revitalización 375 Ml Head & Shoulders,13710387003,$10.750,,
+2025-10-02 17:55:05,Jumbo,HEAD & SHOULDERS,Shampoo Coconut 650 Ml Head & Shoulders,13710104183,$16.600,,
+2025-10-02 17:55:14,Jumbo,HEAD & SHOULDERS,Shampoo Fuerza 180 Ml Head & Shoulders,13710230002,$6.400,,
+2025-10-02 17:55:23,Jumbo,HEAD & SHOULDERS,Shampoo Nuhoney 650 Ml Head & Shoulders,13710104191,$16.600,,
+2025-10-02 17:55:31,Jumbo,HEAD & SHOULDERS,Shampoo Charcoal 375 Ml Head & Shoulders,13710104175,$10.750,,
+2025-10-02 17:55:40,Jumbo,HEAD & SHOULDERS,Shampoo Nuhoney 375 Ml Head & Shoulders,13710104189,$10.750,,
+2025-10-02 17:51:45,Jumbo,PANTENE,Shampoo Pro-v Miracles Detox Equilibrio 400 Ml Pantene,13710771099,$8.585,,
+2025-10-02 17:51:53,Jumbo,PANTENE,Acondicionador Pro-v Miracles Equilibrio 400 Ml Pantene,13720184063,$7.950,,
+2025-10-02 17:52:02,Jumbo,PANTENE,Acondicionador Pro-v Miracles Con Detox 400 Ml Pantene,13720184061,$7.950,,
+2025-10-02 17:52:11,Jumbo,PANTENE,Crema Para Peinar Colágeno Nutre Y Revitaliza 300 Ml Pantene,13730404001,$7.950,,
+2025-10-02 17:52:19,Jumbo,PANTENE,Acondicionador Revilitacion 400 Ml Pantene,13720119109,$7.950,,
+2025-10-02 17:52:28,Jumbo,PANTENE,Sahmpoo Pro-v Miracles Volumen 400 Ml Pantene,13710757109,$8.585,,
+2025-10-02 17:52:36,Jumbo,PANTENE,Acondicionador Pro-v Miracles Volumen 400 Ml Pantene,13720119106,$7.950,,
+2025-10-02 17:52:45,Jumbo,PANTENE,Shampoo Pro-v Miracles Detox Limpia-purifica 750 Ml Pantene,13710771098,$14.800,,
+2025-10-02 17:52:54,Jumbo,PANTENE,Shampoo Pantene Pro-v Miracles Hidrata Y Fortalece 400 Ml,13711225003,$8.585,,
+2025-10-02 17:53:02,Jumbo,PANTENE,Acondicionador Pantene Hidrata Y Fortalece 400 Ml,13720908002,$7.950,,
+2025-10-02 17:53:11,Jumbo,PANTENE,Shampoo Pro-v Solutions Restauración 400 Ml Pantene,13710381001,$7.505,,
+2025-10-02 17:53:19,Jumbo,PANTENE,Acondicionador Pro-v Solutions Restauración 400 Ml Pantene,13720872001,$7.505,,
+2025-10-02 17:53:28,Jumbo,PANTENE,Acondicionador 3 Minute Miracle Nutrición 170 Ml Pantene,13730112019,$8.550,,
+2025-10-02 17:53:37,Jumbo,PANTENE,Shampoo Colageno X 510 Ml Pantene,13710757116,$13.200,,
+2025-10-02 17:53:45,Jumbo,PANTENE,Shampoo Keratina X 510 Ml Pantene,13710757121,$13.200,,
+2025-10-02 17:53:54,Jumbo,PANTENE,Acondicionador Anti Caida X 510 Ml Pantene,13720119114,$13.200,,
+2025-10-02 17:54:03,Jumbo,PANTENE,Shampoo Anti Caida 300 Ml Pantene,13710757114,$8.250,,
+2025-10-02 17:54:11,Jumbo,PANTENE,Mascarilla Intensiva Nutrición 270 Ml Pantene,13730112021,$8.800,,
+2025-10-02 17:54:20,Jumbo,PANTENE,Shampoo Pro-v Hidrata Y Fortalece 200 Ml Pantene,13711225001,$5.600,,
+2025-10-02 17:54:28,Jumbo,PANTENE,Acondicionador Keratina X 510 Ml Pantene,13720119118,$13.200,,
+2025-10-02 17:54:42,Jumbo,PANTENE,Serum Puntas Abiertas Colágeno 90 Ml Pantene,13730403001,$7.450,,
+2025-10-02 17:54:50,Jumbo,PANTENE,Shampoo Colageno X 300 Ml Pantene,13710757120,$8.250,,
+2025-10-02 17:54:59,Jumbo,PANTENE,Shampoo Provmir Liso Infinito X 700 Ml Pantene,13710757119,$14.800,,
+2025-10-02 17:55:07,Jumbo,PANTENE,Acondicionador Pro-v Miracles Revilitacion 400 Ml Pantene,13720119110,$14.800,,
+2025-10-02 17:55:16,Jumbo,PANTENE,Shampoo Keratina X 300 Ml Pantene,13710757122,$8.250,,
+2025-10-02 17:55:25,Jumbo,PANTENE,Crema Para Peinar Keratina 300 Ml Pantene,13730112017,$7.950,,
+2025-10-02 17:55:33,Jumbo,PANTENE,Shampoo Pro-v Miracles Hidrata 700 Ml Pantene,13710757113,$14.800,,
+2025-10-02 17:55:42,Jumbo,PANTENE,Mascarilla Intensiva Restauración 270 Ml Pantene,13730112020,$8.800,,
+2025-10-02 17:55:51,Jumbo,PANTENE,Acondicionador Keratina X 250 Ml Pantene,13720119119,$8.250,,
+2025-10-02 17:55:59,Jumbo,PANTENE,Mascarilla Intensiva Hidratación 270 Ml Pantene,13730112018,$8.800,,
+2025-10-02 17:56:08,Jumbo,PANTENE,Acondicionador Colageno X 250 Ml Pantene,13720119116,$8.250,,
+2025-10-02 17:56:16,Jumbo,PANTENE,Shampoo Pro-v Miracles Revitalización X 700 Ml Pantene,13710757117,$14.800,,
+2025-10-02 17:56:25,Jumbo,PANTENE,Shampoo Pro-v Miracles Volumizador X 700 Ml Pantene,13710757118,$14.800,,
+2025-10-02 17:56:34,Jumbo,PANTENE,Acondicionador Anti Caida X 250 Ml Pantene,13720119115,$8.250,,
+2025-10-02 17:56:42,Jumbo,PANTENE,Acondicionador Pro-v Miracles 200 Ml Pantene,13720908001,$5.600,,
+2025-10-02 17:56:51,Jumbo,PANTENE,Crema Peinar Anti Caida X 300 Ml Pantene,13730116010,$7.950,,
+2025-10-02 17:57:01,Jumbo,PANTENE,Shampoo Pro-v Miracles Volumen 200 Ml Pantene,13710757108,$5.600,,
+2025-10-02 17:57:12,Jumbo,PANTENE,Tonico Capilar Anticaida X 60 Ml Pantene,13730708004,$22.600,,
+2025-10-02 17:57:22,Jumbo,PANTENE,Acondicionador Keratina 200 Ml Pantene,13720146001,$5.600,,
