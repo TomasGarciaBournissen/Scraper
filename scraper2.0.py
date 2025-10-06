@@ -285,18 +285,13 @@ async def scrape_single_category(product):
                 await browser.close()
 
 
-'''
 products = [
-    "DOVE",
+    
     "DOWNY",
-    "VIVERE",
-    "GILLETE",
-    "COMFORT",
-    "PANTENE",
-    "HEAD & SHOULDERS",
+  
 
 ]
-'''
+
 
 
 def run_scraping(products):
@@ -321,3 +316,5 @@ def run_scraping(products):
 
     end = time.time()
     print(f"\n✅ Scraping completado en {end - start:.2f} segundos.")
+
+run_scraping(products)
