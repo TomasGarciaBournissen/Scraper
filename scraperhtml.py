@@ -62,6 +62,7 @@ class BaseScraper:
     async def _procesar_producto_inner(self, new_page, link, html_list):
         try:
             await new_page.goto(link, timeout=8000, wait_until="domcontentloaded")
+            await self.page.wait_for_timeout(10000)
             html_content = await new_page.content()
             async with lock:
                 html_list.append((link, html_content))
@@ -86,10 +87,14 @@ class BaseScraper:
             return 1
 
     async def scrapear_url(self, product, html_list):
-        await self.page.goto(self.config['url'])
+        await self.page.goto(self.config['url'], wait_until="domcontentloaded", timeout=60000)
+        await self.page.wait_for_selector(f"xpath={self.config['xpaths']['search_box']}", state="visible", timeout=30000)
+        await self.page.wait_for_timeout(10000)
         await self.page.fill(f"xpath={self.config['xpaths']['search_box']}", product)
         await self.page.press(f"xpath={self.config['xpaths']['search_box']}", "Enter")
         await self.page.wait_for_timeout(2000)
+        
+
 
         total_paginas = await self.obtener_total_paginas()
         print(f"Total de páginas: {total_paginas} para {product}")
@@ -131,15 +136,48 @@ class JumboScraper(BaseScraper):
         }
         super().__init__(page, config, "Jumbo")
 
+class CotoScraper(BaseScraper):
+    def __init__(self, page):
+        config = {
+            'url': "https://www.cotodigital.com.ar/sitios/cdigi/nuevositio",
+            'xpaths': {
+                'search_box': "//input[@placeholder='¿Qué querés comprar hoy?']",
+                'link_button': "//div[contains(@class, 'producto-card')]", 
+                'pagination': "//li[contains(@class, 'page-item') and contains(@class, 'ng-star-inserted')]",
+                'pagination_btn': "//li[contains(@class, 'page-item') and contains(@class, 'ng-star-inserted')]//a[normalize-space(text())='{page}']"
+            }
+        }
+        super().__init__(page, config, "Coto")
 
+    async def obtener_links_desde_botones(self):
+        base_url = "https://www.cotodigital.com.ar"
+        botones = await self.page.query_selector_all(f"xpath={self.config['xpaths']['link_button']}")
+        links = []
+        print(f"Botones encontrados: {len(botones)}")
+        for btn in botones:
+            try:          
+                href_element = await btn.query_selector("xpath=.//a[contains(@href, '/sitios/cdigi/productos/')]")
+                if href_element:
+                    href = await href_element.get_attribute("href")
+                    if href:
+                        # Prepend base_url if the link is relative
+                        if href.startswith("/"):
+                            href = base_url + href
+                        if href not in links:
+                            links.append(href)
+            except Exception as e:
+                print("Error obteniendo link:", e)
+                continue
 
-async def scrape_single_category(product, html_list):
+        return links
+
+async def scrape_single_category(scraper_class, product, html_list):
     async with semaphore:
         async with async_playwright() as p:
             browser = await p.chromium.launch(headless=False)
             context = await browser.new_context()
             page = await context.new_page()
-            scraper = JumboScraper(page)
+            scraper = scraper_class(page)
             try:
                 await scraper.scrapear_url(product, html_list)
             finally:
@@ -147,27 +185,47 @@ async def scrape_single_category(product, html_list):
 
 
 
-products = ["DOWNY"]
+
+scrapers = [JumboScraper, CotoScraper]
+products = ["DOWNY",]
+
 downloaded_htmls = []
 
-async def main(products):
-    await asyncio.gather(*(scrape_single_category(prod, downloaded_htmls) for prod in products))
+async def main():
+    tasks = [
+        scrape_single_category(scraper, product, downloaded_htmls)
+        for scraper in scrapers
+        for product in products
+    ]
+    results = await asyncio.gather(*tasks, return_exceptions=True)
 
-start = time.time()
-asyncio.run(main(products))
-end = time.time()
+    # Log any scraper exceptions for debugging
+    for res in results:
+        if isinstance(res, Exception):
+            print(f"⚠️ Task error: {res}")
+
+
+asyncio.run(main())
 
 output_dir = "downloaded_htmls"
 os.makedirs(output_dir, exist_ok=True)
 
+print(f"📄 Total HTMLs descargados: {len(downloaded_htmls)}")
+for link, _ in downloaded_htmls:
+    print("➡", link)
+
+
 for i, (link, html) in enumerate(downloaded_htmls, start=1):
+    site = "jumbo" if "jumbo.com.ar" in link else "coto"
+    site_dir = os.path.join(output_dir, site)
+    os.makedirs(site_dir, exist_ok=True)
     safe_name = f"page_{i}.html"
-    output_path = os.path.join(output_dir, safe_name)
+    output_path = os.path.join(site_dir, safe_name)
     with open(output_path, "w", encoding="utf-8") as f:
         f.write(f"<!-- {link} -->\n")
         f.write(html)
     print(f"💾 Guardado: {output_path}")
 
-print(f"\n✅ Scraping completado en {end - start:.2f} segundos.")
+
 print(f"Total de HTMLs descargados: {len(downloaded_htmls)}")
 print(f"📂 Archivos guardados en carpeta: {output_dir}")
