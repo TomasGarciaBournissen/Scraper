@@ -1,12 +1,13 @@
 import asyncio
 import time
+import os
+from datetime import datetime
 from playwright.async_api import async_playwright
 
 lock = asyncio.Lock()
 MAX_WORKERS = 4
 semaphore = asyncio.Semaphore(MAX_WORKERS)
 
-# ==== Base scraper class simplificado solo para HTML ====
 class BaseScraper:
     def __init__(self, page, config, location):
         self.page = page
@@ -63,7 +64,7 @@ class BaseScraper:
             await new_page.goto(link, timeout=8000, wait_until="domcontentloaded")
             html_content = await new_page.content()
             async with lock:
-                html_list.append(html_content)
+                html_list.append((link, html_content))
             print(f"✔ HTML descargado: {link}")
         except Exception as e:
             print(f"⚠️ Error cargando {link}: {e}")
@@ -106,7 +107,7 @@ class BaseScraper:
                 await element.click()
                 await self.page.wait_for_timeout(2000)
 
-            # scroll down halfway
+            
             await self.page.evaluate("window.scrollTo(0, document.body.scrollHeight / 2.7)")
             await self.page.wait_for_timeout(1000)
 
@@ -116,7 +117,7 @@ class BaseScraper:
                 await self.procesar_producto(link, html_list)
 
 
-# ==== Scraper de ejemplo ====
+
 class JumboScraper(BaseScraper):
     def __init__(self, page):
         config = {
@@ -131,11 +132,11 @@ class JumboScraper(BaseScraper):
         super().__init__(page, config, "Jumbo")
 
 
-# ==== Función para scrapear categoría ====
+
 async def scrape_single_category(product, html_list):
     async with semaphore:
         async with async_playwright() as p:
-            browser = await p.chromium.launch(headless=True)
+            browser = await p.chromium.launch(headless=False)
             context = await browser.new_context()
             page = await context.new_page()
             scraper = JumboScraper(page)
@@ -145,7 +146,7 @@ async def scrape_single_category(product, html_list):
                 await browser.close()
 
 
-# ==== Ejecutar scraping ====
+
 products = ["DOWNY"]
 downloaded_htmls = []
 
@@ -156,5 +157,17 @@ start = time.time()
 asyncio.run(main(products))
 end = time.time()
 
+output_dir = "downloaded_htmls"
+os.makedirs(output_dir, exist_ok=True)
+
+for i, (link, html) in enumerate(downloaded_htmls, start=1):
+    safe_name = f"page_{i}.html"
+    output_path = os.path.join(output_dir, safe_name)
+    with open(output_path, "w", encoding="utf-8") as f:
+        f.write(f"<!-- {link} -->\n")
+        f.write(html)
+    print(f"💾 Guardado: {output_path}")
+
 print(f"\n✅ Scraping completado en {end - start:.2f} segundos.")
 print(f"Total de HTMLs descargados: {len(downloaded_htmls)}")
+print(f"📂 Archivos guardados en carpeta: {output_dir}")
