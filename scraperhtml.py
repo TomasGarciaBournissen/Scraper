@@ -136,6 +136,32 @@ class JumboScraper(BaseScraper):
         }
         super().__init__(page, config, "Jumbo")
 
+class DiscoScraper(BaseScraper):
+    def __init__(self, page):
+        config = {
+            'url': "https://www.disco.com.ar/?gclsrc=aw.ds&gad_source=1&gad_campaignid=11002659319&gbraid=0AAAAADR-xG-NXLsgewPYAeKaSnO4cqe_Z&gclid=CjwKCAjw0sfHBhB6EiwAQtv5qTjzE-TfUU9R_JhzTwTktU5TAo1YwFMkf8Sc5ovPuPvJWl5mAvEaihoCBhoQAvD_BwE",
+            'xpaths': {
+                'search_box': "//input[@placeholder='Buscar...']",
+                'link_button': "//button[.//span[text()='Ver Producto']]",
+                'pagination': "//button[contains(@class,'discoargentina-search-result-custom-1-x-option-before')]",
+                'pagination_btn': "//button[contains(@class,'discoargentina-search-result-custom-1-x-option-before') and normalize-space(text())='{page}']"
+            }
+        }
+        super().__init__(page, config, "Disco")
+
+class CotoScraper(BaseScraper):
+    def __init__(self, page):
+        config = {
+            'url': "https://www.cotodigital.com.ar/sitios/cdigi/nuevositio",
+            'xpaths': {
+                'search_box': "//input[@placeholder='¿Qué querés comprar hoy?']",
+                'link_button': "//div[contains(@class, 'producto-card')]", 
+                'pagination': "//li[contains(@class, 'page-item') and contains(@class, 'ng-star-inserted')]",
+                'pagination_btn': "//li[contains(@class, 'page-item') and contains(@class, 'ng-star-inserted')]//a[normalize-space(text())='{page}']"
+            }
+        }
+        super().__init__(page, config, "Coto")
+
 class CotoScraper(BaseScraper):
     def __init__(self, page):
         config = {
@@ -186,7 +212,7 @@ async def scrape_single_category(scraper_class, product, html_list):
 
 
 
-scrapers = [JumboScraper, CotoScraper]
+scrapers = [JumboScraper]#JumboScraper, CotoScraper
 products = ["DOWNY",]
 
 downloaded_htmls = []
