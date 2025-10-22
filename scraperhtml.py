@@ -126,7 +126,7 @@ class BaseScraper:
 class JumboScraper(BaseScraper):
     def __init__(self, page):
         config = {
-            'url': "https://www.jumbo.com.ar/almacen/snacks",
+            'url': "https://www.jumbo.com.ar",
             'xpaths': {
                 'search_box': "//input[@placeholder='Buscar...']",
                 'link_button': "//button[.//span[text()='Ver Producto']]",
@@ -141,26 +141,13 @@ class DiscoScraper(BaseScraper):
         config = {
             'url': "https://www.disco.com.ar/?gclsrc=aw.ds&gad_source=1&gad_campaignid=11002659319&gbraid=0AAAAADR-xG-NXLsgewPYAeKaSnO4cqe_Z&gclid=CjwKCAjw0sfHBhB6EiwAQtv5qTjzE-TfUU9R_JhzTwTktU5TAo1YwFMkf8Sc5ovPuPvJWl5mAvEaihoCBhoQAvD_BwE",
             'xpaths': {
-                'search_box': "//input[@placeholder='Buscar...']",
+                'search_box': "//input[@placeholder='¡Hola! ¿Qué estas buscando?']",
                 'link_button': "//button[.//span[text()='Ver Producto']]",
                 'pagination': "//button[contains(@class,'discoargentina-search-result-custom-1-x-option-before')]",
                 'pagination_btn': "//button[contains(@class,'discoargentina-search-result-custom-1-x-option-before') and normalize-space(text())='{page}']"
             }
         }
         super().__init__(page, config, "Disco")
-
-class CotoScraper(BaseScraper):
-    def __init__(self, page):
-        config = {
-            'url': "https://www.cotodigital.com.ar/sitios/cdigi/nuevositio",
-            'xpaths': {
-                'search_box': "//input[@placeholder='¿Qué querés comprar hoy?']",
-                'link_button': "//div[contains(@class, 'producto-card')]", 
-                'pagination': "//li[contains(@class, 'page-item') and contains(@class, 'ng-star-inserted')]",
-                'pagination_btn': "//li[contains(@class, 'page-item') and contains(@class, 'ng-star-inserted')]//a[normalize-space(text())='{page}']"
-            }
-        }
-        super().__init__(page, config, "Coto")
 
 class CotoScraper(BaseScraper):
     def __init__(self, page):
@@ -212,7 +199,7 @@ async def scrape_single_category(scraper_class, product, html_list):
 
 
 
-scrapers = [JumboScraper]#JumboScraper, CotoScraper
+scrapers = [DiscoScraper]#JumboScraper, CotoScraper
 products = ["DOWNY",]
 
 downloaded_htmls = []
@@ -242,7 +229,7 @@ for link, _ in downloaded_htmls:
 
 
 for i, (link, html) in enumerate(downloaded_htmls, start=1):
-    site = "jumbo" if "jumbo.com.ar" in link else "coto"
+    site = "jumbo" if "jumbo.com.ar" in link else "disco" if "disco.com.ar" in link else "coto"
     site_dir = os.path.join(output_dir, site)
     os.makedirs(site_dir, exist_ok=True)
     safe_name = f"page_{i}.html"
