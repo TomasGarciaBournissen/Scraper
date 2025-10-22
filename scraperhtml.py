@@ -200,7 +200,7 @@ async def scrape_single_category(scraper_class, product, html_list):
 
 
 scrapers = [DiscoScraper]#JumboScraper, CotoScraper
-products = ["DOWNY",]
+products = ["pantene",]
 
 downloaded_htmls = []
 

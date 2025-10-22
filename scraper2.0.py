@@ -210,7 +210,7 @@ class DiscoScraper(BaseScraper):
                 'sku': "//span[contains(@class,'vtex-product-identifier-0-x-product-identifier__value')]",
                 'price_special': "//div[@class='jumboargentinaio-store-theme-2t-mVsKNpKjmCAEM_AMCQH']",
                 'price_normal': "//div[@id='priceContainer']",
-                'discount': ["//span[contains(@class, 'jumboargentinaio-store-theme-MnHW0PCgcT3ih2-RUT-t_')]","//span[contains(@class, 'jumboargentinaio-store-theme-Aq2AAEuiQuapu8IqwN0Aj')]"],
+                'discount': "//span[@class='discoargentina-store-theme-MnHW0PCgcT3ih2-RUT-t_']",
                 'pwd': "//div[contains(@class,'vtex-price-format-gallery')]",
                 'pagination': "//button[contains(@class,'discoargentina-search-result-custom-1-x-option-before')]",
                 'pagination_btn': "//button[contains(@class,'discoargentina-search-result-custom-1-x-option-before') and normalize-space(text())='{page}']"
@@ -294,7 +294,7 @@ async def scrape_single_category(product):
                 await browser.close()
 
 
-products = ["DOWNY"]
+products = ["Pantene"]
 
 def run_scraping(products):
     async def main(produ):
