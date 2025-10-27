@@ -14,20 +14,25 @@ class BaseScraper:
         self.config = config
         self.location = location
 
-    async def element_exists(self, page, xpaths, timeout=4000):
+    async def element_exists(self, page, xpaths, timeout=8000):
         if not xpaths:
-            return False, None
+            print("no xp")
+            return False
         if isinstance(xpaths, str):
             xpaths = [xpaths]
         for xp in xpaths:
             if not xp.strip():
+                
                 continue
             try:
+                print("try xp")
                 await page.wait_for_selector(f"xpath={xp}", timeout=timeout)
-                return True, xp
+                return True
+                print("yes")
             except:
                 continue
-        return False, None
+        print("no xp at alls")
+        return False
 
     async def obtener_links_desde_botones(self):
         try:
@@ -62,7 +67,14 @@ class BaseScraper:
     async def _procesar_producto_inner(self, new_page, link, html_list):
         try:
             await new_page.goto(link, timeout=8000, wait_until="domcontentloaded")
-            await self.page.wait_for_timeout(10000)
+            found = await self.element_exists(new_page, self.config['xpaths']['discount'], timeout=4000)
+            if found:
+                print("discount found")
+            else:
+                await new_page.wait_for_selector(f"xpath={self.config['xpaths']['price']}", timeout=6000)
+            time.sleep(5)
+            
+            
             html_content = await new_page.content()
             async with lock:
                 html_list.append((link, html_content))
@@ -128,6 +140,8 @@ class JumboScraper(BaseScraper):
         config = {
             'url': "https://www.jumbo.com.ar",
             'xpaths': {
+                'price': "//div[contains(@class,'vtex-price-format-gallery')]",
+                'discount': ["//span[contains(@class, 'jumboargentinaio-store-theme-MnHW0PCgcT3ih2-RUT-t_')]","//span[contains(@class, 'jumboargentinaio-store-theme-Aq2AAEuiQuapu8IqwN0Aj')]"],
                 'search_box': "//input[@placeholder='Buscar...']",
                 'link_button': "//button[.//span[text()='Ver Producto']]",
                 'pagination': "//button[contains(@class,'discoargentina-search-result-custom-1-x-option-before')]",
@@ -141,6 +155,8 @@ class DiscoScraper(BaseScraper):
         config = {
             'url': "https://www.disco.com.ar/?gclsrc=aw.ds&gad_source=1&gad_campaignid=11002659319&gbraid=0AAAAADR-xG-NXLsgewPYAeKaSnO4cqe_Z&gclid=CjwKCAjw0sfHBhB6EiwAQtv5qTjzE-TfUU9R_JhzTwTktU5TAo1YwFMkf8Sc5ovPuPvJWl5mAvEaihoCBhoQAvD_BwE",
             'xpaths': {
+                'price': "//div[@id='priceContainer']",
+                'discount': "//span[@class='discoargentina-store-theme-MnHW0PCgcT3ih2-RUT-t_']",
                 'search_box': "//input[@placeholder='¡Hola! ¿Qué estas buscando?']",
                 'link_button': "//button[.//span[text()='Ver Producto']]",
                 'pagination': "//button[contains(@class,'discoargentina-search-result-custom-1-x-option-before')]",
@@ -199,8 +215,8 @@ async def scrape_single_category(scraper_class, product, html_list):
 
 
 
-scrapers = [DiscoScraper]#JumboScraper, CotoScraper
-products = ["pantene",]
+scrapers = [DiscoScraper,JumboScraper]#, CotoScraper
+products = ["alfajor oreo"]
 
 downloaded_htmls = []
 
