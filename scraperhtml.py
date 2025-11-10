@@ -101,7 +101,7 @@ class BaseScraper:
     async def scrapear_url(self, product, html_list):
         await self.page.goto(self.config['url'], wait_until="domcontentloaded", timeout=60000)
         await self.page.wait_for_selector(f"xpath={self.config['xpaths']['search_box']}", state="visible", timeout=30000)
-        await self.page.wait_for_timeout(10000)
+        await self.page.wait_for_timeout(5000)
         await self.page.fill(f"xpath={self.config['xpaths']['search_box']}", product)
         await self.page.press(f"xpath={self.config['xpaths']['search_box']}", "Enter")
         await self.page.wait_for_timeout(2000)
@@ -165,6 +165,21 @@ class DiscoScraper(BaseScraper):
         }
         super().__init__(page, config, "Disco")
 
+class diaScraper(BaseScraper):
+    def __init__(self, page):
+        config = {
+            'url': "https://www.diaonline.com.ar",
+            'xpaths': {
+                'price': "//span[contains(@class, 'diaio-store-5-x-sellingPriceValue')]",
+                'search_box': "//input[contains(@class, 'vtex-styleguide-9-x-input') and @type='text']",
+                'link_button': "//section[contains(@class, 'vtex-product-summary-2-x-container')]//a",
+                'discount': "",
+                'pagination': "",
+                'pagination_btn': ""
+            }
+        }
+        super().__init__(page, config, "Dia")
+
 class CotoScraper(BaseScraper):
     def __init__(self, page):
         config = {
@@ -215,8 +230,8 @@ async def scrape_single_category(scraper_class, product, html_list):
 
 
 
-scrapers = [DiscoScraper,JumboScraper]#, CotoScraper
-products = ["alfajor oreo"]
+scrapers = [diaScraper,]#DiscoScraper,JumboScraper]#, CotoScraper
+products = ["Downy"]
 
 downloaded_htmls = []
 
