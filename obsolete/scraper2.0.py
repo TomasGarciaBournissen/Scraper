@@ -6,7 +6,7 @@ import os
 from concurrent.futures import ThreadPoolExecutor
 from playwright.async_api import async_playwright
 from playwright.async_api import Error
-import csv_manager
+import obsolete.csv_manager as csv_manager
 
 lock = asyncio.Lock()
 downloaded_htmls = []  # Global list to store (link, html)
