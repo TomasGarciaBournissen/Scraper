@@ -39,7 +39,7 @@ class BaseScraper:
         try:
             await self.page.wait_for_selector(f"xpath={self.config['xpaths']['link_button']}", timeout=10000)
         except:
-            print("⚠ No se encontraron botones de producto en el timeout")
+            print("No se encontraron botones de producto en el timeout")
             return []
 
         botones = await self.page.query_selector_all(f"xpath={self.config['xpaths']['link_button']}")
@@ -59,9 +59,9 @@ class BaseScraper:
         try:
             await asyncio.wait_for(self._procesar_producto_inner(new_page, link, html_list), timeout=20)
         except asyncio.TimeoutError:
-            print(f"⏱ Timeout procesando producto {link}")
+            print(f"Timeout procesando producto {link}")
         except Exception as e:
-            print(f"❌ Error con producto {link}: {e}")
+            print(f"Error con producto {link}: {e}")
         finally:
             await new_page.close()
 
@@ -79,9 +79,9 @@ class BaseScraper:
             html_content = await new_page.content()
             async with lock:
                 html_list.append((link, html_content))
-            print(f"✔ HTML descargado: {link}")
+            print(f"HTML descargado: {link}")
         except Exception as e:
-            print(f"⚠️ Error cargando {link}: {e}")
+            print(f"Error cargando {link}: {e}")
 
     async def obtener_total_paginas(self):
         pagination_xpath = self.config['xpaths'].get('pagination')
@@ -130,7 +130,7 @@ class BaseScraper:
             await self.page.wait_for_timeout(1000)
 
             links = await self.obtener_links_desde_botones()
-            print(f"🔎 {len(links)} productos encontrados en página {pagina}")
+            print(f"{len(links)} productos encontrados en página {pagina}")
             for link in links:
                 await self.procesar_producto(link, html_list)
 
@@ -253,12 +253,12 @@ async def main():
 asyncio.run(main())
 output_dir = "downloaded_htmls"
 
-# 🧹 Delete all contents inside output_dir
+"""
 if os.path.exists(output_dir):
-    shutil.rmtree(output_dir)  # deletes the whole folder and its contents
-os.makedirs(output_dir, exist_ok=True)  # recreate empty folder
-
-print(f"📄 Total HTMLs descargados: {len(downloaded_htmls)}")
+    shutil.rmtree(output_dir)  
+os.makedirs(output_dir, exist_ok=True)  
+"""
+print(f"Total HTMLs descargados: {len(downloaded_htmls)}")
 for link, _ in downloaded_htmls:
     print("➡", link)
 
@@ -274,6 +274,6 @@ for i, (link, html) in enumerate(downloaded_htmls, start=1):
         f.write(f"<!-- {link} -->\n")
         f.write(html)
 
-    print(f"💾 Guardado: {output_path}")
+    print(f"Guardado: {output_path}")
 print(f"Total de HTMLs descargados: {len(downloaded_htmls)}")
-print(f"📂 Archivos guardados en carpeta: {output_dir}")
+print(f"Archivos guardados en carpeta: {output_dir}")
